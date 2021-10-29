@@ -1,0 +1,12 @@
+.img{
+    object-fit: cover;
+}
+
+img{
+    height: 650px;
+}
+
+.img1{
+    object-fit: cover;
+    object-position: top;
+}

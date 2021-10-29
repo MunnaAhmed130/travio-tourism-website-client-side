@@ -7,24 +7,46 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Login from './Components/LogIn/Login';
+import MyOrder from './Components/Conditional/MyOrder/MyOrder';
+import ManageAllOrders from './Components/Conditional/ManageAllOrders/ManageAllOrders';
+import AddANewService from './Components/Conditional/AddANewService/AddANewService';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <h1>This is travel related website</h1>
+      <AuthProvider>
       <Router>
+          <Header></Header>
         <Switch>
-          <Router exact path='/'>
+            <Route exact path='/'>
             <Home></Home>
-          </Router>
-          <Router path='/home'>
+            </Route>
+            <Route path='/home'>
             <Home></Home>
-          </Router>
-          <Router path='*'>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/myOrder'>
+              <MyOrder></MyOrder>
+            </Route>
+            <Route path='/ManageAllOrders'>
+              <ManageAllOrders></ManageAllOrders>
+            </Route>
+            <Route path='/AddANewService'>
+              <AddANewService></AddANewService>
+            </Route>
+            <Route path='*'>
             <NotFound></NotFound>
-          </Router>
+            </Route>
         </Switch>
       </Router>
+      </AuthProvider>
+      <Footer></Footer>
     </div>
   );
 }

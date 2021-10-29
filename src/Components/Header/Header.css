@@ -1,0 +1,11 @@
+.route-links a{
+    margin-left: 10px;
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+Nav{
+    text-align: right;
+}
