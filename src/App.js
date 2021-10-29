@@ -14,6 +14,8 @@ import MyOrder from './Components/Conditional/MyOrder/MyOrder';
 import ManageAllOrders from './Components/Conditional/ManageAllOrders/ManageAllOrders';
 import AddANewService from './Components/Conditional/AddANewService/AddANewService';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -40,6 +42,9 @@ function App() {
             <Route path='/AddANewService'>
               <AddANewService></AddANewService>
             </Route>
+            <PrivateRoute path='/placeOrder/:serviceId'>
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
             <Route path='*'>
             <NotFound></NotFound>
             </Route>
