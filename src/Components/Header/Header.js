@@ -8,7 +8,7 @@ const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
                 <Container>
 
                     <Navbar.Brand href="#home">Travio</Navbar.Brand>
@@ -19,6 +19,7 @@ const Header = () => {
                             <Nav >
                                 {/* <Nav.Link><Link to="/home">Home</Link></Nav.Link> */}
                                 <Link to='/home'>Home</Link>
+                                <Link to='/placeOrder'>PlaceOrder</Link>
 
 
                                 {user?.email &&
@@ -35,6 +36,9 @@ const Header = () => {
 
                                     <Link to='/AddANewService'>Add A New Service</Link>
 
+                                }
+                                {
+                                    user?.email && <span className="span">Signed In as : {user?.displayName}<img className="profile" src={user.photoURL} />  </span>
                                 }
                                 {
                                     user?.email ? <Button variant="primary" onClick={handleLogOut}>Log Out</Button> : <Link to='/logIn'>Log In</Link>

@@ -9,3 +9,18 @@
 Nav{
     text-align: right;
 }
+.span{
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.profile{
+    display: inline-block;
+    height: 30px;
+    border-radius:50% ;
+    margin-left: 10px;
+    margin-right: 5px;
+}

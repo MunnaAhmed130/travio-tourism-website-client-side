@@ -1,17 +1,24 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
+import UseAuth from '../../Hooks/UseAuth';
 import Service from '../Service/Service';
 
 const TourPlans = () => {
+
     const [plans, setPlans] = useState([]);
+
     useEffect(() => {
-        fetch('http://localhost:4000/tour')
+        fetch('https://polar-dusk-61914.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setPlans(data))
     }, [])
     console.log(plans)
+    const { isLoading } = UseAuth();
+    if (isLoading) {
+        return <Spinner animation="border" variant="primary" />
+    }
     return (
         <div>
             <h2>TourPlans</h2>

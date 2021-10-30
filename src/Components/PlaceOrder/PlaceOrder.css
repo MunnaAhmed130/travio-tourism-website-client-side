@@ -1,0 +1,21 @@
+.place-order form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+.place-order img{
+    height: 500px;
+    
+}
+.place-order form input,textarea{
+    /* width: 40%; */
+    padding: 5px;
+    margin: 10px;
+}
+
+.place-order form textarea{
+    height: 100px;
+}
