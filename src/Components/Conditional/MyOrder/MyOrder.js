@@ -5,7 +5,7 @@ import OrderForm from '../../OrderForm/OrderForm';
 const MyOrder = () => {
     const [order, setOrder] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/orders`)
+        fetch(`https://polar-dusk-61914.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => {
                 setOrder(data)

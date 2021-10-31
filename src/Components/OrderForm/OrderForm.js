@@ -8,7 +8,7 @@ const OrderForm = ({ order }) => {
     // console.log(productKey)
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/tours')
+        fetch('https://polar-dusk-61914.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => {
                 setMyOrder(data)
@@ -28,7 +28,7 @@ const OrderForm = ({ order }) => {
     console.log(myOrder.img)
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:4000/orders`;
+        const url = `https://polar-dusk-61914.herokuapp.com/orders`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
@@ -46,7 +46,7 @@ const OrderForm = ({ order }) => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         if (proceed) {
-            const url = `http://localhost:4000/orders/${id}`
+            const url = `https://polar-dusk-61914.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

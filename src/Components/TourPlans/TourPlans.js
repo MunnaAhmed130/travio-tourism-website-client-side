@@ -10,7 +10,7 @@ const TourPlans = () => {
     const [plans, setPlans] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/tours')
+        fetch('https://polar-dusk-61914.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setPlans(data))
     }, [])

@@ -1,3 +1,8 @@
+.place-order{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .place-order form{
     display: flex;
     flex-direction: column;
@@ -18,11 +23,33 @@
 }
 
 .place-order form input{
-    width: 100%;
+    width: 80%;
     padding: 5px;
     margin: 10px;
+
+}
+
+.place-order form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    /* border: 1px solid black; */
 }
 
 .place-order form textarea{
     height: 100px;
+}
+
+@media only screen and (max-width:900px) {
+    
+.place-order form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
 }

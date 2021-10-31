@@ -8,7 +8,7 @@ const AddANewService = () => {
     const onSubmit = data => {
         console.log(data)
 
-        axios.post('http://localhost:4000/tours', data)
+        axios.post('https://polar-dusk-61914.herokuapp.com/tours', data)
             .then(res => {
                 console.log(res)
                 if (res.data.insertedId) {

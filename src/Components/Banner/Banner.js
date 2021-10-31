@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <div className="banner">
             <Carousel>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="img img1 d-block w-100"
                         variant="top"
@@ -20,7 +20,7 @@ const Banner = () => {
                         <p className="banner-info">Experience holidays in Paris and find the best time to go and the best places to visit. Travel and find happiness within yourself.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={500}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="img img2 d-block w-100"
                         src="https://i.ibb.co/X5cshjc/italy2.jpg"
@@ -32,7 +32,7 @@ const Banner = () => {
                         <p className="banner-info">In Italy you'll find sunny isles, glacial lakes and fiery volcanoes, rolling vineyards and urban landscapes harbouring more UNESCO World Heritage sites.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item interval={2000}>
                     <img
                         className="img img3 d-block w-100"
                         src="https://i.ibb.co/HdNG7gw/Zurich.jpg"

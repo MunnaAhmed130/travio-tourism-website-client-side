@@ -15,10 +15,10 @@ const Login = () => {
             })
     }
     return (
-        <div>
-            <h2>Please Login</h2>
+        <div className="mb-5 pb-5">
+            <h2 className="text-dark mt-5 mb-3">Please Login</h2>
             {
-                user?.email ? <button onClick={handleLogOut}>Log Out</button> : <button onClick={handleLogIn}>Log In</button>
+                user?.email ? <button className="btn btn-danger" onClick={handleLogOut}>Log Out</button> : <button className="btn btn-primary" onClick={handleLogIn}>Log In</button>
             }
 
             {/* <button onClick={handleGoogleLogIn}>Log In</button> */}

@@ -4,6 +4,8 @@
     border-radius: 50%;
 }
 
+
+
 .destinations span{
     font-size: 2em;
     
@@ -40,6 +42,7 @@
     font-size: 2.5em;
     font-weight: 700;
     color: white;
+    z-index: 2;
 }
 
 .div1{
@@ -52,6 +55,22 @@
 .div3{
     background-image: url("https://i.ibb.co/Z20FXtG/Italy2.jpg");
 
+}
+
+.div{
+    position:relative;
+    z-index: -1;
+}
+
+.div::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 /* @media screen and (max-width:800px) {
