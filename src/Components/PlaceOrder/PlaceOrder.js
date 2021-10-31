@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import './PlaceOrder.css';
 import UseAuth from '../../Hooks/UseAuth';
@@ -59,17 +59,13 @@ const PlaceOrder = () => {
 
                             <div>
                                 <label htmlFor="">Destination :</label>
-                                <input {...register("place")} defaultValue={order.name} required />
+                                <input {...register("place")} defaultValue={order?.name} required />
                             </div>
                             <div>
                                 <label htmlFor="">Price :</label>
-                                <input type="number" {...register("price")} value={order.price} required />
+                                <input type="number" {...register("price")} value={order?.price} required />
                             </div>
 
-                            {/* <input {...register("productId")} defaultValue={serviceId} /> */}
-                            {/* <textarea {...register("description")} defaultValue={order.description} /> */}
-
-                            {/* <Link to="/myOrder"><input className="btn btn-primary" type="submit" value="Place Order" /></Link> */}
                             <div>
                             <input className="btn btn-primary" type="submit" value="Place Order" />
                             </div>
