@@ -16,7 +16,7 @@ const MyOrder = () => {
     // console.log(order)
     return (
         <div>
-            <h2>My Orders</h2>
+            <h2 className="text-black mt-4">My Orders</h2>
             <Row xs={1} md={2} lg={3} className="g-4 m-4">
                 {
                     order.map(order => <OrderForm key={order._id} order={order}></OrderForm>)
