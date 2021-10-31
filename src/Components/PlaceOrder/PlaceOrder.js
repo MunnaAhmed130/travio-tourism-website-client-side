@@ -27,7 +27,15 @@ const PlaceOrder = () => {
     const onSubmit = data => {
         console.log(data)
         axios.post("https://polar-dusk-61914.herokuapp.com/orders", data)
-            .then(res => console.log(res))
+            .then(res => {
+                console.log(res)
+
+                if (res.data.insertedId) {
+                    alert('order successfully placed');
+                    // const remaining = products.filter(products._id !== id)
+                    // setProducts(remaining)
+                }
+            })
         // .then(result => console.log(result))
     };
     return (
@@ -46,24 +54,24 @@ const PlaceOrder = () => {
                             </div>
                             <div>
                                 <label htmlFor=""> Address :</label>
-                                <input {...register("address")} required />
+                                <input {...register("address")} required="require" />
                             </div>
                             <div>
                                 <label htmlFor="">Phone :</label>
-                                <input type="tel" {...register("Phone")} require required />
+                                <input type="tel" {...register("Phone")} required="require" />
                             </div>
                             <div>
                                 <label htmlFor="">Product Key :</label>
-                                <input {...register("productKey")} defaultValue={serviceId} required />
+                                <input {...register("productKey")} defaultValue={serviceId} required="require" />
                             </div>
 
                             <div>
                                 <label htmlFor="">Destination :</label>
-                                <input {...register("place")} defaultValue={order?.name} required />
+                                <input {...register("place")} defaultValue={order?.name} required="require" />
                             </div>
                             <div>
                                 <label htmlFor="">Price :</label>
-                                <input type="number" {...register("price")} value={order?.price} required />
+                                <input type="number" {...register("price")} defaultValue={order?.price} required="require" />
                             </div>
 
                             <div>

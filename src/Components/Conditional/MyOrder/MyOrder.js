@@ -12,12 +12,8 @@ const MyOrder = () => {
                 // console.log(data)
             })
     }, [])
-    if (order.length === 0) {
-        <Spinner animation="border" variant="primary" />
-    }
 
-
-    console.log(order)
+    // console.log(order)
     return (
         <div>
             <h2>My Orders</h2>

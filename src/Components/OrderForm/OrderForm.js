@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const OrderForm = ({ order }) => {
-    const { img, productKey, _id } = order;
-    console.log(order);
+    const { productKey, _id } = order;
+    // console.log(order);
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
         fetch('https://polar-dusk-61914.herokuapp.com/tours')
@@ -17,7 +16,7 @@ const OrderForm = ({ order }) => {
             })
     }, [])
 
-    console.log(myOrder.img)
+    // console.log(myOrder.img)
     const [products, setProducts] = useState([]);
     useEffect(() => {
         const url = `https://polar-dusk-61914.herokuapp.com/orders`;
@@ -25,10 +24,10 @@ const OrderForm = ({ order }) => {
             .then(res => res.json())
             .then(data => setProducts(data))
     })
-    console.log(products)
+    // console.log(products)
 
 
-    const handleDeleteUser = id => {
+    const handleDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         if (proceed) {
             const url = `https://polar-dusk-61914.herokuapp.com/orders/${id}`
@@ -40,8 +39,11 @@ const OrderForm = ({ order }) => {
 
                     if (data.deletedCount > 0) {
                         alert('deleted successfully');
-                        // const remaining = products.filter(products._id !== id)
-                        // setProducts(remaining)
+                        // for (const keys in products) {
+                        //     const remaining = keys.filter(keys._id !== id)
+                        //     console.log(remaining)
+                        // }
+
                     }
 
                 })
@@ -57,7 +59,7 @@ const OrderForm = ({ order }) => {
                         <Card.Title className="title">{myOrder?.name}</Card.Title>
                         <p className="place">{myOrder?.places}</p>
                         <Card.Text>{myOrder?.description}</Card.Text>
-                        <Button onClick={() => handleDeleteUser(_id)} variant="primary">DELETE</Button>
+                        <Button onClick={() => handleDeleteOrder(_id)} variant="primary">DELETE</Button>
 
                     </Card.Body>
                 </Card>
