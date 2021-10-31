@@ -3,7 +3,6 @@ import { Button, Card, Col } from 'react-bootstrap';
 
 const OrderForm = ({ order }) => {
     const { productKey, _id } = order;
-    // console.log(order);
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
         fetch('https://polar-dusk-61914.herokuapp.com/tours')
@@ -16,7 +15,7 @@ const OrderForm = ({ order }) => {
             })
     }, [])
 
-    // console.log(myOrder.img)
+
     const [products, setProducts] = useState([]);
     useEffect(() => {
         const url = `https://polar-dusk-61914.herokuapp.com/orders`;
@@ -24,7 +23,6 @@ const OrderForm = ({ order }) => {
             .then(res => res.json())
             .then(data => setProducts(data))
     })
-    // console.log(products)
 
 
     const handleDeleteOrder = id => {
@@ -39,10 +37,6 @@ const OrderForm = ({ order }) => {
 
                     if (data.deletedCount > 0) {
                         alert('deleted successfully');
-                        // for (const keys in products) {
-                        //     const remaining = keys.filter(keys._id !== id)
-                        //     console.log(remaining)
-                        // }
 
                     }
 

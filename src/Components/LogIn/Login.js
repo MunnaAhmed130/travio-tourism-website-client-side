@@ -22,7 +22,6 @@ const Login = () => {
                 user?.email ? <button className="btn btn-danger logOut" onClick={handleLogOut}>Log Out</button> : <button className="btn btn-primary login" onClick={handleLogIn}>Log In</button>
             }
 
-            {/* <button onClick={handleGoogleLogIn}>Log In</button> */}
 
         </div>
     );

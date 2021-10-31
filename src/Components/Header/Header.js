@@ -17,7 +17,6 @@ const Header = () => {
                         <Navbar.Collapse id="navbarScroll">
 
                             <Nav >
-                                {/* <Nav.Link><Link to="/home">Home</Link></Nav.Link> */}
                                 <Link to='/home'>Home</Link>
                                 <Link to='/placeOrder'>PlaceOrder</Link>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Spinner } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import OrderForm from '../../OrderForm/OrderForm';
 
 const MyOrder = () => {

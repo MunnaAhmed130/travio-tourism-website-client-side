@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Row, Spinner } from 'react-bootstrap';
-import UseAuth from '../../Hooks/UseAuth';
 import Service from '../Service/Service';
 
 const TourPlans = () => {

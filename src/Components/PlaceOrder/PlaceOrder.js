@@ -7,7 +7,6 @@ import { useForm } from "react-hook-form";
 import './PlaceOrder.css';
 import UseAuth from '../../Hooks/UseAuth';
 import { Container, Row, Col } from 'react-bootstrap';
-import Service from '../Service/Service';
 
 const PlaceOrder = () => {
     const { user } = UseAuth();
@@ -32,11 +31,8 @@ const PlaceOrder = () => {
 
                 if (res.data.insertedId) {
                     alert('order successfully placed');
-                    // const remaining = products.filter(products._id !== id)
-                    // setProducts(remaining)
                 }
             })
-        // .then(result => console.log(result))
     };
     return (
         <div  >
