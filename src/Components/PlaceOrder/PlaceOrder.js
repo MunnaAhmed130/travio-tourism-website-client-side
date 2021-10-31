@@ -41,6 +41,7 @@ const PlaceOrder = () => {
     return (
         <div  >
             <Container>
+                <h2 className="text-black my-4">Place My Order</h2>
                 <Row className="place-order" >
                     <Col className="col1" md={12} lg={6}>
                         <form onSubmit={handleSubmit(onSubmit)}>
