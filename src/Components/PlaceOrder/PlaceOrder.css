@@ -42,6 +42,10 @@
     height: 100px;
 }
 
+.order-img{
+    object-fit: cover;
+}
+
 @media only screen and (max-width:900px) {
     
 .place-order form div{

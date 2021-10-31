@@ -20,11 +20,11 @@ const Home = () => {
             <Destination></Destination>
             <section className="section">
                 {/* <Container> */}
-                    <Row>
+                <Row className="me-0">
                     <Col md={8} lg={8} >
                             <h2>Subscribe Now and Quench Your Wonderlust</h2>
                         </Col>
-                    <Col md={4} lg={4} className="join-col" >
+                    <Col md={4} lg={4} className="join-col " >
                         <button className="join-btn">Join Us Now</button>
                         </Col>
                     </Row>

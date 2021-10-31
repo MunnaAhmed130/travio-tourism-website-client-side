@@ -6,9 +6,9 @@ const Footer = () => {
         <div>
             <div className="footer-bottom">
                 <Container >
-                    <Row >
-                        <Col xs={12} sm={6} className="text-start">Travio &copy; 2021 All Right Reserved</Col>
-                        <Col xs={12} sm={6} className="text-end">Terms of Service | Privacy Policy</Col>
+                    <Row className="mini-footer">
+                        <Col xs={12} sm={6} >Travio &copy; 2021 All Right Reserved</Col>
+                        <Col xs={12} sm={6}>Terms of Service | Privacy Policy</Col>
                     </Row>
                 </Container>
             </div>

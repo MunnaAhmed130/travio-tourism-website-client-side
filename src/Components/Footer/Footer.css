@@ -6,3 +6,12 @@
     font-size: 1em;
     line-height: 50px;
 }
+
+@media screen  and (max-width:424px){
+    .mini-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

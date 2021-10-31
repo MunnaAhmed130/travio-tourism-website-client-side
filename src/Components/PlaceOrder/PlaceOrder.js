@@ -77,7 +77,7 @@ const PlaceOrder = () => {
                         </form>
                     </Col>
                     <Col md={12} lg={6}>
-                        <img src={order.img} alt="" />
+                        <img className="img-fluid order-img" src={order.img} alt="" />
                     </Col>
                 </Row>
             </Container>
