@@ -2,3 +2,17 @@
     height: 20em;
     object-fit: cover;
 }
+
+p{
+    font-weight: 500;
+    color: rgba(19, 6, 6, 0.885);
+}
+
+.title{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.place{
+    color: rgba(0, 0, 0, 0.831);
+    font-weight: 700;
+}

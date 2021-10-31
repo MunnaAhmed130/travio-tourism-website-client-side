@@ -45,6 +45,9 @@ function App() {
             <PrivateRoute path='/placeOrder/:serviceId'>
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
+            <PrivateRoute path='/placeOrder'>
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
             <Route path='*'>
             <NotFound></NotFound>
             </Route>

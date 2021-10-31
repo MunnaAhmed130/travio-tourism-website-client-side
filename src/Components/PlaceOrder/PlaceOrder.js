@@ -1,11 +1,13 @@
 import React from 'react';
+import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import './PlaceOrder.css';
 import UseAuth from '../../Hooks/UseAuth';
 import { Container, Row, Col } from 'react-bootstrap';
+import Service from '../Service/Service';
 
 const PlaceOrder = () => {
     const { user } = UseAuth();
@@ -13,26 +15,42 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
     const [order, setOrder] = useState({});
     useEffect(() => {
-        fetch(`https://polar-dusk-61914.herokuapp.com/tours/${serviceId}`)
+        fetch(`http://localhost:4000/tours/${serviceId}`)
             .then(res => res.json())
-            .then(data => setOrder(data))
+            .then(data => {
+                setOrder(data)
+                console.log(data)
+            })
     }, [])
+
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        axios.post("http://localhost:4000/orders", data)
+            .then(res => console.log(res))
+        // .then(result => console.log(result))
+    };
     return (
-        <div className="place-order">
+        <div >
             <Container>
-                <Row>
-                    <Col><form onSubmit={handleSubmit(onSubmit)}>
-                        <label htmlFor="">User Name:</label>
-                        <input {...register("name", { required: true, maxLength: 20 })} value={user.displayName} />
-                        <input {...register("email")} value={user.email} />
-                        <textarea {...register("description")} value={order.description} />
-                        <input type="number" {...register("price")} value={order.price} />
-                        <input className="btn btn-primary" type="submit" value="Place Order" />
-                    </form>
+                <Row className="place-order" >
+                    <Col className="col1" md={6}>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <div>
+                                <label htmlFor="">User Name:</label>
+                                <input {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} />
+                            </div>
+                            <input {...register("email")} defaultValue={user.email} />
+                            <input {...register("productKey")} defaultValue={serviceId} />
+                            <input {...register("place")} defaultValue={order.name} />
+                            {/* <input {...register("productId")} defaultValue={serviceId} /> */}
+                            {/* <textarea {...register("description")} defaultValue={order.description} /> */}
+                            <input type="number" {...register("price")} value={order.price} />
+                            {/* <Link to="/myOrder"><input className="btn btn-primary" type="submit" value="Place Order" /></Link> */}
+                            <input className="btn btn-primary" type="submit" value="Place Order" />
+                        </form>
                     </Col>
-                    <Col>
+                    <Col md={6}>
                         <img src={order.img} alt="" />
                     </Col>
                 </Row>

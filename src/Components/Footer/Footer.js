@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="footer-bottom">
                 <Container >
                     <Row >
-                        <Col className='text-start'>Travio &copy; 2021 All Right Reserved</Col>
-                        <Col className='text-end'>Terms of Service | Privacy Policy</Col>
+                        <Col xs={12} sm={6} className="text-start">Travio &copy; 2021 All Right Reserved</Col>
+                        <Col xs={12} sm={6} className="text-end">Terms of Service | Privacy Policy</Col>
                     </Row>
                 </Container>
             </div>

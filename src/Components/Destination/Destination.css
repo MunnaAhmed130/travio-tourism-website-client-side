@@ -14,7 +14,13 @@
 
 }
 
+.row{
+    justify-content: center;
+    justify-content: space-around;
+}
+
 .div{
+    display: inline-block;
     background-color: black;
     mix-blend-mode:darken;
     background-position: bottom;
@@ -27,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .div h2{
@@ -46,3 +53,17 @@
     background-image: url("https://i.ibb.co/Z20FXtG/Italy2.jpg");
 
 }
+
+/* @media screen and (max-width:800px) {
+    .div{
+        border: 1px solid black;
+        display: flex;
+        
+        
+    }
+    .row{
+        justify-content: center;
+        justify-content: space-around;
+        padding-bottom: 5em;
+    }
+} */

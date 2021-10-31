@@ -1,17 +1,24 @@
 .place-order form{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     /* align-items: center; */
+
 }
 
+.place-order .col1{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+    margin: auto;
+}
 
 .place-order img{
     height: 500px;
-    
 }
-.place-order form input,textarea{
-    /* width: 40%; */
+
+.place-order form input{
+    width: 100%;
     padding: 5px;
     margin: 10px;
 }
