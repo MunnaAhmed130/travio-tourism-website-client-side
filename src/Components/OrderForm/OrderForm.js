@@ -10,7 +10,6 @@ const OrderForm = ({ order }) => {
         fetch('https://polar-dusk-61914.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => {
-                // setMyOrder(data)
                 if (data.length) {
                     const dataFound = data.find(data => data._id === productKey)
                     setMyOrder(dataFound)
