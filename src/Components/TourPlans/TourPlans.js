@@ -14,15 +14,10 @@ const TourPlans = () => {
             .then(res => res.json())
             .then(data => setPlans(data))
     }, [])
-    // console.log(plans)
 
-    // const { isLoading } = UseAuth();
-    // if (isLoading) {
-    //     return <Spinner animation="border" variant="primary" />
-    // }
     return (
         <div>
-            <h2 className="fs-1 fw-bold mt-5">TourPlans</h2>
+            <h2 className="fs-1 fw-bold mt-5 text-dark">TourPlans</h2>
 
             {plans.length === 0 ? <Spinner animation="border" variant="primary" /> : <Row xs={1} md={2} lg={3} className="g-4 m-4">
                 {

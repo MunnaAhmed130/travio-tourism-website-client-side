@@ -44,7 +44,7 @@ const Header = () => {
                                         < img className="profile" src={user.photoURL} /></div>
                                 }
                                 {
-                                    user?.email ? <Button variant="primary" onClick={handleLogOut}>Log Out</Button> : <Link to='/logIn'>Log In</Link>
+                                    user?.email ? <Button variant="danger" onClick={handleLogOut}>Log Out</Button> : <Link to='/logIn'>Log In</Link>
                                 }
                             </Nav>
 

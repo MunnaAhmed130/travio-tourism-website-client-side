@@ -31,31 +31,39 @@ const PlaceOrder = () => {
         // .then(result => console.log(result))
     };
     return (
-        <div className="" >
+        <div  >
             <Container>
                 <Row className="place-order" >
                     <Col className="col1" md={12} lg={6}>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
                                 <label htmlFor="">Your Name :</label>
-                                <input {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} />
+                                <input {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} required />
                             </div>
                             <div>
                                 <label htmlFor="">Your Email :</label>
-                                <input {...register("email")} defaultValue={user.email} />
+                                <input {...register("email")} defaultValue={user.email} required />
+                            </div>
+                            <div>
+                                <label htmlFor=""> Address :</label>
+                                <input {...register("address")} required />
+                            </div>
+                            <div>
+                                <label htmlFor="">Phone :</label>
+                                <input type="tel" {...register("Phone")} require required />
                             </div>
                             <div>
                                 <label htmlFor="">Product Key :</label>
-                            <input {...register("productKey")} defaultValue={serviceId} />
+                                <input {...register("productKey")} defaultValue={serviceId} required />
                             </div>
 
                             <div>
                                 <label htmlFor="">Destination :</label>
-                            <input {...register("place")} defaultValue={order.name} />
+                                <input {...register("place")} defaultValue={order.name} required />
                             </div>
                             <div>
                                 <label htmlFor="">Price :</label>
-                                <input type="number" {...register("price")} value={order.price} />
+                                <input type="number" {...register("price")} value={order.price} required />
                             </div>
 
                             {/* <input {...register("productId")} defaultValue={serviceId} /> */}
