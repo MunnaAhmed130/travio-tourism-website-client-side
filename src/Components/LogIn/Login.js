@@ -1,6 +1,7 @@
 import React from 'react';
 import UseAuth from '../../Hooks/UseAuth';
 import { useLocation, useHistory } from 'react-router-dom';
+import './Login.css'
 
 
 const Login = () => {
@@ -16,9 +17,9 @@ const Login = () => {
     }
     return (
         <div className="mb-5 pb-5">
-            <h2 className="text-dark mt-5 mb-3">Please Login</h2>
+            <h2 className="text-dark  log">Please Login</h2>
             {
-                user?.email ? <button className="btn btn-danger" onClick={handleLogOut}>Log Out</button> : <button className="btn btn-primary" onClick={handleLogIn}>Log In</button>
+                user?.email ? <button className="btn btn-danger logOut" onClick={handleLogOut}>Log Out</button> : <button className="btn btn-primary login" onClick={handleLogIn}>Log In</button>
             }
 
             {/* <button onClick={handleGoogleLogIn}>Log In</button> */}
