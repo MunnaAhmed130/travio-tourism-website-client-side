@@ -10,7 +10,7 @@ const AddANewService = () => {
 
         axios
             .post(
-                "https://travio-tourism-website-server-side.vercel.app/tours",
+                "https://travel-related-website-server.vercel.app//tours",
                 data
             )
             .then((res) => {

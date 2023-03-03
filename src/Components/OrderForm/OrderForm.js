@@ -5,7 +5,7 @@ const OrderForm = ({ order }) => {
     const { productKey, _id } = order;
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch("https://travio-tourism-website-server-side.vercel.app/tours")
+        fetch("https://travel-related-website-server.vercel.app//tours")
             .then((res) => res.json())
             .then((data) => {
                 if (data.length) {
@@ -19,7 +19,7 @@ const OrderForm = ({ order }) => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        const url = `https://travio-tourism-website-server-side.vercel.app/orders`;
+        const url = `https://travel-related-website-server.vercel.app//orders`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setProducts(data));
@@ -28,7 +28,7 @@ const OrderForm = ({ order }) => {
     const handleDeleteOrder = (id) => {
         const proceed = window.confirm("Are you sure, you want to delete?");
         if (proceed) {
-            const url = `https://travio-tourism-website-server-side.vercel.app/orders/${id}`;
+            const url = `https://travel-related-website-server.vercel.app//orders/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

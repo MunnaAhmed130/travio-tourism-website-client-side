@@ -3,7 +3,7 @@
 # Tourism related website
 
 This project was deployed with [Firebase](https://travel-agency-e968e.web.app/).
-This project-server was deployed with [Heroku](https://travio-tourism-website-server-side.vercel.app/).
+This project-server was deployed with [Heroku](https://travel-related-website-server.vercel.app//).
 
 This website helps people find the best place to visit on their holidays. We always try our best to find the best destination.We are one of the best agency's in the international market doing the best we can!
 

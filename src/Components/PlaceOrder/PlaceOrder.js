@@ -15,7 +15,7 @@ const PlaceOrder = () => {
     const [order, setOrder] = useState({});
     useEffect(() => {
         fetch(
-            `https://travio-tourism-website-server-side.vercel.app/tours/${serviceId}`
+            `https://travel-related-website-server.vercel.app//tours/${serviceId}`
         )
             .then((res) => res.json())
             .then((data) => {
@@ -29,7 +29,7 @@ const PlaceOrder = () => {
         console.log(data);
         axios
             .post(
-                "https://travio-tourism-website-server-side.vercel.app/orders",
+                "https://travel-related-website-server.vercel.app//orders",
                 data
             )
             .then((res) => {
