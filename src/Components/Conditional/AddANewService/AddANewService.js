@@ -8,18 +8,13 @@ const AddANewService = () => {
     const onSubmit = (data) => {
         console.log(data);
 
-        axios
-            .post(
-                "https://travel-related-website-server.vercel.app//tours",
-                data
-            )
-            .then((res) => {
-                console.log(res);
-                if (res.data.insertedId) {
-                    alert("successfully added a Service");
-                    reset();
-                }
-            });
+        axios.post("http://localhost:4000//tours", data).then((res) => {
+            console.log(res);
+            if (res.data.insertedId) {
+                alert("successfully added a Service");
+                reset();
+            }
+        });
     };
     return (
         <div className="add-service">

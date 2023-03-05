@@ -10,24 +10,38 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand className="">Travio</Navbar.Brand>
-                    <div className="route-links">
+                    <Navbar.Brand className="fs-1 fw-bold lh-1">
+                        <span className="bg-white px-1 d-inline-block text-black">
+                            T
+                        </span>
+                        ravio
+                    </Navbar.Brand>
+                    <div className="">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="navbarScroll">
-                            <Nav>
-                                <Link to="/home">Home</Link>
-                                <Link to="/placeOrder">PlaceOrder</Link>
+                            <Nav className="text-start">
+                                <Link to="/home" className="link">
+                                    Home
+                                </Link>
+                                <Link to="/placeOrder" className="link">
+                                    PlaceOrder
+                                </Link>
 
                                 {user?.email && (
-                                    <Link to="/myOrder">My Order</Link>
+                                    <Link to="/myOrder" className="link">
+                                        My Order
+                                    </Link>
                                 )}
                                 {user?.email && (
-                                    <Link to="/manageAllOrders">
+                                    <Link
+                                        to="/manageAllOrders"
+                                        className="link"
+                                    >
                                         Manage All Service
                                     </Link>
                                 )}
                                 {user?.email && (
-                                    <Link to="/addANewService">
+                                    <Link to="/addANewService" className="link">
                                         Add A New Service
                                     </Link>
                                 )}
@@ -51,7 +65,9 @@ const Header = () => {
                                         Log Out
                                     </Button>
                                 ) : (
-                                    <Link to="/logIn">Log In</Link>
+                                    <Link to="/logIn" className="link">
+                                        Log In
+                                    </Link>
                                 )}
                             </Nav>
                         </Navbar.Collapse>
