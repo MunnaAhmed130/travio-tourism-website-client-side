@@ -1,10 +1,5 @@
 import "./App.css";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/Home/Home";
-import NotFound from "./Components/NotFound/NotFound";
-import Header from "./layout/Main/Header/Header";
-import Footer from "./Components/Footer/Footer";
-import Login from "./Components/LogIn/Login";
 import MyOrder from "./Components/Conditional/MyOrder/MyOrder";
 import ManageAllOrders from "./Components/Conditional/ManageAllOrders/ManageAllOrders";
 import AddANewService from "./Components/Conditional/AddANewService/AddANewService";
@@ -13,6 +8,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/routes";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (

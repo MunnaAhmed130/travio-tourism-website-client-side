@@ -8,7 +8,7 @@ const TourPlans = () => {
     const [plans, setPlans] = useState([]);
 
     useEffect(() => {
-        fetch("https://travel-related-website-server.vercel.app//tours")
+        fetch("https://travel-related-website-server.vercel.app/tours")
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);

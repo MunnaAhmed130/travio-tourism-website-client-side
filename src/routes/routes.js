@@ -1,31 +1,15 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
+import AddANewService from "../Components/Conditional/AddANewService/AddANewService";
 import ManageAllOrders from "../Components/Conditional/ManageAllOrders/ManageAllOrders";
 import MyOrder from "../Components/Conditional/MyOrder/MyOrder";
-import Home from "../Components/Home/Home";
-import Login from "../Components/LogIn/Login";
+import Home from "../Pages/Home/Home";
+import Login from "../Pages/LogIn/Login";
 import Main from "../layout/Main/Main";
+import NotFound from "../Pages/NotFound/NotFound";
 
 {
-    /* <Route exact path='/'>
-<Home></Home>
-</Route>
-<Route path='/home'>
-<Home></Home>
-</Route>
-<Route path='/login'>
-  <Login></Login>
-</Route>
-<Route path='/myOrder'>
-  <MyOrder></MyOrder>
-</Route>
-<Route path='/ManageAllOrders'>
-  <ManageAllOrders></ManageAllOrders>
-</Route>
-<Route path='/AddANewService'>
-  <AddANewService></AddANewService>
-</Route>
-<PrivateRoute path='/placeOrder/:serviceId'>
+    /* <PrivateRoute path='/placeOrder/:serviceId'>
   <PlaceOrder></PlaceOrder>
 </PrivateRoute>
 <PrivateRoute path='/placeOrder'>
@@ -33,7 +17,7 @@ import Main from "../layout/Main/Main";
 </PrivateRoute>
 <Route path='*'>
 <NotFound></NotFound>
-</Route> */
+</Route>  */
 }
 
 const routes = createBrowserRouter([
@@ -60,6 +44,14 @@ const routes = createBrowserRouter([
             {
                 path: "/manageAllOrders",
                 element: <ManageAllOrders />,
+            },
+            {
+                path: "/addANewService",
+                element: <AddANewService />,
+            },
+            {
+                path: "*",
+                element: <NotFound />,
             },
         ],
     },

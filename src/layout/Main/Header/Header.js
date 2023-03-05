@@ -10,7 +10,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand>Travio</Navbar.Brand>
+                    <Navbar.Brand className="">Travio</Navbar.Brand>
                     <div className="route-links">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="navbarScroll">
@@ -22,12 +22,12 @@ const Header = () => {
                                     <Link to="/myOrder">My Order</Link>
                                 )}
                                 {user?.email && (
-                                    <Link to="/ManageAllOrders">
+                                    <Link to="/manageAllOrders">
                                         Manage All Service
                                     </Link>
                                 )}
                                 {user?.email && (
-                                    <Link to="/AddANewService">
+                                    <Link to="/addANewService">
                                         Add A New Service
                                     </Link>
                                 )}
@@ -39,6 +39,7 @@ const Header = () => {
                                         <img
                                             className="profile"
                                             src={user.photoURL}
+                                            alt=""
                                         />
                                     </div>
                                 )}
