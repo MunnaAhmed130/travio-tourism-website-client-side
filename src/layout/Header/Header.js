@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import UseAuth from "../../../Hooks/UseAuth";
+import UseAuth from "../../Hooks/UseAuth";
 import "./Header.css";
 
 const Header = () => {

@@ -1,20 +1,18 @@
-.section{
+.section {
     color: white;
     background-color: #0a4eb4e3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
-
-.section h2{
+.section h2 {
     display: inline-block;
     padding-block: 50px;
     margin-bottom: 0px;
 }
-.join-btn{
+.join-btn {
     color: rgb(15, 16, 60);
     font-size: 1rem;
     font-weight: bold;
@@ -25,15 +23,14 @@
     border-radius: 2px;
 }
 
-.join-col{
+.join-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-.mid-banner div{
+.mid-banner div {
     background-image: url("https://i.ibb.co/0CR9VV8/1600x1200-13.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -42,22 +39,20 @@
     height: 500px;
 }
 
-.mid-banner div{
+.mid-banner div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.mid-banner p, h2{
+.mid-banner :is(p, h2) {
     color: white;
 }
 
-.mid-banner h2{
+.mid-banner h2 {
     font-size: 5em;
 }
 
-.mid-banner p{
+.mid-banner p {
     font-size: 2em;
 }
-
-
