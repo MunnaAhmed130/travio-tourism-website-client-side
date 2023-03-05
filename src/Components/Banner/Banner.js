@@ -2,7 +2,8 @@ import React from "react";
 import "./Banner.css";
 
 import { Carousel } from "react-bootstrap";
-
+// Travel and find happiness within
+// yourself.
 // const height = { height: "100vh" };
 const Banner = () => {
     const intervalCount = 10000;
@@ -17,15 +18,14 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <div>
+                    <div className="caption__container">
                         <h4>FRANCE</h4>
                         <h3>PARIS</h3>
                         <p className="banner-info">
                             Experience holidays in Paris and find the best time
                             to go and the best places to visit. Famous
                             monuments, Shopping avenue, Arts, Louvre museums,
-                            Seine and Cuisine. Travel and find happiness within
-                            yourself.
+                            Seine and Cuisine.
                         </p>
                     </div>
                 </Carousel.Caption>
@@ -60,9 +60,10 @@ const Banner = () => {
                         <h4>SWITZERLAND</h4>
                         <h3>ZURICH</h3>
                         <p className="banner-info">
-                            The amazing mountains, heaps of lakes and beautiful
-                            villages make for the most beautiful scenery in
-                            Switzerland.
+                            The amazing mountains, heaps of lakes and quaint,
+                            quiet streets set against an Alpine backdrop
+                            beautiful villages make for the most beautiful
+                            scenery in Switzerland.
                         </p>
                     </div>
                 </Carousel.Caption>

@@ -15,12 +15,12 @@
 }
 
 .banner h3 {
-    font-size: 4em;
+    font-size: clamp(2.5rem, 3.698vw + 1.63328rem, 4rem);
     letter-spacing: 3px;
 }
 
 .banner h4 {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 0.308166vw + 0.802773rem, 1rem);
     letter-spacing: 3px;
 }
 
@@ -29,9 +29,9 @@
     letter-spacing: var(--spacing);
     word-spacing: var(--spacing);
     font-weight: 300;
-    font-size: clamp(0.9375rem, 0.770416vw + 0.756934rem, 1.25rem);
-
-    width: 70%;
+    font-size: clamp(0.875rem, 0.770416vw + 0.694434rem, 1.1875rem);
+    /* font-size: 1.1875; */
+    width: min(800px, 100%);
     margin: auto;
 }
 
@@ -40,20 +40,12 @@
     flex-direction: column;
     justify-content: center;
     bottom: initial;
-    height: 100%;
+    height: calc(100vh - var(--navbar-height));
 }
 
 .img1 {
-    object-posi\hometion: bottom;
+    object-position: center;
 }
 .img3 {
     object-position: top;
-}
-
-@media screen and (max-width: 450px) {
-    .banner-info {
-        width: 200px;
-        margin: auto;
-        margin-bottom: 200px;
-    }
 }
