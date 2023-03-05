@@ -1,9 +1,16 @@
 nav.navbar {
-    background: none;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background-color: none;
     height: var(--navbar-height);
     z-index: 1;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
+@media screen and (min-width: 992px) {
+    .navbar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
 /* navbar brand  */
 .navbar-brand {
     letter-spacing: 3px;
@@ -28,9 +35,21 @@ span.navbar-toggler-icon {
     width: var(--box);
 }
 
-.navbar {
-    /* padding-bottom: 1rem; */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.navbar-container {
+    /* margin-bottom: -2rem; */
+    padding-block: 1em;
+    /* padding-bottom: 24px; */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-container {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+.navbar-toggler ~ .collapsed {
+    border-bottom: 1px solid black;
 }
 /* .carousel next and previous buttons  */
 

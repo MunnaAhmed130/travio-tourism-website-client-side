@@ -8,16 +8,7 @@ const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
         // <div className=" navbar-inverse ">
-        <Navbar
-            collapseOnSelect
-            expand="sm"
-            // scrolling
-            // // dark
-            // fixed="top"
-            // bg="dark"
-            variant="dark"
-            className="navbar-inner"
-        >
+        <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0">
             <Container fluid="lg" className="navbar-container">
                 <Navbar.Brand className="fs-1 fw-bold lh-1">
                     <span className="navbar--span bg-white px-1 me-1 d-inline-block text-black ">
