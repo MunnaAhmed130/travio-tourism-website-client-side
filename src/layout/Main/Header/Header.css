@@ -1,26 +1,62 @@
+nav.navbar {
+    background: none;
+    height: 60px;
+    z-index: 1;
+
+    /* background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3); */
+}
+
+span.navbar-toggler-icon {
+    --box: 20px;
+    height: var(--box);
+    width: var(--box);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    display: none;
+}
+.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0, 0, 0, 0.4);
+}
+.navbar-brand {
+    letter-spacing: 3px;
+    transform: rotate(0);
+    color: white;
+}
+
+/* .navbar-brand:hover {
+    transform: rotate(0);
+} */
+
+.navbar-brand:hover .navbar--span {
+    transform: rotate(0);
+}
+
 .link {
+    font-size: clamp(0.875rem, 0.308166vw + 0.802773rem, 1rem);
     margin-left: 10px;
     padding: 5px;
     display: inline-block;
     text-decoration: none;
     color: rgb(182, 182, 182);
-    transition: 1s;
-    font-weight: 700;
+    transition: 0.5s;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .link:hover {
-    color: rgb(107, 107, 221);
+    color: white;
 }
 
 Nav {
     /* text-align: right; */
 }
-.span {
-    display: inline-block;
-    color: white;
-    font-weight: 500;
-    margin-left: 10px;
-    padding: 5px;
+.navbar--span {
+    border-radius: 5px;
+    transform: rotate(-15deg);
+    transition: 1s;
 }
 
 .profile {
