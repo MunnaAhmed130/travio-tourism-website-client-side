@@ -1,38 +1,44 @@
 nav.navbar {
     background: none;
-    height: 60px;
+    height: var(--navbar-height);
     z-index: 1;
-
-    /* background-color: rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgb(0, 0, 0, 0.3); */
 }
 
-span.navbar-toggler-icon {
-    --box: 20px;
-    height: var(--box);
-    width: var(--box);
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    display: none;
-}
-.transparent.navbar-inverse .navbar-inner {
-    background: rgba(0, 0, 0, 0.4);
-}
+/* navbar brand  */
 .navbar-brand {
     letter-spacing: 3px;
     transform: rotate(0);
     color: white;
 }
 
-/* .navbar-brand:hover {
-    transform: rotate(0);
-} */
+.navbar--span {
+    border-radius: 5px;
+    transform: rotate(-15deg);
+    transition: 0.5s;
+}
 
-.navbar-brand:hover .navbar--span {
+.navbar:hover .navbar--span {
     transform: rotate(0);
 }
+
+/* navbar dropdown button  */
+span.navbar-toggler-icon {
+    --box: 20px;
+    height: var(--box);
+    width: var(--box);
+}
+
+.navbar {
+    /* padding-bottom: 1rem; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* .carousel next and previous buttons  */
+
+.carousel :is(.carousel-control-next, .carousel-control-prev) {
+    display: none;
+}
+
+/* navbar routes  */
 
 .link {
     font-size: clamp(0.875rem, 0.308166vw + 0.802773rem, 1rem);
@@ -48,15 +54,6 @@ span.navbar-toggler-icon {
 
 .link:hover {
     color: white;
-}
-
-Nav {
-    /* text-align: right; */
-}
-.navbar--span {
-    border-radius: 5px;
-    transform: rotate(-15deg);
-    transition: 1s;
 }
 
 .profile {

@@ -15,10 +15,10 @@ const Header = () => {
             // // dark
             // fixed="top"
             // bg="dark"
-            // variant="dark"
+            variant="dark"
             className="navbar-inner"
         >
-            <Container fluid="lg">
+            <Container fluid="lg" className="navbar-container">
                 <Navbar.Brand className="fs-1 fw-bold lh-1">
                     <span className="navbar--span bg-white px-1 me-1 d-inline-block text-black ">
                         T

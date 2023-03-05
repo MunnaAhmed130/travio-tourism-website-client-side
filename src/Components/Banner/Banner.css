@@ -1,7 +1,7 @@
 .banner {
     --banner-height: calc(100vh);
     height: var(--banner-height);
-    margin-top: -60px;
+    margin-top: calc(var(--navbar-height) * -1);
 }
 
 .img {
