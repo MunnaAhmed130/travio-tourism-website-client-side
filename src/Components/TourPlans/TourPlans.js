@@ -15,7 +15,7 @@ const TourPlans = () => {
     }, []);
 
     return (
-        <div className="tours-section py-5">
+        <section className="tours-section py-5">
             <h2 className=" fw-bold  text-center">
                 TRAVEL TO YOUR DESTINATION
             </h2>
@@ -31,7 +31,7 @@ const TourPlans = () => {
                     </Row>
                 </Container>
             )}
-        </div>
+        </section>
     );
 };
 

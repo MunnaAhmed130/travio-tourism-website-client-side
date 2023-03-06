@@ -1,3 +1,8 @@
+.tours-section .card {
+    /* border: 1px solid transparent; */
+    border-color: rgba(139, 139, 139, 0.15);
+}
+
 .card .card-img {
     height: 15rem;
     object-fit: cover;
@@ -6,15 +11,20 @@
 }
 
 p {
-    font-weight: 500;
-    color: rgba(19, 6, 6, 0.885);
+    /* word-spacing: 1px; */
+    font-size: 15px;
+    line-height: 25px;
+    /* font-weight: 500; */
+    /* color: rgba(19, 6, 6, 0.885); */
 }
 
-.title {
+.card .title {
+    font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
-    font-weight: 800;
+    /* font-weight: 700; */
 }
+
 .place {
     color: rgba(0, 0, 0, 0.831);
-    font-weight: 700;
+    font-weight: 500;
 }

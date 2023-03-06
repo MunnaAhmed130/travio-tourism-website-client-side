@@ -5,15 +5,16 @@ import "./Service.css";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places } = service;
+    const cardDescription = description.slice(0, 150);
     return (
         // <div>
         <Col>
-            <Card className="card">
+            <Card className="">
                 <Card.Img variant="top" className="card-img" src={img} />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
-                    <p className="place">{places}</p>
-                    <Card.Text>{description}</Card.Text>
+                    <h6 className="place">{places}</h6>
+                    <Card.Text>{cardDescription}...</Card.Text>
                     <Link to={`/placeOrder/${_id}`}>
                         <Button variant="primary">Buy Now</Button>
                     </Link>
