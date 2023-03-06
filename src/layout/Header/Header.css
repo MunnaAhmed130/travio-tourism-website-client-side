@@ -12,6 +12,8 @@ nav.navbar {
 
 /* navbar brand  */
 .navbar-brand {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 3px;
     transform: rotate(0);
     color: white;
@@ -21,6 +23,7 @@ nav.navbar {
     border-radius: 5px;
     transform: rotate(-15deg);
     transition: 0.5s;
+    scale: 1.1;
 }
 
 .navbar:hover .navbar--span {

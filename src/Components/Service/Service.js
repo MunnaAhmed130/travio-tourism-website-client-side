@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import RippleButton from "../RippleButton/RippleButton";
 import "./Service.css";
 
 const Service = ({ service }) => {
@@ -9,14 +10,16 @@ const Service = ({ service }) => {
     return (
         // <div>
         <Col>
-            <Card className="">
+            <Card className="tour-card">
                 <Card.Img variant="top" className="card-img" src={img} />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
                     <h6 className="place">{places}</h6>
-                    <Card.Text>{cardDescription}...</Card.Text>
+                    <Card.Text className="pt-1">{cardDescription}...</Card.Text>
                     <Link to={`/placeOrder/${_id}`}>
-                        <Button variant="primary">Buy Now</Button>
+                        <RippleButton className="border border-secondery-subtle py-1 rounded">
+                            Buy Now
+                        </RippleButton>
                     </Link>
                 </Card.Body>
             </Card>

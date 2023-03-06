@@ -1,13 +1,16 @@
 .tours-section .card {
-    /* border: 1px solid transparent; */
     border-color: rgba(139, 139, 139, 0.15);
 }
 
 .card .card-img {
     height: 15rem;
     object-fit: cover;
-    /* border-bottom-left-radius: 0px; */
     border-radius: 0 0 0 0;
+}
+
+.tour-card .ripple-button {
+    background-color: white;
+    /* border: 1px solid black; */
 }
 
 p {
