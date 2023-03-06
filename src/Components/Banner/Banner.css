@@ -2,12 +2,24 @@
     --banner-height: calc(100vh);
     height: var(--banner-height);
     margin-top: calc(var(--navbar-height) * -1);
+    position: relative;
+    overflow: hidden;
 }
 
-.img {
+/* .banner::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://i.ibb.co/H74JPDf/h1-rev-bottom.png");
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+} */
+.banner .img {
     object-fit: cover;
     filter: brightness(50%);
     height: var(--banner-height);
+    z-index: 5;
 }
 
 .banner :is(p, h3) {
@@ -43,9 +55,23 @@
     height: calc(100vh - var(--navbar-height));
 }
 
+.carousel-indicators {
+    visibility: hidden;
+}
 .img1 {
     object-position: center;
 }
 .img3 {
     object-position: top;
+}
+
+.banner .btm-img {
+    position: absolute;
+    bottom: -1rem;
+    /* bottom: -2rem; */
+    right: 0;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: auto;
+    z-index: 5;
 }

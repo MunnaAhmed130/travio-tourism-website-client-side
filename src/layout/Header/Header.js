@@ -7,7 +7,6 @@ import "./Header.css";
 const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
-        // <div className=" navbar-inverse ">
         <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0">
             <Container fluid="lg" className="navbar-container">
                 <Navbar.Brand className="fs-1 fw-bold lh-1">
@@ -69,7 +68,6 @@ const Header = () => {
                 </div>
             </Container>
         </Navbar>
-        // </div>
     );
 };
 

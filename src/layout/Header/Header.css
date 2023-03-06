@@ -1,21 +1,15 @@
 nav.navbar {
-    /* background: rgba(255, 255, 255, 0.1); */
     background-color: none;
     height: var(--navbar-height);
-    z-index: 1;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    z-index: 100; /* to show navbar above banner  */
 }
 
-/* @media screen and (min-width: 992px) {
-    .navbar {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-} */
 @media screen and (min-width: 576px) {
     .navbar {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
+
 /* navbar brand  */
 .navbar-brand {
     letter-spacing: 3px;
@@ -41,21 +35,9 @@ span.navbar-toggler-icon {
 }
 
 .navbar-container {
-    /* margin-bottom: -2rem; */
     padding-block: 1em;
-    /* padding-bottom: 24px; */
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
-/* 
-@media screen and (max-width: 992px) {
-    .navbar-container {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-} */
 
-.navbar-toggler ~ .collapsed {
-    border-bottom: 1px solid black;
-}
 /* .carousel next and previous buttons  */
 
 .carousel :is(.carousel-control-next, .carousel-control-prev) {
@@ -68,11 +50,9 @@ span.navbar-toggler-icon {
     font-size: clamp(0.875rem, 0.308166vw + 0.802773rem, 1rem);
     margin-left: 10px;
     padding: 5px;
-    display: inline-block;
     text-decoration: none;
     color: rgb(182, 182, 182);
     transition: 0.5s;
-    font-weight: 400;
     letter-spacing: 2px;
 }
 
