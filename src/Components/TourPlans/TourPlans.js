@@ -23,8 +23,8 @@ const TourPlans = () => {
             {plans.length === 0 ? (
                 <Spinner animation="border" variant="primary" />
             ) : (
-                <Container>
-                    <Row xs={1} md={2} lg={3} className="g-4 m-4">
+                <Container fluid="md">
+                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-4">
                         {plans.map((plan) => (
                             <Service key={plan._id} service={plan}></Service>
                         ))}

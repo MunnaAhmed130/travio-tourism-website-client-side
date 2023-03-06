@@ -4,27 +4,23 @@
     border-radius: 50%;
 } */
 
-
-
-.destinations span{
+.destinations span {
     font-size: 2em;
-    
 }
-.destinations p{
+.destinations p {
     font-weight: 500;
     color: rgba(0, 0, 0, 0.858);
-
 }
 
-.row{
+.destinations .row {
     justify-content: center;
     justify-content: space-around;
 }
 
-.div{
+.div {
     display: inline-block;
     background-color: black;
-    mix-blend-mode:darken;
+    mix-blend-mode: darken;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -35,34 +31,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.div h2{
+.div h2 {
     font-size: 2.5em;
     font-weight: 700;
     color: white;
     z-index: 2;
 }
 
-.div1{
+.div1 {
     background-image: url("https://i.ibb.co/WpMS1Ht/Netherland2.jpg");
-
 }
-.div2{
+.div2 {
     background-image: url("https://i.ibb.co/Xx0vbg0/greece2.jpg");
 }
-.div3{
+.div3 {
     background-image: url("https://i.ibb.co/Z20FXtG/Italy2.jpg");
-
 }
 
-.div{
-    position:relative;
+.div {
+    position: relative;
     z-index: -1;
 }
 
-.div::before{
+.div::before {
     content: "";
     position: absolute;
     display: block;
@@ -73,14 +66,12 @@
     z-index: 1;
 }
 
-@media screen and (max-width:424px) {
-    .div{
+@media screen and (max-width: 424px) {
+    .div {
         /* border: 1px solid black; */
         display: flex;
-        width: 300px ;
+        width: 300px;
         height: 300px;
-        
-        
     }
     /* .row{
         justify-content: center;

@@ -6,9 +6,23 @@ import "./Service.css";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places } = service;
-    const cardDescription = description.slice(0, 150);
+    // var viewportWidth;
+    // =    window.innerWidth || document.documentElement.clientWidth;
+    // var limit;
+
+    // const onResize = () => {
+    //     viewportWidth = window.innerWidth;
+    //     viewportWidth >= 1200 ? (limit = 140) : (limit = 100);
+    //     console.log(viewportWidth, limit);
+    // };
+
+    // onResize();
+    // window.onresize = onResize();
+    // console.log(viewportWidth, limit);
+    const cardDescription = description.slice(0, 140);
     return (
         // <div>
+        // <Col sm={12} md={6}>
         <Col>
             <Card className="tour-card">
                 <Card.Img variant="top" className="card-img" src={img} />
