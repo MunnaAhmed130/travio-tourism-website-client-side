@@ -9,7 +9,9 @@
 }
 
 .tour-card .ripple-button {
-    background-color: white;
+    /* font-size: 0.875rem; */
+    font-size: 12px;
+    /* background-color: rgb(199, 64, 64); */
     /* border: 1px solid black; */
 }
 
