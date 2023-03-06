@@ -7,16 +7,18 @@ import "./TourPlans.css";
 
 const TourPlans = () => {
     const [plans, setPlans] = useState([]);
-
+    const limit = 3;
     useEffect(() => {
-        fetch("http://localhost:4000/tours")
+        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);
 
     return (
-        <div className="tours-section">
-            <h2 className="fs-1 fw-bold mt-5">TourPlans</h2>
+        <div className="tours-section py-5">
+            <h2 className=" fw-bold  text-center">
+                TRAVEL TO YOUR DESTINATION
+            </h2>
 
             {plans.length === 0 ? (
                 <Spinner animation="border" variant="primary" />

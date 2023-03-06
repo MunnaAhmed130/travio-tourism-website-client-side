@@ -1,18 +1,20 @@
-.card-img{
-    height: 20em;
+.card .card-img {
+    height: 15rem;
     object-fit: cover;
+    /* border-bottom-left-radius: 0px; */
+    border-radius: 0 0 0 0;
 }
 
-p{
+p {
     font-weight: 500;
     color: rgba(19, 6, 6, 0.885);
 }
 
-.title{
-    font-size: 1.5em;
-    font-weight: 700;
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
 }
-.place{
+.place {
     color: rgba(0, 0, 0, 0.831);
     font-weight: 700;
 }
