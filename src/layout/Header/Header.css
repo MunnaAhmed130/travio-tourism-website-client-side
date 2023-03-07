@@ -14,20 +14,25 @@ nav.navbar {
 .navbar-brand {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     transform: rotate(0);
     color: white;
 }
 
 .navbar--span {
-    border-radius: 5px;
+    border-radius: 3px;
     transform: rotate(-15deg);
     transition: 0.5s;
     scale: 1.1;
+    /* transform: translatey(-2px); */
+    /* translate: x; */
+    /* rotate: ; */
+    /* margin-bottom: 1rem;  */
+    /* vertical-align: baseline; */
 }
 
 .navbar:hover .navbar--span {
-    transform: rotate(0);
+    transform: rotate(0) translatey(-4px);
 }
 
 /* navbar dropdown button  */

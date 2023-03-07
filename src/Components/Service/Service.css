@@ -1,5 +1,7 @@
 .tours-section .card {
     border-color: rgba(139, 139, 139, 0.15);
+    max-width: 400px;
+    margin-inline: auto;
 }
 
 .tour-card .card-img {

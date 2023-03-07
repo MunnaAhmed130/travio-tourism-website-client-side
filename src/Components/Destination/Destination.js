@@ -12,13 +12,14 @@ import "./Destination.css";
 // https://ibb.co/xYDSjKr
 // https://ibb.co/FHTLcmP
 // https://ibb.co/CQ6b0rg
+
 const Destination = () => {
     return (
         <section className="destinations">
             <Container fluid="lg" className="row__container">
-                <Row lg="2">
+                <Row lg="2" className="g-4">
                     <Col lg="6">
-                        <div className="destination-info">
+                        <div className="destination-info ">
                             <h2 className="mb-4 text-dark">
                                 Choose Your <br /> <span>Destination</span>
                             </h2>
@@ -29,7 +30,7 @@ const Destination = () => {
                                 Enjoy unforgettable travel experiences at
                                 unbelievable prices.
                             </p>
-                            <p className=" ">Find your Destination today!</p>
+                            {/* <p className=" ">Find your Destination today!</p> */}
                         </div>
                     </Col>
                     <Col lg="6">
