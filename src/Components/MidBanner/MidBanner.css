@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     /* filter: brightness(70%); */
 }
 
@@ -57,13 +57,28 @@
 .mid-banner :is(p, h2) {
     position: relative;
     color: white;
+
     /* filter: brightness(1.4); */
 }
 
 .mid-banner h2 {
-    font-size: 5em;
+    /* font-size: 5rem; */
+    text-transform: uppercase;
+    letter-spacing: calc(
+        clamp(0.0625rem, 0.227273vw + 0.0170455rem, 0.1875rem) * -1
+    );
+    word-spacing: 5px;
+    font-weight: 600;
+    font-size: clamp(2rem, 5.46075vw + 0.904437rem, 5rem);
 }
 
 .mid-banner p {
-    font-size: 2em;
+    /* font-size: clamp(1.25rem, 1.36364vw + 0.977273rem, 2rem); */
+    font-size: clamp(0.9375rem, 0.568182vw + 0.823864rem, 1.25rem);
+    /* font-size: 20px; */
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    text-transform: uppercase;
 }

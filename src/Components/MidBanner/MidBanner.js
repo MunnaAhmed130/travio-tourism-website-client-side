@@ -10,9 +10,8 @@ const MidBanner = () => {
                 alt=""
             /> */}
             <div>
-                <p>Come With Us</p>
+                <p>Find your perfect adventure</p>
                 <h2>Relax and Enjoy</h2>
-                <p></p>
             </div>
             {/* <img
                 className="btm-img"
