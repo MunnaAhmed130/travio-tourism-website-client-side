@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     background-image: url("https://i.ibb.co/hW4FZ3C/landing-img-40.jpg");
-    /* background-image: url("https://i.ibb.co/ZBx0Zkd/error-page-bckg-01.jpg"); */
+    background-position: center;
     top: 0;
     left: 0;
     bottom: 0;
@@ -19,3 +19,16 @@
     width: 100%;
     height: 100%;
 }
+
+/* .tours-section::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://i.ibb.co/NFDM48Y/h5-bckg-img-02.jpg");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+} */

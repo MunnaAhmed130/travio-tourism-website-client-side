@@ -1,0 +1,61 @@
+.mid-banner {
+    position: relative;
+    background-image: url("https://i.ibb.co/0CR9VV8/1600x1200-13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: brightness(80%); */
+    overflow: hidden;
+}
+
+/* .mid-banner::before {
+    content: "";
+} */
+
+.mid-banner .btm-img {
+    /* transform: rotate(180deg); */
+    position: absolute;
+    bottom: calc(clamp(0.3125rem, 3.81356vw + -0.450212rem, 3.125rem) * -1);
+
+    /* bottom: -40px; */
+    right: 0;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+.mid-banner .top-img {
+    transform: rotate(180deg);
+    position: absolute;
+    top: calc(clamp(0.3125rem, 3.81356vw + -0.450212rem, 3.125rem) * -1);
+    /* t */
+    /* bottom: -40px; */
+    right: 0;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+.mid-banner div {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-banner :is(p, h2) {
+    position: relative;
+    color: white;
+    /* filter: brightness(1.4); */
+}
+
+.mid-banner h2 {
+    font-size: 5em;
+}
+
+.mid-banner p {
+    font-size: 2em;
+}

@@ -2,22 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../../Components/Banner/Banner";
 import Destination from "../../Components/Destination/Destination";
+import MidBanner from "../../Components/MidBanner/MidBanner";
 import TourPlans from "../../Components/TourPlans/TourPlans";
 import "./Home.css";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Banner></Banner>
             <TourPlans></TourPlans>
-            <section className="mid-banner">
-                <div>
-                    <p>Come With Us</p>
-                    <h2>Relax and Enjoy</h2>
-                    <p></p>
-                </div>
-            </section>
+            <MidBanner></MidBanner>
             <Destination></Destination>
+
             <section className="section">
                 {/* <Container> */}
                 <Row className="me-0">
@@ -30,7 +26,7 @@ const Home = () => {
                 </Row>
                 {/* </Container> */}
             </section>
-        </div>
+        </>
     );
 };
 

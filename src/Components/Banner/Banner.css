@@ -15,6 +15,7 @@
     height: 10px;
     width: 100%;
 } */
+
 .banner .img {
     object-fit: cover;
     filter: brightness(50%);
