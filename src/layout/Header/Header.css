@@ -42,7 +42,11 @@ span.navbar-toggler-icon {
     width: var(--box);
 }
 
-.navbar-container {
+.navbar > .container-lg {
+    align-items: start;
+}
+
+.navbar .navbar-container {
     padding-block: 1em;
 }
 

@@ -48,12 +48,15 @@
     margin: auto;
 }
 
-.carousel-caption {
+.banner .carousel-caption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    bottom: initial;
+    /* bottom: initial; */
     height: calc(100vh - var(--navbar-height));
+    /* right: 10%;
+    left: 10%;
+    bottom: 2rem; */
 }
 
 .carousel-indicators {

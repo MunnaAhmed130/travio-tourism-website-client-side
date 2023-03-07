@@ -9,7 +9,7 @@ const TourPlans = () => {
     const [plans, setPlans] = useState([]);
     const limit = 3;
     useEffect(() => {
-        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
+        fetch(`http://localhost:4000/tours/querys?limit=${limit}`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);
@@ -22,7 +22,13 @@ const TourPlans = () => {
                 </h2>
 
                 {plans.length === 0 ? (
-                    <Spinner animation="border" variant="primary" />
+                    <div className="py-4">
+                        <Spinner
+                            animation="border"
+                            variant="primary"
+                            className="spinner"
+                        />
+                    </div>
                 ) : (
                     <Container fluid="md">
                         <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-2">
