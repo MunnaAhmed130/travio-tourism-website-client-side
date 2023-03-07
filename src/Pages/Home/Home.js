@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Banner from "../../Components/Banner/Banner";
-import Destination from "../../Components/Destination/Destination";
-import MidBanner from "../../Components/MidBanner/MidBanner";
+import Banner from "../../Components/Home/Banner/Banner";
+import Destination from "../../Components/Home/Destination/Destination";
+import MidBanner from "../../Components/Home/MidBanner/MidBanner";
 import TourPlans from "../../Components/TourPlans/TourPlans";
 import "./Home.css";
 

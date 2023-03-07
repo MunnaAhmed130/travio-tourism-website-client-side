@@ -18,7 +18,7 @@ const Destination = () => {
         <section className="destinations">
             <Container fluid="lg" className="row__container">
                 <Row lg="2" className="g-4">
-                    <Col lg="6">
+                    <Col lg="6" className="d-flex align-items-center">
                         <div className="destination-info ">
                             <h2 className="mb-4 text-dark">
                                 Choose Your <br /> <span>Destination</span>

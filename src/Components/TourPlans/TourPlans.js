@@ -9,7 +9,7 @@ const TourPlans = () => {
     const [plans, setPlans] = useState([]);
     const limit = 3;
     useEffect(() => {
-        fetch(`http://localhost:4000/tours/querys?limit=${limit}`)
+        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);
