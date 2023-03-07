@@ -7,18 +7,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/LogIn/Login";
 import Main from "../layout/Main/Main";
 import NotFound from "../Pages/NotFound/NotFound";
-
-{
-    /* <PrivateRoute path='/placeOrder/:serviceId'>
-  <PlaceOrder></PlaceOrder>
-</PrivateRoute>
-<PrivateRoute path='/placeOrder'>
-  <PlaceOrder></PlaceOrder>
-</PrivateRoute>
-<Route path='*'>
-<NotFound></NotFound>
-</Route>  */
-}
+import PlaceOrder from "../Components/PlaceOrder/PlaceOrder";
 
 const routes = createBrowserRouter([
     {
@@ -32,6 +21,10 @@ const routes = createBrowserRouter([
             {
                 path: "/home",
                 element: <Home />,
+            },
+            {
+                path: "/placeOrder/:serviceId",
+                element: <PlaceOrder />,
             },
             {
                 path: "/login",

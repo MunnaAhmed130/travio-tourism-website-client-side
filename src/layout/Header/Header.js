@@ -22,9 +22,9 @@ const Header = () => {
                             <Link to="/home" className="link">
                                 Home
                             </Link>
-                            <Link to="/placeOrder" className="link">
+                            {/* <Link to="/placeOrder" className="link">
                                 PlaceOrder
-                            </Link>
+                            </Link> */}
 
                             {user?.email && (
                                 <Link to="/myOrder" className="link">

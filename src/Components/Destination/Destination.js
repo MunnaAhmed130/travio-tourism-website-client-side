@@ -6,7 +6,12 @@ import "./Destination.css";
 // https://i.ibb.co/x1284PN/h2-img-01.png
 // https://i.ibb.co/Gf6vL8m/h2-map-bg-imgb.png
 // https://i.ibb.co/mc0Vcgq/landing-img-15.png
-
+// https://i.ibb.co/Vg8NjB8/139490452-3344136389024378-8699545123936856382-n.jpg
+// https://ibb.co/pn0wZCZ
+// https://ibb.co/RpFYTNY
+// https://ibb.co/xYDSjKr
+// https://ibb.co/FHTLcmP
+// https://ibb.co/CQ6b0rg
 const Destination = () => {
     return (
         <section className="destinations">
