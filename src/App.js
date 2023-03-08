@@ -8,7 +8,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/routes";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (

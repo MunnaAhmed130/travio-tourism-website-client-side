@@ -17,14 +17,7 @@
     position: absolute;
     bottom: 0;
     height: 80%;
-    /* height: 100%; */
     width: 100%;
-    /* margin-block: 4rem; */
-    /* padding-top: 5rem; */
-    /* -webkit-mask-image: linear-gradient(black, transparent); */
-    /* mask-image: linear-gradient(black, transparent); */
-    /* -webkit-mask-image: linear-gradient(transparent, black, black, black);
-    mask-image: linear-gradient(transparent, black, black, black); */
 }
 
 .destinations .row__container {
@@ -32,7 +25,7 @@
     z-index: 2;
 }
 
-.destination-info {
+.info-container {
     padding-top: 1rem;
     width: 90%;
 }
@@ -42,14 +35,29 @@
     position: relative;
 }
 
-.destination-info h2 {
+.info-container h2 {
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.top-row .info-container {
+}
+.bottom-row .info-container {
+    text-align: right;
+}
+
+.bottom-row:last-child {
+    order: 1;
+}
+
+/* .info-container h2 {
     font-size: clamp(1.25rem, 1.36364vw + 0.977273rem, 2rem);
 }
 
-.destination-info span {
+.info-container span {
     font-size: clamp(2.5rem, 2.27273vw + 2.04545rem, 3.75rem);
     font-family: "Oswald", sans-serif;
-}
+} */
 
 .destinations p {
     font-weight: 400;
@@ -57,20 +65,46 @@
     color: black;
 }
 
+.info-container {
+    /* margin-left: 5rem; */
+    /* text-align: center; */
+}
+
 .destinations .row {
     justify-content: center;
     justify-content: space-around;
+}
+
+.destinations .bg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.destinations .bg-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://i.ibb.co/7RqYzFS/landing-img-07-tiny.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    z-index: 10;
+    width: 70%;
+    height: 70%;
 }
 
 @media screen and (max-width: 992px) {
     .destinations {
         padding-top: 90px;
     }
-    .destination-info {
+    .destinations .info-container {
         text-align: center;
         margin-inline: auto;
-
-        /* padding-top: 1rem ; */
+    }
+    .bottom-row .bg-img {
+        order: 2;
     }
 }
 

@@ -17,11 +17,46 @@ const Destination = () => {
     return (
         <section className="destinations">
             <Container fluid="lg" className="row__container">
-                <Row lg="2" className="g-4">
+                <Row lg="2" className="g-4 mb-5 top-row">
                     <Col lg="6" className="d-flex align-items-center">
-                        <div className="destination-info ">
+                        <div className="info-container ">
                             <h2 className="mb-4 text-dark">
-                                Choose Your <br /> <span>Destination</span>
+                                Find Your Destination
+                            </h2>
+                            <p className="pb-2 ">
+                                Our expert Travel Crafters design unique package
+                                trips to exciting destinations, with all the
+                                details covered to save you time and money.
+                                Enjoy unforgettable travel experiences at
+                                unbelievable prices.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col lg="6">
+                        <img
+                            className=""
+                            src="https://i.ibb.co/9vC6BKM/h2-img-01-tiny.png"
+                            alt=""
+                            loading="lazy"
+                        />
+                    </Col>
+                </Row>
+                <Row lg="2" className="g-4 mb-5 bottom-row">
+                    <Col className="bg-img">
+                        <img
+                            src="https://i.ibb.co/cXyPS26/landing-img-14-tiny.png"
+                            alt=""
+                            loading="lazy"
+                        />
+                    </Col>
+                    <Col
+                        lg="6"
+                        className="d-flex align-items-center justify-content-end "
+                    >
+                        <div className="info-container ">
+                            <h2 className="mb-4 text-dark">
+                                {/* Choose Your <br /> <span>Destination</span> */}
+                                Choose Your Destination
                             </h2>
                             <p className="pb-2 ">
                                 Our expert Travel Crafters design unique package
@@ -33,27 +68,7 @@ const Destination = () => {
                             {/* <p className=" ">Find your Destination today!</p> */}
                         </div>
                     </Col>
-                    <Col lg="6">
-                        <img
-                            className=""
-                            // src="https://i.ibb.co/x1284PN/h2-img-01.png"
-                            src="https://i.ibb.co/9vC6BKM/h2-img-01-tiny.png"
-                            alt=""
-                        />
-                    </Col>
                 </Row>
-
-                {/* <Row lg={3} className="mb-5 row">
-                    <Col xs={12} lg={4} className="div1 div mb-3">
-                        <h2>NetherLands</h2>
-                    </Col>
-                    <Col xs={12} lg={4} className="div2 div mb-3">
-                        <h2>Greece</h2>
-                    </Col>
-                    <Col xs={12} lg={4} className="div3 div mb-3">
-                        <h2>Rome</h2>
-                    </Col>
-                </Row> */}
             </Container>
         </section>
     );

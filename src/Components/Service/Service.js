@@ -25,7 +25,12 @@ const Service = ({ service }) => {
         // <Col sm={12} md={6}>
         <Col>
             <Card className="tour-card">
-                <Card.Img variant="top" className="card-img" src={img} />
+                <Card.Img
+                    variant="top"
+                    className="card-img"
+                    src={img}
+                    loading="lazy"
+                />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
                     <h6 className="place">{places}</h6>
