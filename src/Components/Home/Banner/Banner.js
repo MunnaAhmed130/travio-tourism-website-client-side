@@ -6,34 +6,14 @@ import { Carousel } from "react-bootstrap";
 // yourself.
 // const height = { height: "100vh" };
 const Banner = () => {
-    const intervalCount = 10000;
+    const intervalCount = 5000;
     return (
         <div className="banner">
             <Carousel fade>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="img img1 d-block w-100"
-                        variant="top"
-                        src="https://i.ibb.co/gFPGw3F/Paris2.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <div className="caption__container">
-                            <h4>FRANCE</h4>
-                            <h3>PARIS</h3>
-                            <p className="banner-info">
-                                Experience holidays in Paris and find the best
-                                time to go and the best places to visit. Famous
-                                monuments, Shopping avenue, Arts, Louvre
-                                museums, Seine and Cuisine.
-                            </p>
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={intervalCount}>
-                    <img
-                        className="img img2 d-block w-100"
-                        src="https://i.ibb.co/X5cshjc/italy2.jpg"
+                        className="banner-img italy d-block w-100"
+                        src="https://i.ibb.co/N1CmY4m/italy-tiny.jpg"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -51,8 +31,8 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="img img3 d-block w-100"
-                        src="https://i.ibb.co/HdNG7gw/Zurich.jpg"
+                        className="banner-img zurich d-block w-100"
+                        src="https://i.ibb.co/DLrCwCY/Zurich-tiny.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>
@@ -64,6 +44,26 @@ const Banner = () => {
                                 quaint, quiet streets set against an Alpine
                                 backdrop beautiful villages make for the most
                                 beautiful scenery in Switzerland.
+                            </p>
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={intervalCount}>
+                    <img
+                        className="banner-img paris d-block w-100"
+                        variant="top"
+                        src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <div className="caption__container">
+                            <h4>FRANCE</h4>
+                            <h3>PARIS</h3>
+                            <p className="banner-info">
+                                Experience holidays in Paris and find the best
+                                time to go and the best places to visit. Famous
+                                monuments, Shopping avenue, Arts, Louvre
+                                museums, Seine and Cuisine.
                             </p>
                         </div>
                     </Carousel.Caption>

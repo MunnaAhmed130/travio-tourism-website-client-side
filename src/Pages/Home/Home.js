@@ -3,29 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../../Components/Home/Banner/Banner";
 import Destination from "../../Components/Home/Destination/Destination";
 import MidBanner from "../../Components/Home/MidBanner/MidBanner";
+import Newsletter from "../../Components/Home/Newsletter/Newsletter";
 import TourPlans from "../../Components/TourPlans/TourPlans";
 import "./Home.css";
 
 const Home = () => {
     return (
         <>
-            <Banner></Banner>
-            <TourPlans></TourPlans>
-            <MidBanner></MidBanner>
-            <Destination></Destination>
-
-            <section className="section">
-                {/* <Container> */}
-                <Row className="me-0">
-                    <Col md={8} lg={8}>
-                        <h2>Subscribe Now and Quench Your Wonderlust</h2>
-                    </Col>
-                    <Col md={4} lg={4} className="join-col ">
-                        <button className="join-btn">Join Us Now</button>
-                    </Col>
-                </Row>
-                {/* </Container> */}
-            </section>
+            <Banner />
+            <TourPlans />
+            <MidBanner />
+            <Destination />
+            <Newsletter />
         </>
     );
 };

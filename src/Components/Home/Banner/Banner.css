@@ -6,21 +6,11 @@
     overflow: hidden;
 }
 
-/* .banner::before {
-    content: "";
-    position: absolute;
-    background-image: url("https://i.ibb.co/H74JPDf/h1-rev-bottom.png");
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-} */
-
-.banner .img {
+.banner .banner-img {
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(70%);
     height: var(--banner-height);
-    z-index: 5;
+    z-index: 2;
 }
 
 .banner :is(p, h3) {
@@ -43,7 +33,6 @@
     word-spacing: var(--spacing);
     font-weight: 300;
     font-size: clamp(0.875rem, 0.770416vw + 0.694434rem, 1.1875rem);
-    /* font-size: 1.1875; */
     width: min(800px, 100%);
     margin: auto;
 }
@@ -54,19 +43,22 @@
     justify-content: center;
     /* bottom: initial; */
     height: calc(100vh - var(--navbar-height));
-    /* right: 10%;
+    right: 10%;
     left: 10%;
-    bottom: 2rem; */
+    bottom: 2rem;
 }
 
 .carousel-indicators {
     visibility: hidden;
 }
-.img1 {
-    object-position: center;
-}
-.img3 {
+
+.paris,
+.zurich {
     object-position: top;
+}
+
+.venezia {
+    object-position: bottom;
 }
 
 .banner .btm-img {
@@ -78,5 +70,5 @@
     /* margin-bottom: 2rem; */
     width: 100%;
     height: auto;
-    z-index: 5;
+    z-index: 1;
 }
