@@ -72,7 +72,8 @@ const Banner = () => {
             </Carousel>
             <img
                 className="btm-img"
-                src="https://i.ibb.co/H74JPDf/h1-rev-bottom.png"
+                // src="https://i.ibb.co/H74JPDf/h1-rev-bottom.png"
+                src="https://i.ibb.co/qFpbKRW/h1-rev-bottom-tiny.png"
                 alt=""
             />
         </div>

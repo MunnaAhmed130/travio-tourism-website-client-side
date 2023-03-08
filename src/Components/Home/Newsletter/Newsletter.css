@@ -29,3 +29,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.newsletter--container {
+    background-image: url("https://i.ibb.co/6t39Jrz/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-block: 5rem;
+}
+
+.newsletter--container::after {
+    content: "";
+    background-image: url("https://i.ibb.co/H74JPDf/h1-rev-bottom.png");
+}
