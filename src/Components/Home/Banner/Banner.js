@@ -1,10 +1,11 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
 import "./Banner.css";
 
-import { Carousel } from "react-bootstrap";
 // Travel and find happiness within
 // yourself.
 // const height = { height: "100vh" };
+
 const Banner = () => {
     const intervalCount = 5000;
     return (

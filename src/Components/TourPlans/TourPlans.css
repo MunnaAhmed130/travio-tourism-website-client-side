@@ -25,7 +25,8 @@
 .tours-section::before {
     content: "";
     position: absolute;
-    background-image: url("https://i.ibb.co/hW4FZ3C/landing-img-40.jpg");
+    /* background-image: url("https://i.ibb.co/hW4FZ3C/landing-img-40.jpg"); */
+    background-image: url("https://i.ibb.co/kg9fg9g/landing-img-40-tiny.jpg");
     background-position: top;
     background-repeat: no-repeat;
     top: 0;

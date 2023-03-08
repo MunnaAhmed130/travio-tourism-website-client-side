@@ -36,7 +36,8 @@ const Destination = () => {
                     <Col lg="6">
                         <img
                             className=""
-                            src="https://i.ibb.co/x1284PN/h2-img-01.png"
+                            // src="https://i.ibb.co/x1284PN/h2-img-01.png"
+                            src="https://i.ibb.co/9vC6BKM/h2-img-01-tiny.png"
                             alt=""
                         />
                     </Col>
