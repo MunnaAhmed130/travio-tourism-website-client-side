@@ -16,14 +16,20 @@ nav.navbar {
     text-transform: uppercase;
     letter-spacing: 0px;
     transform: rotate(0);
-    color: white;
+    /* color: white; */
 }
 
-.navbar--span {
+.navbar .navbar--span {
+    display: inline-block;
     border-radius: 3px;
     transform: rotate(-15deg);
     transition: 0.5s;
-    scale: 1.1;
+    /* scale: 1.1; */
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    background-color: red;
+    mix-blend-mode: screen;
     /* transform: translatey(-2px); */
     /* translate: x; */
     /* rotate: ; */

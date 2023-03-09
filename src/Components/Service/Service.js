@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import RippleButton from "../RippleButton/RippleButton";
 import { BsClock } from "react-icons/bs";
 import "./Service.css";
-import Rating from "../Rating/SetRating/SetRating";
+import SetRating from "../Rating/SetRating/SetRating";
+import Rating from "../Rating/Rating/Rating";
 
 const Service = ({ service }) => {
-    const { img, _id, description, name, places } = service;
+    const { img, _id, description, name, places, rating } = service;
     // var viewportWidth;
     // =    window.innerWidth || document.documentElement.clientWidth;
     // var limit;
@@ -41,7 +42,8 @@ const Service = ({ service }) => {
                             <BsClock />5 days
                         </span>
                     </div>
-                    <Rating />
+                    <SetRating />
+                    <Rating count={rating} />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 
                     <RippleButton className="border border-secondery-subtle py-1 rounded">

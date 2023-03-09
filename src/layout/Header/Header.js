@@ -9,10 +9,8 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0">
             <Container fluid="lg" className="navbar-container">
-                <Navbar.Brand className="fs-1 fw-bold lh-1">
-                    <span className="navbar--span bg-white px-1 me-1 d-inline-block text-black ">
-                        T
-                    </span>
+                <Navbar.Brand className="">
+                    <span className="navbar--span ">T</span>
                     ravio
                 </Navbar.Brand>
                 <div className="text-end">
