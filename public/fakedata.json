@@ -1,4 +1,4 @@
-const tourPlan = [
+[
     {
         "places": "ENGLAND, SCOTLAND, WALES",
         "name": "UK Trip",

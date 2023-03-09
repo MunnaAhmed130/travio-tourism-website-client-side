@@ -7,7 +7,7 @@ import "./Banner.css";
 // const height = { height: "100vh" };
 
 const Banner = () => {
-    const intervalCount = 5000;
+    const intervalCount = 1000;
     return (
         <div className="banner">
             <Carousel fade>
@@ -53,7 +53,31 @@ const Banner = () => {
                     <img
                         className="banner-img paris d-block w-100"
                         variant="top"
+                        // src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
+                        // src="https://i.ibb.co/RB0GX0t/licensed-image-r.jpg"
+                        src="https://i.ibb.co/bHtYwpP/licensed-image.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <div className="caption__container">
+                            <h4>UNITED STATES</h4>
+                            <h3>WYOMING</h3>
+                            <p className="banner-info">
+                                An unforgettable trip in Grand Teton National
+                                Park with views and wildlife sightings from a
+                                spacial stretch of gorgeous river. Destination
+                                for mountaineering, hiking, camping and fishing.
+                            </p>
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={intervalCount}>
+                    <img
+                        className="banner-img paris d-block w-100"
+                        variant="top"
                         src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
+                        // src="https://i.ibb.co/RB0GX0t/licensed-image-r.jpg"
+                        // src="https://i.ibb.co/bHtYwpP/licensed-image.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>

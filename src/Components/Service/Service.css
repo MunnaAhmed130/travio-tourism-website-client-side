@@ -1,4 +1,7 @@
 .tours-section .card {
+    /* --first-color: #c5b486; */
+    --first-color: black;
+    --second-color: #817a59;
     border-color: rgba(139, 139, 139, 0.15);
     max-width: 400px;
     margin-inline: auto;
@@ -11,18 +14,42 @@
 }
 
 .tour-card .ripple-button {
-    /* font-size: 0.875rem; */
-    font-size: 12px;
-    /* background-color: rgb(199, 64, 64); */
-    /* border: 1px solid black; */
+    font-size: 11px;
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        var(--first-color) 0%,
+        var(--first-color) 50%,
+        var(--second-color) 50%,
+        var(--second-color) 100%
+    );
+
+    padding: 0.75em 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block; /* display: block; */
+}
+
+.tour-card .ripple-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.tour-card {
+    margin-inline: auto;
+    /* text-align: center; */
+    display: flex;
 }
 
 p {
-    /* word-spacing: 1px; */
     font-size: 15px;
     line-height: 25px;
-    /* font-weight: 500; */
-    /* color: rgba(19, 6, 6, 0.885); */
 }
 
 .tour-card .title {

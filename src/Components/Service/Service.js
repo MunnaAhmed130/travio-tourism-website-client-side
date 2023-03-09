@@ -34,21 +34,20 @@ const Service = ({ service }) => {
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
                     <h6 className="place">{places}</h6>
-                    <Card.Text className="pt-1">{cardDescription}...</Card.Text>
+                    {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 
                     <RippleButton className="border border-secondery-subtle py-1 rounded">
                         Buy Now
                     </RippleButton>
                     </Link> */}
-                    <Link
+                    {/* <Link
                         to={`/placeOrder/${_id}`}
                         onClick={setTimeout(() => {}, 1)}
-                        // className="border border-secondery-subtle py-1 rounded"
-                    >
-                        <RippleButton className="border border-secondery-subtle py-1 px-2 rounded-1 bg-primary bg-gradient text-white text-uppercase">
-                            Buy Now
-                        </RippleButton>
-                    </Link>
+                    > */}
+                    <RippleButton className=" rounded-1 text-white text-uppercase text-decoration-none">
+                        More Details
+                    </RippleButton>
+                    {/* </Link> */}
                 </Card.Body>
             </Card>
         </Col>

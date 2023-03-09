@@ -2,14 +2,17 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
+// import tourPlan from "fakedata";
 import Service from "../Service/Service";
 import "./TourPlans.css";
 
 const TourPlans = () => {
     const [plans, setPlans] = useState([]);
     const limit = 3;
+
     useEffect(() => {
-        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
+        fetch("fakedata.json")
+            // fetch(`http://localhost:4000/tours/query?limit=${limit}`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);
