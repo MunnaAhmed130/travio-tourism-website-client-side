@@ -2,7 +2,9 @@ import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import RippleButton from "../RippleButton/RippleButton";
+import { BsClock } from "react-icons/bs";
 import "./Service.css";
+import Rating from "../Rating/SetRating/SetRating";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places } = service;
@@ -33,7 +35,13 @@ const Service = ({ service }) => {
                 />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
-                    <h6 className="place">{places}</h6>
+                    <div className="d-flex justify-content-between mb-1">
+                        <h6 className="place mb-1">{places}</h6>
+                        <span className="mb-1">
+                            <BsClock />5 days
+                        </span>
+                    </div>
+                    <Rating />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 
                     <RippleButton className="border border-secondery-subtle py-1 rounded">
