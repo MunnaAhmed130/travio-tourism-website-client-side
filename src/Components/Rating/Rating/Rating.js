@@ -4,7 +4,7 @@ import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 import "../SetRating/Rating.css";
 
 const Rating = ({ count, emptyColor }) => {
-    const [rating, setRating] = useState(2.4);
+    const [rating, setRating] = useState(2.6);
     useEffect(() => {
         setRating(rating);
     }, []);

@@ -44,7 +44,7 @@ const Service = ({ service }) => {
                         </span>
                     </div>
                     <SetRating />
-                    <Rating count={rating} />
+                    <Rating count={rating} emptyColor="#d17e7b" />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 
                     <RippleButton className="border border-secondery-subtle py-1 rounded">

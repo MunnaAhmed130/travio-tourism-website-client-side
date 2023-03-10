@@ -33,6 +33,7 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: inline-block; /* display: block; */
+    z-index: 100;
 }
 
 .tour-card .ripple-button:hover {
@@ -70,5 +71,5 @@ p {
 }
 
 .card-body {
-    background-color: yellowgreen;
+    background-color: #d17e7b;
 }
