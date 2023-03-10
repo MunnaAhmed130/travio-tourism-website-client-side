@@ -8,7 +8,8 @@ import SetRating from "../Rating/SetRating/SetRating";
 import Rating from "../Rating/Rating/Rating";
 
 const Service = ({ service }) => {
-    const { img, _id, description, name, places, rating } = service;
+    const { img, _id, description, name, places } = service;
+    const rating = 3.6;
     // var viewportWidth;
     // =    window.innerWidth || document.documentElement.clientWidth;
     // var limit;

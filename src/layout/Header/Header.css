@@ -19,15 +19,15 @@ nav.navbar {
     /* color: white; */
 }
 
-.navbar .navbar--span {
+.navbar-container .navbar--span {
     display: inline-block;
     border-radius: 3px;
     transform: rotate(-15deg);
-    transition: 0.5s;
+    /* transition: 0.5s; */
     /* scale: 1.1; */
     font-size: 2rem;
     font-weight: 600;
-    color: black;
+    color: white;
     background-color: red;
     mix-blend-mode: screen;
     /* transform: translatey(-2px); */

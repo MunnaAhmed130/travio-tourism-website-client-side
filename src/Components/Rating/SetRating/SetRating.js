@@ -1,38 +1,46 @@
 import React, { useState } from "react";
+import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
+
 import "./Rating.css";
 
 const SetRating = () => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
-    console.log(hover, rating);
+
+    // const both = (hover && rating) || rating;
+    // const both = hover || (rating && hover);
+    // const both = rating || (hover && rating);
+    // const both = hover || rating;
+    const both = rating || hover;
+
     return (
         <div className="star-rating">
             {[...Array(5)].map((star, index) => {
-                let number = index + 1;
+                let number = index + 0.5;
                 return (
                     <button
                         type="button"
                         key={index}
-                        className={
-                            index <= ((hover && rating) || rating)
-                                ? "on"
-                                : "off"
-                        }
-                        onClick={() => setRating(index)}
-                        onMouseEnter={() => setHover(index)}
-                        onMouseLeave={() => setHover(rating)}
+                        onClick={() => setRating(hover)}
+                        onMouseOver={(e) => {
+                            const rect = e.target.getBoundingClientRect();
+                            e.clientX - rect.left < 10
+                                ? setHover(index + 0.5)
+                                : setHover(index + 1);
+                        }}
+                        onMouseOut={() => setHover(rating)}
+                        // onMouseLeave={() => {
+                        //     setHover(index);
+                        // }}
+                        className="rating"
                     >
-                        <span className="star">&#9733;</span>
-                        {/* {starCount >= index + 1 ? (
-                            <span className="star on">&#9733;</span>
-                        ) : starCount >= number ? (
-                            <span className="half">
-                                &#9733;
-                                <span className="before"></span>
-                            </span>
+                        {both >= index + 1 ? (
+                            <BsStarFill />
+                        ) : both >= number ? (
+                            <BsStarHalf />
                         ) : (
-                            <span className="star off">&#9733;</span>
-                        )} */}
+                            <BsStar />
+                        )}
                     </button>
                 );
             })}
