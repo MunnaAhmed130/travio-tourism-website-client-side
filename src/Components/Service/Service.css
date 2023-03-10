@@ -65,6 +65,10 @@ p {
 }
 
 .new-rating {
-    color: red;
+    /* color: red; */
     /* background-color: yellow; */
+}
+
+.card-body {
+    background-color: yellowgreen;
 }

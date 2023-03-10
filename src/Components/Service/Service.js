@@ -43,7 +43,7 @@ const Service = ({ service }) => {
                             <BsClock />5 days
                         </span>
                     </div>
-                    <SetRating className="new-rating" emptyStar="black" />
+                    <SetRating />
                     <Rating count={rating} />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 
