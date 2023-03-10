@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
-
 import "./Rating.css";
 
-const SetRating = () => {
+const SetRating = ({ className, emptyStar }) => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
-
-    // const both = (hover && rating) || rating;
-    // const both = hover || (rating && hover);
-    // const both = rating || (hover && rating);
-    // const both = hover || rating;
-    const both = rating || hover;
-
+    const color = {
+        color: "#d17e7b",
+    };
     return (
         <div className="star-rating">
             {[...Array(5)].map((star, index) => {
@@ -32,14 +27,21 @@ const SetRating = () => {
                         // onMouseLeave={() => {
                         //     setHover(index);
                         // }}
-                        className="rating"
                     >
-                        {both >= index + 1 ? (
-                            <BsStarFill />
-                        ) : both >= number ? (
-                            <BsStarHalf />
+                        {(rating || hover) >= index + 1 ? (
+                            <BsStarFill className={className} />
+                        ) : (rating || hover) >= number ? (
+                            <BsStarHalf className={className} />
                         ) : (
-                            <BsStar />
+                            <span className="parent">
+                                <BsStar
+                                    className={`${className} position-relative`}
+                                />
+                                <BsStarFill
+                                    style={color}
+                                    className={` child`}
+                                />
+                            </span>
                         )}
                     </button>
                 );

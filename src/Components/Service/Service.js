@@ -8,8 +8,8 @@ import SetRating from "../Rating/SetRating/SetRating";
 import Rating from "../Rating/Rating/Rating";
 
 const Service = ({ service }) => {
-    const { img, _id, description, name, places } = service;
-    const rating = 3.6;
+    const { img, _id, description, name, places, rating } = service;
+    // const rating = 3.6;
     // var viewportWidth;
     // =    window.innerWidth || document.documentElement.clientWidth;
     // var limit;
@@ -43,7 +43,7 @@ const Service = ({ service }) => {
                             <BsClock />5 days
                         </span>
                     </div>
-                    <SetRating />
+                    <SetRating className="new-rating" emptyStar="black" />
                     <Rating count={rating} />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
                     {/* <Link to={`/placeOrder/${_id}`}> 

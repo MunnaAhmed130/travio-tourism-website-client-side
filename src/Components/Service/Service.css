@@ -63,3 +63,8 @@ p {
     font-weight: 400;
     font-size: 0.875rem;
 }
+
+.new-rating {
+    color: red;
+    /* background-color: yellow; */
+}
