@@ -43,13 +43,9 @@ const Service = ({ service }) => {
                             <BsClock />5 days
                         </span>
                     </div>
-                    <SetRating />
-                    <Rating count={rating} emptyColor="#d17e7b" />
-                    {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> */}
-                    {/* <Link to={`/placeOrder/${_id}`}> 
-                    <RippleButton className="border border-secondery-subtle py-1 rounded">
-                        Buy Now
-                    </RippleButton>
+                    <SetRating className="rating-demo" />
+                    <Rating count={rating} />
+                    {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> 
                     </Link> */}
                     {/* <Link
                         to={`/placeOrder/${_id}`}

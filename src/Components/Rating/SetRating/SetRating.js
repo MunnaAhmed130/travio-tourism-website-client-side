@@ -19,7 +19,7 @@ const SetRating = ({ className, emptyStar }) => {
                 return (
                     <button
                         type="button"
-                        className="star-button"
+                        className={`${className} star-button`}
                         key={index}
                         onClick={() => setRating(hover)}
                         onMouseOver={(e) => {
@@ -34,10 +34,10 @@ const SetRating = ({ className, emptyStar }) => {
                         }}
                     >
                         {condition >= index + 1 ? (
-                            <BsStarFill className={className} />
+                            <BsStarFill />
                         ) : condition >= number ? (
                             // <span className="parent">
-                            <BsStarHalf className={`${className}  half-star`}>
+                            <BsStarHalf className={`  half-star`}>
                                 <BsStarFill className="child" />
                             </BsStarHalf>
                         ) : (

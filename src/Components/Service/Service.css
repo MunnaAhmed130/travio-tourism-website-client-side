@@ -71,5 +71,9 @@ p {
 }
 
 .card-body {
-    background-color: #d17e7b;
+    /* background-color: #d17e7b; */
+}
+
+.rating-demo {
+    font-size: 1rem;
 }
