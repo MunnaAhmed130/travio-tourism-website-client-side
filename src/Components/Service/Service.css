@@ -74,9 +74,9 @@ p {
     /* background-color: #d17e7b; */
 }
 
-.rating-demo {
-    font-size: 1.5rem;
-    margin-block: 1rem;
-    color: red;
-    background-color: red;
+.tour-rating {
+    font-size: 1rem;
+    /* margin-block: 1rem; */
+    /* color: #ff1900; */
+    /* background-color: white;  */
 }

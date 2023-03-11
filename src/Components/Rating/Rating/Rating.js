@@ -40,7 +40,11 @@ const Rating = ({ count, emptyColor, className }) => {
                     <button
                         type="button"
                         key={index}
-                        className={`${className} star-button`}
+                        className={
+                            className
+                                ? `${className} star-button `
+                                : "star-button "
+                        }
                     >
                         {rating >= index + 1 ? (
                             <BsStarFill />
@@ -49,10 +53,10 @@ const Rating = ({ count, emptyColor, className }) => {
                                 {emptyColor && (
                                     <BsStarFill
                                         className="dummy--star"
-                                        style={{ color: ` ${emptyColor}` }}
+                                        style={{ color: `${emptyColor}` }}
                                     />
                                 )}
-                                <BsStar style={{ zIndex: 100 }} />
+                                <BsStar className={emptyColor && "outline"} />
                                 <span className="hidden" style={hidden}>
                                     <BsStarFill className="hidden--star" />
                                 </span>

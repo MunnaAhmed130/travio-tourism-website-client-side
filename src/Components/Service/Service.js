@@ -23,10 +23,8 @@ const Service = ({ service }) => {
     // onResize();
     // window.onresize = onResize();
     // console.log(viewportWidth, limit);
-    const cardDescription = description.slice(0, 140);
+    const cardDescription = description.slice(0, 70);
     return (
-        // <div>
-        // <Col sm={12} md={6}>
         <Col>
             <Card className="tour-card">
                 <Card.Img
@@ -37,20 +35,16 @@ const Service = ({ service }) => {
                 />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
-                    <div className="d-flex justify-content-between mb-1">
-                        <h6 className="place mb-1">{places}</h6>
-                        <span className="mb-1">
+                    <div className="d-flex justify-content-between ">
+                        <h6 className="place ">{places}</h6>
+                        <span className="">
                             <BsClock />5 days
                         </span>
                     </div>
-                    <SetRating className="rating-demo" />
-                    <Rating
-                        count={rating}
-                        className="rating-demo"
-                        // emptyColor="pink"
-                    />
-                    {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> 
-                    </Link> */}
+                    <Rating count={rating} className="tour-rating" />
+                    <a href="/">(Reviews)</a>
+                    <Card.Text className="pt-1">{cardDescription}...</Card.Text>
+
                     {/* <Link
                         to={`/placeOrder/${_id}`}
                         onClick={setTimeout(() => {}, 1)}
@@ -62,7 +56,6 @@ const Service = ({ service }) => {
                 </Card.Body>
             </Card>
         </Col>
-        // </div>
     );
 };
 
