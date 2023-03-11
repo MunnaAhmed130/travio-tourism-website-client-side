@@ -7,7 +7,7 @@ import "./Banner.css";
 // const height = { height: "100vh" };
 
 const Banner = () => {
-    const intervalCount = 1000;
+    const intervalCount = 10000;
     return (
         <div className="banner">
             <Carousel fade>

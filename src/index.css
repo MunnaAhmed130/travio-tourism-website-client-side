@@ -3,6 +3,7 @@
 :root {
     /* --navbar-height: clamp(3.75rem, 1.54083vw + 3.38887rem, 4.375rem); */
     --navbar-height: clamp(3.75rem, 3.08166vw + 3.02773rem, 5rem);
+    --oswald: "Oswald", sans-serif;
 }
 
 * {
@@ -29,5 +30,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: var(--oswald);
 }
