@@ -4,42 +4,32 @@ nav.navbar {
     z-index: 100; /* to show navbar above banner  */
 }
 
-@media screen and (min-width: 576px) {
-    .navbar {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-}
-
 /* navbar brand  */
 .navbar .navbar-brand {
+    display: inline-block;
     font-family: var(--oswald);
     text-transform: uppercase;
     letter-spacing: 0px;
     transform: rotate(0);
     color: white;
-    font-size: 35px;
+    font-size: clamp(1.5625rem, 1.5625vw + 1.25rem, 2.25rem);
     font-weight: 600;
+    line-height: 1;
 }
 
 .navbar-container .navbar--span {
     font-family: var(--oswald);
     display: inline-block;
-    /* transform: rotate(-15deg); */
-
-    transition: 0.5s;
     font-weight: 800;
-    padding-block: 0px;
-    padding-inline: 0px;
-    /* margin-right: 5px; */
-    /* color: white; */
-    /* background-color: white; */
-    mix-blend-mode: screen;
-    /* transform: translatey(-2px); */
-    /* translate: x; */
-    /* rotate: ; */
-    /* scale: 1.4; */
-    /* margin-bottom: 1rem; */
+    padding: 0px;
     vertical-align: baseline;
+}
+
+.navbar-links {
+    /* padding-block: 10px; */
+    display: inline-block;
+    align-content: center;
+    /* justify-content: center; */
 }
 
 .navbar:hover .navbar--span {
@@ -53,12 +43,17 @@ span.navbar-toggler-icon {
     width: var(--box);
 }
 
-.navbar > .container-lg {
+.navbar-toggler {
+    /* margin-top: 5px; */
+}
+.navbar > .container-lg.navbar-container {
+    /* align-items: center; */
     align-items: start;
+    /* justify-items: flex-start; */
 }
 
 .navbar .navbar-container {
-    padding-block: 1em;
+    /* padding-block: 1em; */
 }
 
 /* .carousel next and previous buttons  */
@@ -69,6 +64,10 @@ span.navbar-toggler-icon {
 
 /* navbar routes  */
 
+div.navbar-nav {
+    /* margin-top: 5px; */
+}
+
 .link {
     font-size: clamp(0.875rem, 0.308166vw + 0.802773rem, 1rem);
     margin-left: 10px;
@@ -77,6 +76,7 @@ span.navbar-toggler-icon {
     color: rgb(182, 182, 182);
     transition: 0.5s;
     letter-spacing: 2px;
+    height: 100%;
 }
 
 .link:hover {
@@ -89,4 +89,15 @@ span.navbar-toggler-icon {
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 5px;
+}
+
+/* media queries */
+@media screen and (min-width: 576px) {
+    .navbar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .navbar > .container-lg.navbar-container {
+        align-items: center;
+        /* justify-items: flex-start; */
+    }
 }
