@@ -75,5 +75,8 @@ p {
 }
 
 .rating-demo {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-block: 1rem;
+    color: red;
+    background-color: red;
 }

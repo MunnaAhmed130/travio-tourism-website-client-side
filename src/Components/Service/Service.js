@@ -44,7 +44,11 @@ const Service = ({ service }) => {
                         </span>
                     </div>
                     <SetRating className="rating-demo" />
-                    <Rating count={rating} />
+                    <Rating
+                        count={rating}
+                        className="rating-demo"
+                        // emptyColor="pink"
+                    />
                     {/* <Card.Text className="pt-1">{cardDescription}...</Card.Text> 
                     </Link> */}
                     {/* <Link

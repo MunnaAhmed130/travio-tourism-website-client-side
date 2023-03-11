@@ -36,23 +36,9 @@ const SetRating = ({ className, emptyStar }) => {
                         {condition >= index + 1 ? (
                             <BsStarFill />
                         ) : condition >= number ? (
-                            // <span className="parent">
-                            <BsStarHalf className={`  half-star`}>
-                                <BsStarFill className="child" />
-                            </BsStarHalf>
+                            <BsStarHalf className={`  half-star`}></BsStarHalf>
                         ) : (
-                            // </span>
                             <BsStar />
-                            // <span className="parent">
-                            // <BsStarFill></BsStarFill>
-                            // <BsStar
-                            //    className={`${className} position-relative`}
-                            //    />
-                            //    <BsStarFill
-                            //    style={color}
-                            //    className={` child`}
-                            //    /> *
-                            //    </span>
                         )}
                     </button>
                 );
