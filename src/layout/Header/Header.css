@@ -26,14 +26,8 @@ nav.navbar {
 }
 
 .navbar-links {
-    /* padding-block: 10px; */
     display: inline-block;
     align-content: center;
-    /* justify-content: center; */
-}
-
-.navbar:hover .navbar--span {
-    /* transform: rotate(0) translatey(-4px); */
 }
 
 /* navbar dropdown button  */
@@ -43,17 +37,14 @@ span.navbar-toggler-icon {
     width: var(--box);
 }
 
-.navbar-toggler {
-    /* margin-top: 5px; */
-}
 .navbar > .container-lg.navbar-container {
-    /* align-items: center; */
     align-items: start;
-    /* justify-items: flex-start; */
 }
 
+/* container padding */
+
 .navbar .navbar-container {
-    /* padding-block: 1em; */
+    padding-block: 1em;
 }
 
 /* .carousel next and previous buttons  */
@@ -65,7 +56,7 @@ span.navbar-toggler-icon {
 /* navbar routes  */
 
 div.navbar-nav {
-    /* margin-top: 5px; */
+    margin-top: 5px;
 }
 
 .link {
@@ -98,6 +89,5 @@ div.navbar-nav {
     }
     .navbar > .container-lg.navbar-container {
         align-items: center;
-        /* justify-items: flex-start; */
     }
 }
