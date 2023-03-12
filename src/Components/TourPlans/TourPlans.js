@@ -42,26 +42,8 @@ const TourPlans = () => {
                     </Row>
                 </Container>
             )}
-
-            {/* <Container fluid="md">
-                <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-2">
-                    {Array(limit).fill(
-                        <SkeletonProduct key={limit}></SkeletonProduct>
-                    )}
-                </Row>
-            </Container> */}
         </section>
     );
 };
 
 export default TourPlans;
-
-{
-    /* <div className="py-4">
-<Spinner
-    animation="border"
-    variant="primary"
-    className="spinner"
-/>
-</div> */
-}

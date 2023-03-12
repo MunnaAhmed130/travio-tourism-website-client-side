@@ -3,7 +3,7 @@
     --item-bg: rgba(0, 0, 0, 0.1);
     --btn-color: rgba(42, 42, 42, 0.6);
     /* animation: skeleton-loading 0.5s linear infinite alternate; */
-    margin: 10px 0;
+    margin-bottom: 10px;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -46,20 +46,18 @@
     margin-inline: auto;
 }
 
-.product--skeleton .text {
-    width: 50%;
-    margin: auto;
-    margin-block: 10px;
-}
-
 .product--skeleton .title {
     width: 60%;
-    /* margin-inline: auto; */
+}
+.product--skeleton .text {
+    height: 13px;
+    width: 50%;
+    /* margin-block: 10px; */
 }
 
 .product--skeleton .btn {
     width: 9rem;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     background-color: var(--btn-color);
     /* margin-inline: auto; */
 }

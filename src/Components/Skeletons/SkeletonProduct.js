@@ -13,21 +13,26 @@ const SkeletonProduct = () => {
                 <Card.Body>
                     <SkeletonElements
                         type="title "
-                        style={{ height: "30px" }}
+                        style={{ height: "35px" }}
                     />
-                    <div className="d-flex justify-content-between align-items-center mb-2 lh-1">
-                        <SkeletonElements type="text" className="" />
-                        <SkeletonElements type="text" className="w-25" />
+                    <div className="d-flex flex-row justify-content-between">
+                        <SkeletonElements
+                            type="text w-25 "
+                            style={{ height: "20px" }}
+                        />
+                        <SkeletonElements
+                            type="text w-25"
+                            style={{ height: "20px" }}
+                        />
                     </div>
                     <div className="d-flex justify-content-start align-items-center lh-1">
-                        <SkeletonElements type="text" className="w-25" />
-                        <SkeletonElements type="text" className="w-25" />
+                        <SkeletonElements type="text w-50" />
                     </div>
-                    <SkeletonElements type="text" className="w-25" />
-                    <SkeletonElements type="text" className="w-25" />
-                    <SkeletonElements type="text" className="w-25" />
-
-                    <SkeletonElements type="btn" />
+                    <SkeletonElements type="text w-100" />
+                    <SkeletonElements type="text w-100" />
+                    <div className="text-center">
+                        <SkeletonElements type="btn" />
+                    </div>
                 </Card.Body>
                 <Shimmer></Shimmer>
             </Card>
