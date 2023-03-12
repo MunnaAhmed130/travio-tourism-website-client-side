@@ -36,7 +36,7 @@
         "name": "Grand Italy",
         "img": "https://i.ibb.co/6P3V0XZ/Italy.jpg",
         "description": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.",
-        "rating": "5",
+        "rating": "4.5",
         "price": "5500"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Grand Spain Madrid",
         "img": "https://i.ibb.co/r0c0xPg/Spain.jpg",
         "description": "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters.",
-        "rating": "5",
+        "rating": "4.7",
         "price": "5500"
     }
 ]

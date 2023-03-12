@@ -35,24 +35,31 @@ const Service = ({ service }) => {
                 />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
-                    <div className="d-flex justify-content-between ">
+                    <div className="d-flex justify-content-between align-items-center mb-2 lh-1">
                         <h6 className="place ">{places}</h6>
-                        <span className="">
-                            <BsClock />5 days
+                        <span className="time">
+                            <BsClock className="me-1" />5 days
                         </span>
                     </div>
-                    <Rating count={rating} className="tour-rating" />
-                    <a href="/">(Reviews)</a>
-                    <Card.Text className="pt-1">{cardDescription}...</Card.Text>
+                    <div className="d-flex justify-content-start align-items-center lh-1">
+                        <Rating count={rating} className="tour-rating" />
+                        <span className="">({rating})</span>
+                        <span className="reviews">
+                            <a href="/">Reviews</a>
+                        </span>
+                    </div>
 
-                    {/* <Link
+                    <Card.Text className="pt-2">{cardDescription}...</Card.Text>
+
+                    <Link
                         to={`/placeOrder/${_id}`}
                         onClick={setTimeout(() => {}, 1)}
-                    > */}
-                    <RippleButton className=" rounded-1 text-white text-uppercase text-decoration-none">
-                        More Details
-                    </RippleButton>
-                    {/* </Link> */}
+                        className="tour-btn__container"
+                    >
+                        <RippleButton className="tour-btn rounded-1 text-white text-uppercase text-decoration-none">
+                            More Details
+                        </RippleButton>
+                    </Link>
                 </Card.Body>
             </Card>
         </Col>
