@@ -27,7 +27,7 @@ const TourPlans = () => {
 
             {plans.length === 0 ? (
                 <Container fluid="md">
-                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-2">
+                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 my-2">
                         {limitArray.map((n) => (
                             <SkeletonProduct key={n}></SkeletonProduct>
                         ))}
@@ -35,7 +35,7 @@ const TourPlans = () => {
                 </Container>
             ) : (
                 <Container fluid="md">
-                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-2">
+                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 my-2">
                         {plans.map((plan) => (
                             <Service key={plan._id} service={plan}></Service>
                         ))}
@@ -43,13 +43,13 @@ const TourPlans = () => {
                 </Container>
             )}
 
-            <Container fluid="md">
+            {/* <Container fluid="md">
                 <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-2">
                     {Array(limit).fill(
                         <SkeletonProduct key={limit}></SkeletonProduct>
                     )}
                 </Row>
-            </Container>
+            </Container> */}
         </section>
     );
 };

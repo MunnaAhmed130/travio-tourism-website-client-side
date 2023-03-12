@@ -19,7 +19,7 @@
     width: 10rem;
 }
 
-/* Skeleton Product/explore  */
+/* Skeleton Product  */
 .col--skeleton {
     --container-bg: white;
     z-index: 1;
@@ -54,7 +54,7 @@
 
 .product--skeleton .title {
     width: 60%;
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 .product--skeleton .btn {
@@ -78,7 +78,7 @@
 }
 
 .dark .product--skeleton .shimmer {
-    --shimmer-color: rgba(255, 255, 255, 0.2);
+    /* --shimmer-color: rgba(255, 255, 255, 0.2); */
 }
 
 .product--skeleton .shimmer {
