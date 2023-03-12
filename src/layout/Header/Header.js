@@ -9,20 +9,20 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0">
             <Container fluid="lg" className="navbar-container">
-                <Navbar.Brand className="p-0">
-                    <span className="navbar--span ">T</span>
-                    ravio
+                <Navbar.Brand className="p-0 text-uppercase">
+                    {/* <span className="navbar--span ">T</span> */}
+                    Travio
                 </Navbar.Brand>
                 <div className="navbar-links text-end">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav>
+                        <Nav className="links">
                             <Link to="/home" className="link">
                                 Home
                             </Link>
-                            {/* <Link to="/placeOrder" className="link">
+                            <Link to="/placeOrder" className="link">
                                 PlaceOrder
-                            </Link> */}
+                            </Link>
 
                             {user?.email && (
                                 <Link to="/myOrder" className="link">

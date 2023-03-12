@@ -29,6 +29,7 @@
     background-image: url("https://i.ibb.co/kg9fg9g/landing-img-40-tiny.jpg");
     background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
     /* bottom: 0;
@@ -57,6 +58,7 @@
     background-image: url("https://i.ibb.co/NFDM48Y/h5-bckg-img-02.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     position: absolute;
     bottom: 0;
     height: 100%;
