@@ -11,8 +11,8 @@ const TourPlans = () => {
     const limit = 3;
 
     useEffect(() => {
-        fetch("fakedata.json")
-            // fetch(`http://localhost:4000/tours/query?limit=${limit}`)
+        // fetch("fakedata.json")
+        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);

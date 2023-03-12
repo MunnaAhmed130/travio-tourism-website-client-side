@@ -43,13 +43,15 @@ const Service = ({ service }) => {
                     </div>
                     <div className="d-flex justify-content-start align-items-center lh-1">
                         <Rating count={rating} className="tour-rating" />
-                        <span className="">({rating})</span>
-                        <span className="reviews">
-                            <a href="/">Reviews</a>
+                        {/* <span className="">({rating})</span> */}
+                        <span className="reviews ms-1">
+                            <a href="/">(Reviews)</a>
                         </span>
                     </div>
 
-                    <Card.Text className="pt-2">{cardDescription}...</Card.Text>
+                    <Card.Text className="pt-2 description">
+                        {cardDescription}...
+                    </Card.Text>
 
                     <Link
                         to={`/placeOrder/${_id}`}
