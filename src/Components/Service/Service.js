@@ -1,11 +1,11 @@
 import React from "react";
-import { Button, Card, Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import RippleButton from "../RippleButton/RippleButton";
 import { BsClock } from "react-icons/bs";
-import "./Service.css";
 import SetRating from "../Rating/SetRating/SetRating";
 import Rating from "../Rating/Rating/Rating";
+import "./Service.css";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
@@ -43,7 +43,6 @@ const Service = ({ service }) => {
                     </div>
                     <div className="d-flex justify-content-start align-items-center lh-1">
                         <Rating count={rating} className="tour-rating" />
-                        {/* <span className="">({rating})</span> */}
                         <span className="reviews ms-1">
                             <a href="/">(Reviews)</a>
                         </span>
@@ -58,7 +57,7 @@ const Service = ({ service }) => {
                         onClick={setTimeout(() => {}, 1)}
                         className="tour-btn__container"
                     >
-                        <RippleButton className="tour-btn rounded-1 text-white text-uppercase text-decoration-none">
+                        <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none">
                             More Details
                         </RippleButton>
                     </Link>

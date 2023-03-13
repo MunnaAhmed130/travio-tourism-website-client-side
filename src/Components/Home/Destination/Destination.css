@@ -13,6 +13,7 @@
     content: "";
     background-image: url("https://i.ibb.co/NFDM48Y/h5-bckg-img-02.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: top;
     position: absolute;
     bottom: 0;
