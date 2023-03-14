@@ -6,8 +6,8 @@ import Banner from "../../Components/Home/Banner/Banner";
 import Destination from "../../Components/Home/Destination/Destination";
 import MidBanner from "../../Components/Home/MidBanner/MidBanner";
 import Newsletter from "../../Components/Home/Newsletter/Newsletter";
+import TourPlans from "../../Components/Home/TourPlans/TourPlans";
 import Footer from "../../Components/Shared/Footer/Footer";
-import TourPlans from "../../Components/TourPlans/TourPlans";
 import "./Home.css";
 
 const Home = () => {

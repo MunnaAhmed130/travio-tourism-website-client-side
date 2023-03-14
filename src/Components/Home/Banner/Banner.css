@@ -10,7 +10,7 @@
     object-fit: cover;
     filter: brightness(70%);
     height: var(--banner-height);
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .banner :is(p, h3) {
@@ -63,8 +63,9 @@
 .banner .btm-img {
     position: absolute;
     bottom: calc(clamp(0.09375rem, 3.94068vw + -0.694386rem, 3rem) * -1);
+    bottom: -10px;
     /* bottom: -0.1rem; */
-    /* bottom: -3rem; */
+    /* bottom: -5rem; */
     /* right: 0; */
     /* margin-bottom: 2rem; */
     width: 100%;

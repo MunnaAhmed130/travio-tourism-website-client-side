@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
 // import tourPlan from "fakedata";
-import Service from "../Service/Service";
-import SkeletonProduct from "../Skeletons/SkeletonProduct";
+import Service from "../../Service/Service";
+import SkeletonProduct from "../../Skeletons/SkeletonProduct";
 import "./TourPlans.css";
 
 const TourPlans = () => {
