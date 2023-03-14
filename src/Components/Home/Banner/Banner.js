@@ -51,7 +51,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="banner-img paris d-block w-100"
+                        className="banner-img wyoming d-block w-100"
                         variant="top"
                         // src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
                         // src="https://i.ibb.co/RB0GX0t/licensed-image-r.jpg"

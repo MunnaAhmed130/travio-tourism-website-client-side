@@ -1,6 +1,6 @@
 import React from "react";
 // import { lazy, Suspense } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 // import Loading from "../../Components/Fallback/Loading";
 import Banner from "../../Components/Home/Banner/Banner";
 import Destination from "../../Components/Home/Destination/Destination";
