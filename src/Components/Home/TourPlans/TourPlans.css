@@ -4,6 +4,7 @@
     padding-top: 4rem;
     padding-bottom: 6rem;
     z-index: 5;
+    overflow: hidden;
 }
 
 .tours-section .spinner {
@@ -30,17 +31,22 @@
     position: absolute;
     /* background-image: url("https://i.ibb.co/hW4FZ3C/landing-img-40.jpg"); */
     background-image: url("https://i.ibb.co/kg9fg9g/landing-img-40-tiny.jpg");
-    background-position: top;
+    /* background-color: linear-gradient(white, black); */
+    /* background-color: rgba(239, 236, 228, 0.3); */
+    /* filter: brightness(80%); */
+
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-blend-mode: darken; */
     top: 0;
-    left: 0;
-    /* bottom: 0;
-    right: 0; */
+    /* left: 0; */
     width: 100%;
     height: 100%;
-    /* -webkit-mask-image: linear-gradient(transparent, black); */
-    mask-image: linear-gradient(transparent, black 10%);
+    -webkit-mask-image: linear-gradient(transparent, black 20%);
+    mask-image: linear-gradient(transparent, black 20%);
+    /* mask-image: linear-gradient(transparent, black); */
+    /* mask-image: linear-gradient(black, transparent); */
 }
 
 /* .tours-section::before {
@@ -62,14 +68,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    /* background-blend-mode: darken; */
     position: absolute;
-    bottom: 0;
-    height: 100%;
+    bottom: calc(clamp(0rem, 0.892857vw + -0.178571rem, 1.25rem) * -1);
+    height: 100px;
+    height: 300px;
     width: 100%;
-    /* -webkit-mask-image: linear-gradient(black, transparent); */
-    /* mask-image: linear-gradient(black, transparent); */
-    -webkit-mask-image: linear-gradient(transparent, transparent, black);
-    mask-image: linear-gradient(transparent, transparent, black);
+    /* -webkit-mask-image: linear-gradient(transparent, black); */
+    mask-image: linear-gradient(transparent, black 30%);
 }
 
 .tours-section .card {

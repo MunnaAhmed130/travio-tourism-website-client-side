@@ -51,15 +51,12 @@
     visibility: hidden;
 }
 
-.paris {
-    object-position: bottom;
-}
-
 .zurich,
 .wyoming {
     object-position: top;
 }
 
+.paris,
 .venezia {
     object-position: top;
 }

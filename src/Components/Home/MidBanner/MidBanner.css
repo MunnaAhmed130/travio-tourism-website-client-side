@@ -23,9 +23,9 @@
 
 .mid-banner div {
     position: relative;
-    height: 500px;
+    height: clamp(25rem, 11.6071vw + 22.6786rem, 41.25rem);
     /*                    */
-    height: clamp(25rem, 9.28571vw + 23.1429rem, 38rem);
+    /* height: clamp(25rem, 9.28571vw + 23.1429rem, 38rem); */
     /* padding-block: 15rem; */
     display: flex;
     flex-direction: column;
