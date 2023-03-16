@@ -7,7 +7,7 @@ import SkeletonElements from "./SkeletonElements";
 
 const SkeletonProduct = () => {
     return (
-        <Col className=" col--skeleton ">
+        <Col className="col--skeleton">
             <Card className="product--skeleton ">
                 <SkeletonElements type="img" />
                 <Card.Body>
