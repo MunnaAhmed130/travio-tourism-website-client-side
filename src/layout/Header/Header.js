@@ -8,12 +8,14 @@ const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
         <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0 ">
-            <Container fluid="lg" className="navbar-container">
-                <Navbar.Brand className="p-0 text-uppercase">
-                    {/* <span className="navbar--span ">T</span> */}
+            <Container
+                fluid="lg"
+                className="navbar-container align-items-lg-center align-items-start"
+            >
+                <Navbar.Brand className="p-0 text-uppercase text-white">
                     Travio
                 </Navbar.Brand>
-                <div className="navbar-links text-end">
+                <div className="text-end">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="links">

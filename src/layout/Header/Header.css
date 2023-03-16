@@ -1,7 +1,6 @@
 /* navbar */
 
 nav.navbar {
-    /* background-color: none; */
     height: var(--navbar-height);
     z-index: 100; /* to show navbar above banner  */
 }
@@ -10,24 +9,11 @@ nav.navbar {
 
 .navbar .navbar-brand {
     font-family: var(--oswald);
-    color: white;
     font-size: clamp(1.5625rem, 1.5625vw + 1.25rem, 2.25rem);
     font-weight: 900;
 }
 
-/* .navbar-container .navbar--span {
-    font-family: var(--oswald);
-    display: inline-block;
-    font-weight: 800;
-    padding: 0px;
-    vertical-align: baseline;
-} */
 /* navbar links */
-
-.navbar-links {
-    display: inline-block;
-    align-content: center;
-}
 
 /* navbar dropdown button  */
 
@@ -35,10 +21,6 @@ span.navbar-toggler-icon {
     --box: 20px;
     height: var(--box);
     width: var(--box);
-}
-
-.navbar > .container-lg.navbar-container {
-    align-items: start;
 }
 
 /* container padding */
@@ -68,7 +50,6 @@ div.navbar-nav {
     color: rgba(255, 255, 255, 0.8);
     transition: 0.5s;
     letter-spacing: 2px;
-    height: 100%;
 }
 
 .links:hover a {
@@ -91,8 +72,5 @@ div.navbar-nav {
 @media screen and (min-width: 576px) {
     .navbar {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .navbar > .container-lg.navbar-container {
-        align-items: center;
     }
 }
