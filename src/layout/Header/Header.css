@@ -1,7 +1,7 @@
 /* navbar */
 
 nav.navbar {
-    background-color: none;
+    /* background-color: none; */
     height: var(--navbar-height);
     z-index: 100; /* to show navbar above banner  */
 }

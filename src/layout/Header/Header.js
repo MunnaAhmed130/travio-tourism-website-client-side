@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
-        <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0">
+        <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0 ">
             <Container fluid="lg" className="navbar-container">
                 <Navbar.Brand className="p-0 text-uppercase">
                     {/* <span className="navbar--span ">T</span> */}

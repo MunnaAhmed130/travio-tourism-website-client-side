@@ -15,12 +15,12 @@ import "./Destination.css";
 
 const Destination = () => {
     return (
-        <section className="destinations">
+        <section className="destinations ">
             <Container fluid="lg" className="row__container">
-                <Row lg="2" className="g-4 mb-5 top-row">
+                <Row lg="2" className="g-4 mb-5 align-items-center">
                     <Col lg="6" className="d-flex align-items-center">
                         <div className="info-container ">
-                            <h2 className="mb-4 text-dark">
+                            <h2 className="mb-4 text-dark ">
                                 Find Your Destination
                             </h2>
                             <p className="pb-2 ">
@@ -32,7 +32,7 @@ const Destination = () => {
                             </p>
                         </div>
                     </Col>
-                    <Col lg="6">
+                    <Col lg="6" className="">
                         <img
                             className=""
                             src="https://i.ibb.co/9vC6BKM/h2-img-01-tiny.png"
