@@ -9,20 +9,7 @@ import "./Service.css";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
-    // const rating = 3.6;
-    // var viewportWidth;
-    // =    window.innerWidth || document.documentElement.clientWidth;
-    // var limit;
 
-    // const onResize = () => {
-    //     viewportWidth = window.innerWidth;
-    //     viewportWidth >= 1200 ? (limit = 140) : (limit = 100);
-    //     console.log(viewportWidth, limit);
-    // };
-
-    // onResize();
-    // window.onresize = onResize();
-    // console.log(viewportWidth, limit);
     const cardDescription = description.slice(0, 70);
     return (
         <Col>

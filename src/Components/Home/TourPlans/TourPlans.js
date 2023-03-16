@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
 // import tourPlan from "fakedata";
 import Service from "../../Service/Service";
@@ -20,8 +18,8 @@ const TourPlans = () => {
     }, []);
 
     return (
-        <section className="tours-section">
-            <h2 className=" fw-bold  text-center">
+        <section className="tours-section overflow-hidden position-relative">
+            <h2 className="fw-bold text-center py-sm-4 py-0 position-relative">
                 TRAVEL TO YOUR DESTINATION
             </h2>
 
@@ -34,7 +32,7 @@ const TourPlans = () => {
                     </Row>
                 </Container>
             ) : (
-                <Container fluid="md">
+                <Container fluid="sm">
                     <Row xs={1} sm={1} md={2} lg={3} className="g-4 my-2">
                         {plans.map((plan) => (
                             <Service key={plan._id} service={plan}></Service>
