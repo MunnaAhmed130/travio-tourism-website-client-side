@@ -41,7 +41,10 @@ const Destination = () => {
                         />
                     </Col>
                 </Row>
-                <Row lg="2" className="g-4 mb-5 bottom-row">
+                <Row
+                    lg="2"
+                    className="g-4 mb-5 bottom-row flex-lg-row flex-sm-column-reverse "
+                >
                     <Col className="bg-img">
                         <img
                             src="https://i.ibb.co/cXyPS26/landing-img-14-tiny.png"

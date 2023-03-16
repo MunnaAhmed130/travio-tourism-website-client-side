@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MyOrder from "./Components/Conditional/MyOrder/MyOrder";
@@ -18,15 +19,6 @@ function App() {
                 {/* <Router>
           <Header></Header>
         <Switch>
-            <Route exact path='/'>
-            <Home></Home>
-            </Route>
-            <Route path='/home'>
-            <Home></Home>
-            </Route>
-            <Route path='/login'>
-              <Login></Login>
-            </Route>
             <Route path='/myOrder'>
               <MyOrder></MyOrder>
             </Route>
