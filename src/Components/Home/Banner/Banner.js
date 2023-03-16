@@ -5,7 +5,8 @@ import "./Banner.css";
 // Travel and find happiness within
 // yourself.
 // const height = { height: "100vh" };
-
+const imgStyle = "object-fit-cover d-block w-100";
+const captionStyle = "d-flex flex-column justify-content-center";
 const Banner = () => {
     const intervalCount = 5000;
     return (
@@ -13,12 +14,12 @@ const Banner = () => {
             <Carousel fade>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="banner-img italy d-block w-100"
+                        className={`banner-img italy ${imgStyle}`}
                         src="https://i.ibb.co/N1CmY4m/italy-tiny.jpg"
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <div>
+                    <Carousel.Caption className={`${captionStyle}`}>
+                        <div className="text-white">
                             <h4>ITALY</h4>
                             <h3>VENEZIA</h3>
                             <p className="banner-info">
@@ -32,11 +33,11 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="banner-img zurich d-block w-100"
+                        className={`banner-img zurich ${imgStyle}`}
                         src="https://i.ibb.co/DLrCwCY/Zurich-tiny.jpg"
                         alt="Third slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={`${captionStyle}`}>
                         <div>
                             <h4>SWITZERLAND</h4>
                             <h3>ZURICH</h3>
@@ -51,14 +52,14 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="banner-img wyoming d-block w-100"
+                        className={`banner-img wyoming ${imgStyle}`}
                         variant="top"
                         // src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
                         // src="https://i.ibb.co/RB0GX0t/licensed-image-r.jpg"
                         src="https://i.ibb.co/bHtYwpP/licensed-image.jpg"
                         alt="First slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={`${captionStyle}`}>
                         <div className="caption__container">
                             <h4>UNITED STATES</h4>
                             <h3>WYOMING</h3>
@@ -73,14 +74,14 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item interval={intervalCount}>
                     <img
-                        className="banner-img paris d-block w-100"
+                        className={`banner-img paris ${imgStyle}`}
                         variant="top"
                         src="https://i.ibb.co/4TPBGmf/Paris-tiny.jpg"
                         // src="https://i.ibb.co/RB0GX0t/licensed-image-r.jpg"
                         // src="https://i.ibb.co/bHtYwpP/licensed-image.jpg"
                         alt="First slide"
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={`${captionStyle}`}>
                         <div className="caption__container">
                             <h4>FRANCE</h4>
                             <h3>PARIS</h3>

@@ -1,4 +1,3 @@
-import "./App.css";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MyOrder from "./Components/Conditional/MyOrder/MyOrder";
 import ManageAllOrders from "./Components/Conditional/ManageAllOrders/ManageAllOrders";
@@ -9,6 +8,7 @@ import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/routes";
 // import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
 function App() {
     return (
