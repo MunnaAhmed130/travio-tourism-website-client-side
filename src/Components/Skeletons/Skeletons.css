@@ -8,10 +8,12 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.skeleton.btn,
+/* .skeleton.button, */
 .skeleton.button {
     height: 40px;
     background-color: var(--btn-color);
+    display: inline-block;
+    margin: 0;
 }
 
 .skeleton.price {
@@ -55,7 +57,7 @@
     /* margin-block: 10px; */
 }
 
-.product--skeleton .btn {
+.product--skeleton .button {
     width: 9rem;
     /* margin-bottom: 2em; */
     background-color: var(--btn-color);

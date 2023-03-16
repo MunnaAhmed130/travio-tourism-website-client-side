@@ -30,8 +30,8 @@ const SkeletonProduct = () => {
                     </div>
                     <SkeletonElements type="text w-100" />
                     <SkeletonElements type="text w-100" />
-                    <div className="text-center">
-                        <SkeletonElements type="btn" />
+                    <div className=" text-center">
+                        <SkeletonElements type="button" />
                     </div>
                 </Card.Body>
                 <Shimmer></Shimmer>
