@@ -12,11 +12,11 @@ const Service = ({ service }) => {
 
     const cardDescription = description.slice(0, 70);
     return (
-        <Col>
-            <Card className="tour-card">
+        <Col className="">
+            <Card className="tour-card border-0  shadow mx-auto overflow-hidden">
                 <Card.Img
                     variant="top"
-                    className="card-img"
+                    className="card-img rounded-0"
                     src={img}
                     loading="lazy"
                 />

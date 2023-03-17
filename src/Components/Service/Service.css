@@ -4,13 +4,9 @@
     /* --first-color: rgb(15, 24, 145); */
     /* --second-color: #7700ff; */
     --second-color: rgb(128, 128, 158);
-    border: none;
-    border-radius: 0 0 2px 2px;
-    border-radius: 5px;
     max-width: 400px;
-    margin-inline: auto;
-    box-shadow: var(--card-box-shadow);
-    /* background-color: transparent; */
+
+    /* box-shadow: var(--card-box-shadow); */
 }
 
 /* image  */
@@ -21,25 +17,22 @@
 }
 
 .tour-card .title {
-    font-family: "Oswald", sans-serif;
+    font-family: var(--oswald);
     font-size: 1.5rem;
-    /* font-weight: 700; */
 }
 
-.tour-card .place {
+.tour-card :is(.place, .time) {
+    font-family: var(--oswald);
     color: rgba(0, 0, 0, 0.831);
     font-weight: 400;
     margin-bottom: 0;
     font-size: 0.875rem;
 }
 
-.tour-card .time {
-    font-size: 0.875rem;
-}
-
 /* rating and reviews  */
 
 .tour-rating {
+    /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
     font-size: 1.25rem;
     /* background-color: yellow; */
     color: rgb(253, 198, 15);
@@ -48,9 +41,10 @@
 .reviews a {
     color: red;
 }
+
 /* description  */
 .description {
-    font-size: 15px;
+    font-size: clamp(0.8125rem, 0.267857vw + 0.758929rem, 1rem);
     line-height: 25px;
 }
 

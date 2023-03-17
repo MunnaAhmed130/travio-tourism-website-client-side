@@ -6,9 +6,9 @@ import "./Banner.css";
 // yourself.
 // const height = { height: "100vh" };
 const imgStyle = "object-fit-cover d-block w-100";
-const captionStyle = "d-flex flex-column justify-content-center";
+const captionStyle = "d-flex flex-column justify-content-center ";
 const Banner = () => {
-    const intervalCount = 5000;
+    const intervalCount = 10000;
     return (
         <div className="banner">
             <Carousel fade>

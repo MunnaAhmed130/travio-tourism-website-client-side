@@ -25,15 +25,15 @@ const TourPlans = () => {
 
             {plans.length === 0 ? (
                 <Container fluid="md">
-                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 my-2">
+                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-1">
                         {limitArray.map((n) => (
                             <SkeletonProduct key={n}></SkeletonProduct>
                         ))}
                     </Row>
                 </Container>
             ) : (
-                <Container fluid="sm">
-                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 my-2">
+                <Container fluid="xl">
+                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 m-1">
                         {plans.map((plan) => (
                             <Service key={plan._id} service={plan}></Service>
                         ))}

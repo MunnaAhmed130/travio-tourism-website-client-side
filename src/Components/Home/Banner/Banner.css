@@ -26,16 +26,19 @@
     letter-spacing: var(--spacing);
     word-spacing: var(--spacing);
     font-weight: 300;
-    font-size: clamp(0.875rem, 0.770416vw + 0.694434rem, 1.1875rem);
-    width: min(800px, 100%);
+    /* font-size: clamp(0.875rem, 0.770416vw + 0.694434rem, 1.1875rem); */
+    font-size: clamp(0.8125rem, 0.535714vw + 0.705357rem, 1.1875rem);
+    /* font-size: clamp(0.8125rem, 0.267857vw + 0.758929rem, 1rem); */
+    width: min(750px, 100%);
+    /* max-width: 750px; */
     margin: auto;
 }
 
 .banner .carousel-caption {
     height: calc(100vh - var(--navbar-height));
-    right: 10%;
-    left: 10%;
-    bottom: 2rem;
+    /* right: 10%;
+    left: 10%; */
+    /* bottom: 2rem; */
 }
 
 .carousel-indicators {

@@ -4,24 +4,25 @@
     /* --navbar-height: clamp(3.75rem, 1.54083vw + 3.38887rem, 4.375rem); */
     --navbar-height: clamp(3.75rem, 3.08166vw + 3.02773rem, 5rem);
     --oswald: "Oswald", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--roboto);
     letter-spacing: 1px;
 }
 
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--roboto);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+    font-family: var(--code);
 }
 
 h1,
