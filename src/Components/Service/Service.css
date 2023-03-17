@@ -1,24 +1,19 @@
 /* tour section cards style  */
 .tours-section .card {
     --first-color: rgba(0, 0, 0, 0.8);
-    /* --first-color: rgb(15, 24, 145); */
-    /* --second-color: #7700ff; */
     --second-color: rgb(128, 128, 158);
     max-width: 400px;
-
-    /* box-shadow: var(--card-box-shadow); */
 }
 
 /* image  */
 .tour-card .card-img {
     height: var(--card-img-height);
     object-fit: cover;
-    /* border-radius: 0 0 0 0; */
 }
 
 .tour-card .title {
     font-family: var(--oswald);
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 0.284091vw + 1.06818rem, 1.25rem);
 }
 
 .tour-card :is(.place, .time) {
@@ -26,26 +21,36 @@
     color: rgba(0, 0, 0, 0.831);
     font-weight: 400;
     margin-bottom: 0;
-    font-size: 0.875rem;
+    font-size: clamp(0.8125rem, 0.178571vw + 0.776786rem, 0.9375rem);
 }
 
+.tour-card .subtitle-container {
+    /* font-size: 14px; */
+}
 /* rating and reviews  */
 
 .tour-rating {
     /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
-    font-size: 1.25rem;
+
     /* background-color: yellow; */
     color: rgb(253, 198, 15);
 }
 
-.reviews a {
-    color: red;
+.reviews {
+    /* color: red; */
+    font-family: var(--oswald);
+}
+
+.tour-card :is(.tour-rating, .reviews) {
+    font-size: clamp(0.875rem, 0.178571vw + 0.839286rem, 1rem);
 }
 
 /* description  */
 .description {
     font-size: clamp(0.8125rem, 0.267857vw + 0.758929rem, 1rem);
-    line-height: 25px;
+    /* line-height: 25px; */
+    /* font-family: var(--oswald);
+    font-weight: 400; */
 }
 
 /* button */

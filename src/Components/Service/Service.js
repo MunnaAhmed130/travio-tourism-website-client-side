@@ -21,21 +21,21 @@ const Service = ({ service }) => {
                     loading="lazy"
                 />
                 <Card.Body>
-                    <Card.Title className="title">{name}</Card.Title>
-                    <div className="d-flex justify-content-between align-items-center mb-2 lh-1">
+                    <Card.Title className="title text-uppercase">
+                        {name}
+                    </Card.Title>
+                    <div className="subtitle-container d-flex justify-content-between align-items-center mb-2 lh-1">
                         <h6 className="place ">{places}</h6>
-                        <span className="time">
-                            <BsClock className="me-1" />5 days
+                        <span className="time d-flex justify-content-end">
+                            <BsClock className="me-1" />5 DAYS
                         </span>
                     </div>
-                    <div className="d-flex justify-content-start align-items-center lh-1">
+                    <div className="d-flex justify-content-start align-items-end lh-1">
                         <Rating count={rating} className="tour-rating" />
-                        <span className="reviews ms-1">
-                            <a href="/">(Reviews)</a>
-                        </span>
+                        <span className="reviews ms-1">{rating}</span>
                     </div>
 
-                    <Card.Text className="pt-2 description">
+                    <Card.Text className="pt-2 description lh">
                         {cardDescription}...
                     </Card.Text>
 

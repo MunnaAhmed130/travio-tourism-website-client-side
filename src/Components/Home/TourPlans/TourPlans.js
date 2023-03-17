@@ -32,8 +32,8 @@ const TourPlans = () => {
                     </Row>
                 </Container>
             ) : (
-                <Container fluid="xl">
-                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 m-1">
+                <Container fluid="lg" className="px-3">
+                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 my-1">
                         {plans.map((plan) => (
                             <Service key={plan._id} service={plan}></Service>
                         ))}
