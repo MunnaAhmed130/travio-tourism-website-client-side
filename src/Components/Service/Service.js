@@ -12,7 +12,7 @@ const Service = ({ service }) => {
 
     const cardDescription = description.slice(0, 70);
     return (
-        <Col className="">
+        <Col className="mt-3 mt-sm-3">
             <Card className="tour-card border-0  shadow mx-auto overflow-hidden">
                 <Card.Img
                     variant="top"

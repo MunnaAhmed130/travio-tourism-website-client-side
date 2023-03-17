@@ -33,8 +33,8 @@
 
 .product--skeleton {
     background-color: var(--container-bg);
-    border-radius: 5px;
-    box-shadow: var(--card-box-shadow);
+    /* border-radius: 5px; */
+    /* box-shadow: var(--card-box-shadow); */
     position: relative;
     overflow: hidden;
 }

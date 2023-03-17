@@ -19,13 +19,13 @@ const TourPlans = () => {
 
     return (
         <section className="tours-section overflow-hidden position-relative">
-            <h2 className="fw-bold text-center py-sm-4 py-0 position-relative">
+            <h2 className="fw-bold text-center py-md-4 pt-0 py-0 position-relative px-4 mb-0">
                 TRAVEL TO YOUR DESTINATION
             </h2>
 
             {plans.length === 0 ? (
-                <Container fluid="md">
-                    <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-1">
+                <Container fluid="lg">
+                    <Row xs={1} sm={2} md={2} lg={3} className="g-4 m-1">
                         {limitArray.map((n) => (
                             <SkeletonProduct key={n}></SkeletonProduct>
                         ))}

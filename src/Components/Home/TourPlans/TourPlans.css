@@ -1,8 +1,8 @@
 .tours-section {
     --card-img-height: 15rem;
     --card-box-shadow: 0px 0px 20px 0px rgba(130, 130, 130, 0.3);
-    padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-top: clamp(2.5rem, 2.14286vw + 2.07143rem, 4rem);
+    padding-bottom: clamp(6rem, 2.85714vw + 5.42857rem, 8rem);
     z-index: 5;
 }
 
@@ -15,7 +15,7 @@
 } */
 
 .tours-section h2 {
-    font-size: clamp(1.5625rem, 1.70455vw + 1.22159rem, 2.5rem);
+    font-size: clamp(1.6875rem, 1.16071vw + 1.45536rem, 2.5rem);
     z-index: 1;
 }
 
