@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 // import { FaStarHalf } from "react-icons/fa";
-import "../SetRating/Rating.css";
+import "./Rating.css";
 
 const Rating = ({ count, emptyColor, className }) => {
     const [rating, setRating] = useState(count);
