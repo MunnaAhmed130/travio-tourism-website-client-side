@@ -7,10 +7,13 @@ import { BsClock } from "react-icons/bs";
 // import Rating from "../Shared/Rating/Rating";
 import "./Service.css";
 import Rating from "../Shared/Rating/Rating";
+import SetRating from "../Shared/Rating/SetRating";
+import { useState } from "react";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
-
+    // const [value, setValue] = useState(1.5);
+    // console.log(`value: ${value}`);
     const cardDescription = description.slice(0, 70);
     return (
         <Col className="mt-3 mt-sm-3">
@@ -35,7 +38,7 @@ const Service = ({ service }) => {
                         <Rating count={rating} className="tour-rating" />
                         <span className="reviews ms-1">{rating}</span>
                     </div>
-
+                    {/* <SetRating setValue={setValue} /> */}
                     <Card.Text className="pt-2 description lh">
                         {cardDescription}...
                     </Card.Text>

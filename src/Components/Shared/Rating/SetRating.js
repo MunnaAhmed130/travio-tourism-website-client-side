@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 import "./Rating.css";
 
-const SetRating = ({ className, emptyStar }) => {
-    const [rating, setRating] = useState(0);
-    const [hover, setHover] = useState(0);
+const SetRating = ({ value, setValue, className, emptyStar }) => {
+    const [rating, setRating] = useState(value || 0);
+    const [hover, setHover] = useState(value || 0);
+
+    useEffect(() => {
+        setValue(rating);
+    }, [rating]);
+
     // console.log(`rating: ${rating}, hover: ${hover}`);
     const color = {
         color: "#d17e7b",
