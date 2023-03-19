@@ -14,7 +14,7 @@ const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
     // const [value, setValue] = useState(1.5);
     // console.log(`value: ${value}`);
-    const cardDescription = description.slice(0, 70);
+    const cardDescription = description.slice(0, 120);
     return (
         <Col className="mt-3 mt-sm-3">
             <Card className="tour-card border-0  shadow mx-auto overflow-hidden">
@@ -49,7 +49,7 @@ const Service = ({ service }) => {
                         onClick={setTimeout(() => {}, 1)}
                         className="tour-btn__container"
                     >
-                        <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none">
+                        <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none ">
                             More Details
                         </RippleButton>
                     </Link>

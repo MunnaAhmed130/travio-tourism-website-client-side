@@ -18,13 +18,11 @@
     right: 0;
     width: 100%;
     height: auto;
-    /* filter: brightness(70%); */
 }
 
 .mid-banner div {
     position: relative;
     height: clamp(25rem, 11.6071vw + 22.6786rem, 41.25rem);
-    /*                    */
     /* height: clamp(25rem, 9.28571vw + 23.1429rem, 38rem); */
     /* padding-block: 15rem; */
     display: flex;
