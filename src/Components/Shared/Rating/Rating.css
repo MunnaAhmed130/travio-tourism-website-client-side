@@ -1,6 +1,7 @@
 /* common style for setRating and Rating componenet */
 .star-button {
-    display: inline-block;
+    /* display: flex; */
+    flex-direction: column;
     background-color: transparent;
     border: none;
     outline: none;
@@ -8,11 +9,14 @@
     /* margin: 0; */
     /* font-size: 2rem; */
     line-height: 1;
+    /* background-color: greenyellow; */
+
     /* padding: 4px; */
 }
 
 .rating--star {
     display: inline-block;
+    /* background-color: red; */
 }
 
 /* SetRating component  */

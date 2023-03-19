@@ -34,11 +34,12 @@ const Service = ({ service }) => {
                             <BsClock className="me-1" />5 DAYS
                         </span>
                     </div>
-                    <div className="d-flex justify-content-start align-items-end lh-1">
+
+                    <div className="d-flex flex-row justify-content-start align-items-center">
                         <Rating count={rating} className="tour-rating" />
                         <span className="reviews ms-1">{rating}</span>
                     </div>
-                    {/* <SetRating setValue={setValue} /> */}
+
                     <Card.Text className="pt-2 description lh">
                         {cardDescription}...
                     </Card.Text>

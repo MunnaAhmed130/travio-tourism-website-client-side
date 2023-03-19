@@ -30,7 +30,7 @@ const Rating = ({ count, emptyColor, className }) => {
                         }
                     >
                         {rating >= index + 1 ? (
-                            <BsStarFill />
+                            <BsStarFill className="p-0 m-0" />
                         ) : rating >= number ? (
                             <span className="parent--star">
                                 {emptyColor && (

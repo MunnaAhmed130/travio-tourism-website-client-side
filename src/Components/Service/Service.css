@@ -29,20 +29,25 @@
 }
 /* rating and reviews  */
 
+.tour-card .reviews {
+    font-size: clamp(0.875rem, 0.178571vw + 0.839286rem, 1rem);
+}
+
 .tour-rating {
     /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
 
     /* background-color: yellow; */
     color: rgb(253, 198, 15);
+    font-size: clamp(1rem, 0.568182vw + 0.886364rem, 1.25rem);
+}
+
+.tour-rating:first-child {
+    padding-left: 0;
 }
 
 .reviews {
     /* color: red; */
     font-family: var(--oswald);
-}
-
-.tour-card :is(.tour-rating, .reviews) {
-    font-size: clamp(0.875rem, 0.178571vw + 0.839286rem, 1rem);
 }
 
 /* description  */
