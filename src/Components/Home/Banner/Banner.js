@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import RippleButton from "../../Shared/RippleButton/RippleButton";
 import "./Banner.css";
 
 // Travel and find happiness within
@@ -7,6 +8,7 @@ import "./Banner.css";
 // const height = { height: "100vh" };
 const imgStyle = "object-fit-cover d-block w-100";
 const captionStyle = "d-flex flex-column justify-content-center ";
+const buttonStyle = "border-0 text-white rounded-1 text-uppercase";
 const Banner = () => {
     const intervalCount = 10000;
     return (
@@ -28,6 +30,11 @@ const Banner = () => {
                                 landscapes harbouring more UNESCO World Heritage
                                 sites.
                             </p>
+                            <RippleButton
+                                className={`banner-btn ${buttonStyle}`}
+                            >
+                                Learn More
+                            </RippleButton>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -47,6 +54,11 @@ const Banner = () => {
                                 backdrop beautiful villages make for the most
                                 beautiful scenery in Switzerland.
                             </p>
+                            <RippleButton
+                                className={`banner-btn ${buttonStyle}`}
+                            >
+                                Learn More
+                            </RippleButton>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -69,6 +81,11 @@ const Banner = () => {
                                 spacial stretch of gorgeous river. Destination
                                 for mountaineering, hiking, camping and fishing.
                             </p>
+                            <RippleButton
+                                className={`banner-btn ${buttonStyle}`}
+                            >
+                                Learn More
+                            </RippleButton>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -91,6 +108,11 @@ const Banner = () => {
                                 monuments, Shopping avenue, Arts, Louvre
                                 museums, Seine and Cuisine.
                             </p>
+                            <RippleButton
+                                className={`banner-btn ${buttonStyle}`}
+                            >
+                                Learn More
+                            </RippleButton>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

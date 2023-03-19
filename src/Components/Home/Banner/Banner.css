@@ -34,6 +34,38 @@
     margin: auto;
 }
 
+.banner-btn {
+    --first-color: rgb(77, 128, 77);
+    --second-color: rgb(18, 71, 18);
+    padding-inline: 30px;
+    padding-block: 15px;
+    margin-top: 1.54rem;
+    /* border: 0px; */
+    background-color: rgb(50, 145, 50);
+    background-size: 200% auto;
+
+    background-image: linear-gradient(
+        to right,
+        var(--first-color) 0%,
+        var(--first-color) 50%,
+        var(--second-color) 50%,
+        var(--second-color) 58%,
+        var(--first-color) 58%,
+        var(--first-color) 100%
+    );
+
+    /* background-image: linear-gradient(
+        to right,
+        var(--first-color) 0%,
+        var(--first-color) 41%,
+        var(--second-color) 51%,
+        var(--first-color) 100%
+    ); */
+}
+
+.banner-btn:hover {
+    background-position: right;
+}
 .banner .carousel-caption {
     height: calc(100vh - var(--navbar-height));
     /* right: 10%;

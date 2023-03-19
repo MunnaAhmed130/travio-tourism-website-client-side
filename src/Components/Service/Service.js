@@ -47,12 +47,14 @@ const Service = ({ service }) => {
                     <Link
                         to={`/placeOrder/${_id}`}
                         onClick={setTimeout(() => {}, 1)}
-                        className="tour-btn__container text-decoration-none"
+                        className="tour-btn--container text-decoration-none"
                     >
                         {/* <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none ">
                             More Details
                         </RippleButton> */}
-                        More Details <BsArrowRight />
+                        <button className="tour-btn border-0 bg-transparent p-0">
+                            More Details <BsArrowRight />
+                        </button>
                     </Link>
                 </Card.Body>
             </Card>

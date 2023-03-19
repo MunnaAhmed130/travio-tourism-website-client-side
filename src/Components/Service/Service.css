@@ -60,6 +60,16 @@
 
 /* button */
 
+.tour-btn {
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.tour-btn:hover {
+    color: rgb(104, 104, 104);
+    letter-spacing: 2px;
+}
+
 .tour-card .ripple-button {
     font-size: 12px;
     border: none;
