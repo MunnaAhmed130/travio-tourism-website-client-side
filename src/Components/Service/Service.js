@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import RippleButton from "../Shared/RippleButton/RippleButton";
-import { BsClock } from "react-icons/bs";
+import { BsClock, BsArrowRight } from "react-icons/bs";
 // import SetRating from "../Shared/Rating/SetRating";
 // import Rating from "../Shared/Rating/Rating";
 import "./Service.css";
@@ -40,18 +40,19 @@ const Service = ({ service }) => {
                         <span className="reviews ms-1">{rating}</span>
                     </div>
 
-                    <Card.Text className="pt-2 description lh">
+                    <Card.Text className="pt-2 description ">
                         {cardDescription}...
                     </Card.Text>
 
                     <Link
                         to={`/placeOrder/${_id}`}
                         onClick={setTimeout(() => {}, 1)}
-                        className="tour-btn__container"
+                        className="tour-btn__container text-decoration-none"
                     >
-                        <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none ">
+                        {/* <RippleButton className="tour-btn rounded-1  text-uppercase text-decoration-none ">
                             More Details
-                        </RippleButton>
+                        </RippleButton> */}
+                        More Details <BsArrowRight />
                     </Link>
                 </Card.Body>
             </Card>

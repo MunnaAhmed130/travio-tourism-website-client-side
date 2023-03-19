@@ -39,7 +39,7 @@
 
 .info-container h2 {
     font-size: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: var(--oswald);
 }
 
 .bottom-row .info-container {
@@ -52,11 +52,11 @@
 .destinations .row > * {
     margin-top: 0;
 }
-.row,
+/* .row,
 .col,
 .container {
-    /* border: 1px solid black; */
-}
+    border: 1px solid black;
+} */
 /* .info-container h2 {
     font-size: clamp(1.25rem, 1.36364vw + 0.977273rem, 2rem);
 }

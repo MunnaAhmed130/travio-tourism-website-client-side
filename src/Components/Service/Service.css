@@ -52,17 +52,13 @@
 /* description  */
 .description {
     font-size: clamp(0.8125rem, 0.267857vw + 0.758929rem, 1rem);
-    /* line-height: 25px; */
+    font-size: 13px;
+    line-height: 25px;
     /* font-family: var(--oswald);
     font-weight: 400; */
 }
 
 /* button */
-.tour-btn__container {
-    display: block;
-    margin-inline: auto;
-    text-align: center;
-}
 
 .tour-card .ripple-button {
     font-size: 12px;
