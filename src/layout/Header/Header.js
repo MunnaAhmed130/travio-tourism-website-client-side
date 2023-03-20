@@ -13,6 +13,11 @@ const Header = () => {
                 className="navbar-container align-items-lg-center align-items-start"
             >
                 <Navbar.Brand className="p-0 text-uppercase text-white">
+                    <img
+                        className="logo"
+                        src="https://i.ibb.co/ZgtNRjn/logo-small-white.png"
+                        alt="logo"
+                    />
                     Travio
                 </Navbar.Brand>
                 <div className="text-end">

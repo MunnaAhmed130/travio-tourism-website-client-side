@@ -35,9 +35,8 @@ const RippleButton = ({ children, onClick, className, type, disabled }) => {
                 // e.preventDefault();
                 const rect = e.target.getBoundingClientRect();
                 setCoords({
-                    x: e.clientX - rect.left,
-                    x1: e.clientX - rect.right,
-                    y: e.clientY - rect.top,
+                    x: e.clientX - rect.left - 10,
+                    y: e.clientY - rect.top - 10,
                 });
 
                 onClick && onClick(e);
