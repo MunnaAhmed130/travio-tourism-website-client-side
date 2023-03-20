@@ -6,7 +6,7 @@
 }
 
 .banner .banner-img {
-    filter: brightness(70%);
+    filter: brightness(60%);
     height: var(--banner-height);
     /* z-index: 2; */
 }
@@ -36,8 +36,8 @@
 
 .banner .carousel-caption {
     height: calc(100vh - var(--navbar-height));
-    /* right: 10%;
-    left: 10%; */
+    right: 5%;
+    left: 5%;
     /* bottom: 2rem; */
 }
 
@@ -64,57 +64,27 @@
 .banner-btn .content {
     font-family: var(--oswald);
     letter-spacing: 2px;
-    font-size: 1.25rem;
+    font-size: var(--btn-fs);
+    /* font-size: 14px; */
     font-weight: 500;
-    /* font-size: 0.9rem; */
-    /* padding-inline: 1.5em;
-    padding-block: 0.75em; */
-    /* z-index: 1; */
 }
 
 .banner-btn {
-    /* font-family: var(--oswald); */
-    letter-spacing: 2px;
-    font-size: 1.25rem;
-    /* position: relative; */
-    /* --background-color: #63ab45; */
+    --btn-fs: clamp(0.875rem, 0.852273vw + 0.704545rem, 1.25rem);
     --background-color: #59815b;
-    padding-inline: 2rem;
-    padding-block: 1rem;
+    letter-spacing: 2px;
+    font-size: var(--btn-fs);
+    padding-inline: 2em;
+    padding-block: 1em;
     margin-top: 1.54rem;
-    /* border: 0px; */
     background-color: var(--background-color);
     box-shadow: 0px 0px 5px 0px var(--background-color);
     transition: 0.3s;
 }
 
-/* .banner-btn:after {
-    content: "";
-    position: absolute;
-    --first-color: rgb(77, 128, 77);
-    --second-color: rgb(18, 71, 18);
-    background-size: 300% auto;
-
-    background-image: linear-gradient(
-        to right,
-        var(--first-color) 0%,
-        var(--first-color) 34%,
-        var(--second-color) 34%,
-        var(--second-color) 66%,
-        var(--first-color) 66%,
-        var(--first-color) 100%
-    );
-
-    transition: 0.5s;
-    z-index: 2;
-} */
-
 .banner-btn:hover {
     background-position: right;
     --background-color: #426444;
-    /* --background-color: black; */
-    /* --background-color: #165a19; */
     background-color: var(--background-color);
     box-shadow: 0px 0px 5px 0px var(--background-color);
-    /* z-index: 10; */
 }
