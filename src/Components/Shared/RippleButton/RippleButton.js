@@ -2,18 +2,28 @@ import React, { useEffect, useState } from "react";
 import "./RippleButton.css";
 
 const RippleButton = ({ children, onClick, className, type, disabled }) => {
-    const [coords, setCoords] = useState({ x: -1, y: -1 });
+    const value = 0;
+    // const [localCoords, setLocalCoords] = useState({ x: 0, y: 0 });
+    const [coords, setCoords] = useState({ x: value, y: value });
     const [isRippling, setIsRippling] = useState(false);
+    // console.log(localCoords);
+
+    // const handleMouseMove = (event) => {
+    //     setLocalCoords({
+    //         x: event.clientX - event.target.offsetLeft,
+    //         y: event.clientY - event.target.offsetTop,
+    //     });
+    // };
 
     useEffect(() => {
-        if (coords.x !== -1 && coords.y !== -1) {
+        if (coords.x !== value && coords.y !== value) {
             setIsRippling(true);
             setTimeout(() => setIsRippling(false), 300);
         } else setIsRippling(false);
     }, [coords]);
 
     useEffect(() => {
-        if (!isRippling) setCoords({ x: -1, y: -1 });
+        if (!isRippling) setCoords({ x: value, y: value });
     }, [isRippling]);
 
     return (
@@ -26,10 +36,13 @@ const RippleButton = ({ children, onClick, className, type, disabled }) => {
                 const rect = e.target.getBoundingClientRect();
                 setCoords({
                     x: e.clientX - rect.left,
+                    x1: e.clientX - rect.right,
                     y: e.clientY - rect.top,
                 });
+
                 onClick && onClick(e);
             }}
+            // onMouseMove={handleMouseMove}
             disabled={disabled}
         >
             {isRippling ? (
