@@ -19,8 +19,8 @@ const TourPlans = () => {
 
     return (
         <section className="tours-section overflow-hidden position-relative">
-            <h2 className="fw-bold text-center py-md-4 pt-0 py-0 position-relative px-4 mb-0">
-                TRAVEL TO YOUR DESTINATION
+            <h2 className="fw-bold text-center py-md-4 pt-0 py-0 position-relative text-uppercase px-4 mb-0">
+                Most Popular Destinations
             </h2>
 
             {plans.length === 0 ? (

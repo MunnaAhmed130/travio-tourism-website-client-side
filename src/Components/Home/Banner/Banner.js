@@ -38,7 +38,7 @@ const Banner = () => {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={intervalCount}>
+                {/* <Carousel.Item interval={intervalCount}>
                     <img
                         className={`banner-img zurich ${imgStyle}`}
                         src="https://i.ibb.co/DLrCwCY/Zurich-tiny.jpg"
@@ -54,11 +54,9 @@ const Banner = () => {
                                 backdrop beautiful villages make for the most
                                 beautiful scenery in Switzerland.
                             </p>
-                            <RippleButton
-                                className={`banner-btn ${buttonStyle}`}
-                            >
+                            <button className={`banner-btn ${buttonStyle}`}>
                                 Learn More
-                            </RippleButton>
+                            </button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -81,11 +79,9 @@ const Banner = () => {
                                 spacial stretch of gorgeous river. Destination
                                 for mountaineering, hiking, camping and fishing.
                             </p>
-                            <RippleButton
-                                className={`banner-btn ${buttonStyle}`}
-                            >
+                            <button className={`banner-btn ${buttonStyle}`}>
                                 Learn More
-                            </RippleButton>
+                            </button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -108,14 +104,12 @@ const Banner = () => {
                                 monuments, Shopping avenue, Arts, Louvre
                                 museums, Seine and Cuisine.
                             </p>
-                            <RippleButton
-                                className={`banner-btn ${buttonStyle}`}
-                            >
+                            <button className={`banner-btn ${buttonStyle}`}>
                                 Learn More
-                            </RippleButton>
+                            </button>
                         </div>
                     </Carousel.Caption>
-                </Carousel.Item>
+                </Carousel.Item> */}
             </Carousel>
             <img
                 className="btm-img"
