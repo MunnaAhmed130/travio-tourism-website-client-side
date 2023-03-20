@@ -1,14 +1,11 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import RippleButton from "../Shared/RippleButton/RippleButton";
 import { BsClock, BsArrowRight } from "react-icons/bs";
 // import SetRating from "../Shared/Rating/SetRating";
 // import Rating from "../Shared/Rating/Rating";
-import "./Service.css";
 import Rating from "../Shared/Rating/Rating";
-import SetRating from "../Shared/Rating/SetRating";
-import { useState } from "react";
+import "./Service.css";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;

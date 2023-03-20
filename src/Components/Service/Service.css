@@ -41,9 +41,9 @@
 .tour-card:hover .icon {
     box-shadow: 0px 0px 2px 1px var(--clock-color);
 }
-.tour-card .subtitle-container {
-    /* font-size: 14px; */
-}
+/* .tour-card .subtitle-container {
+    font-size: 14px;
+} */
 /* rating and reviews  */
 
 .tour-card .reviews {
