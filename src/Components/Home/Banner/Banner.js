@@ -8,7 +8,7 @@ import "./Banner.css";
 // const height = { height: "100vh" };
 const imgStyle = "object-fit-cover d-block w-100";
 const captionStyle = "d-flex flex-column justify-content-center ";
-const buttonStyle = "border-0 text-white rounded-1 text-uppercase";
+const buttonStyle = "border-0 text-white  text-uppercase";
 const Banner = () => {
     const intervalCount = 10000;
     return (
@@ -31,7 +31,7 @@ const Banner = () => {
                                 sites.
                             </p>
                             <RippleButton
-                                className={`banner-btn ${buttonStyle}`}
+                                className={`banner-btn  ${buttonStyle}`}
                             >
                                 Learn More
                             </RippleButton>
