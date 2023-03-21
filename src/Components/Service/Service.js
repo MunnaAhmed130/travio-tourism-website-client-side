@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsClock, BsArrowRight } from "react-icons/bs";
@@ -6,11 +6,12 @@ import { BsClock, BsArrowRight } from "react-icons/bs";
 // import Rating from "../Shared/Rating/Rating";
 import Rating from "../Shared/Rating/Rating";
 import "./Service.css";
+import SetRating from "../Shared/Rating/SetRating";
 
 const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
-    // const [value, setValue] = useState(1.5);
-    // console.log(`value: ${value}`);
+    const [value, setValue] = useState(1.5);
+    console.log(`value: ${value}`);
     const cardDescription = description.slice(0, 120);
     return (
         <Col className="mt-3 mt-sm-3">
@@ -36,11 +37,13 @@ const Service = ({ service }) => {
                         <Rating
                             count={rating}
                             outlineColor="orange"
-                            emptyColor="orange"
+                            emptyColor="white"
+                            // emptyColor is a must attribute default is white
                             className="tour-rating"
                         />
                         <span className="reviews ms-1">{rating}</span>
                     </div>
+                    {/* <SetRating value={value} setValue={setValue} /> */}
 
                     <Card.Text className="pt-3 description ">
                         {cardDescription}...

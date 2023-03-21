@@ -3,16 +3,20 @@ import { BsStarFill, BsStar } from "react-icons/bs";
 import "./Rating.css";
 
 const Rating = ({ count, emptyColor, className, outlineColor }) => {
-    const [rating, setRating] = useState(count);
+    const [rating, setRating] = useState(0);
     useEffect(() => {
-        setRating(rating);
-    }, []);
+        setRating(count);
+    }, [count]);
 
-    const full = ((rating - Math.floor(rating)).toFixed(1) * 100).toString();
+    const fill = ((rating - Math.floor(rating)).toFixed(1) * 100).toString();
 
-    const hidden = {
-        width: `${full}%`,
+    const half = {
+        width: `${fill}%`,
         height: "100%",
+    };
+
+    const empty = {
+        color: `${emptyColor} `,
     };
 
     const outline = {
@@ -25,6 +29,7 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
             {[...Array(5)].map((star, index) => {
                 let number = index + 0.1;
                 return (
+                    // star button here
                     <button
                         type="button"
                         key={index}
@@ -36,6 +41,7 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
                     >
                         {rating >= index + 1 ? (
                             <span>
+                                {/* full rating  */}
                                 {outlineColor ? (
                                     <span className="parent--star">
                                         <BsStarFill className="p-0 m-0 star-fill" />
@@ -45,38 +51,34 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
                                         />
                                     </span>
                                 ) : (
+                                    // here
                                     <BsStarFill className="p-0 m-0 " />
                                 )}
                             </span>
                         ) : rating >= number ? (
                             <span className="parent--star">
-                                {emptyColor && (
+                                {/* half star  */}
+                                <span className="half" style={half}>
+                                    <BsStarFill className="half--star" />
+                                </span>
+                                {/* empty star  */}
+                                {emptyColor ? (
                                     <BsStarFill
-                                        className="dummy--star"
-                                        style={{ color: `${emptyColor}` }}
+                                        className="star--empty"
+                                        style={empty}
                                     />
+                                ) : (
+                                    <BsStarFill className="star--empty" />
                                 )}
+                                {/* star outline  */}
                                 <BsStar
-                                    className={emptyColor && "outline"}
+                                    className={`${
+                                        emptyColor ? emptyColor : ""
+                                    } half-outline `}
                                     style={outlineColor && outline}
                                 />
-                                <span className="hidden" style={hidden}>
-                                    <BsStarFill className="hidden--star" />
-                                </span>
                             </span>
                         ) : (
-                            // <span className="parent--star">
-                            //     {emptyColor && (
-                            //         <BsStarFill
-                            //             className="dummy--star"
-                            //             style={{
-                            //                 color: ` ${emptyColor}`,
-                            //             }}
-                            //         />
-                            //     )}
-
-                            //     <BsStar />
-                            // </span>
                             <span>
                                 {emptyColor ? (
                                     <span className="parent--star">
@@ -92,7 +94,11 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
                                         />
                                     </span>
                                 ) : (
-                                    <BsStar style={outlineColor && outline} />
+                                    <span className="">
+                                        <BsStar
+                                            style={outlineColor && outline}
+                                        />
+                                    </span>
                                 )}
                             </span>
                         )}

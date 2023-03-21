@@ -26,71 +26,65 @@
 .parent--star {
     position: relative;
     top: 0;
-    /* z-index: 1; */
 }
 
-.child--star {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 8;
-}
-
-.hidden {
+/* half star style  */
+.half {
     /* display: inline-block; */
     position: absolute;
-    top: 2px;
+    /* top: 2px; */
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     z-index: 20;
     overflow: hidden;
+    /* color: black;  */
 }
-.hidden--star {
-    display: inline-block;
-    /* padding-top: 0.25em; */
+.half--star {
+    /* display: inline-block; */
+    /* position: absolute; */
     /* padding-bottom: 1px; */
     /* top: 1px; */
-    /* bottom: 2px; */
-    height: 100%;
-    z-index: 8;
+    /* bottom: 0px; */
+    /* height: 100%;
+    z-index: 12; */
     /* color: red; */
 }
 
-.dummy--star {
-    /* position: absolute; */
+/* empty style color  */
+.star-empty {
+    position: absolute;
     /* top: 4.5px; */
-    top: 0;
+    /* color: white; */
+    /* top: 0; */
     left: 0;
-    bottom: 0;
-    z-index: 1;
+    bottom: 2px;
+    z-index: 10;
 }
 
 .outline {
     /* display: inline-block; */
     position: absolute;
-    /* top: 2px; */
-    bottom: 0;
+    /* top: 4.7px; */
+    bottom: 1px;
     left: 0;
-    /* color: transparent; */
-    /* color: green; */
-    /* bottom: -0px; */
-    z-index: 30;
+}
+
+.half-outline {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
 }
 
 .star-outline {
     /* display: inline-block; */
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 0;
-    /* color: transparent; */
-    /* color: green; */
-    /* bottom: -0px; */
-    z-index: 9;
+    z-index: 8;
 }
 
 .star-fill {
-    display: inline-block;
+    /* display: inline-block; */
     /* position: relative; */
     /* position: absolute; */
     /* top: 1px;

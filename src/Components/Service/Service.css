@@ -54,8 +54,10 @@
     /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
 
     /* background-color: yellow; */
-    color: rgb(255, 209, 58);
+    /* color: rgb(255, 209, 58); */
+    color: orange;
     font-size: clamp(1rem, 0.568182vw + 0.886364rem, 1.25rem);
+    /* font-size: 2rem; */
 }
 
 .tour-rating:first-child {
