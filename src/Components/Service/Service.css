@@ -9,7 +9,7 @@
 
 .tour-card:hover {
     transform: translatey(-10px);
-    box-shadow: 0px 10px 15px 0px rgba(182, 182, 182, 0.9);
+    box-shadow: 0px 15px 10px 0px rgba(182, 182, 182, 0.5);
 }
 /* image  */
 .tour-card .card-img {
@@ -54,7 +54,7 @@
     /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
 
     /* background-color: yellow; */
-    color: rgb(253, 198, 15);
+    color: rgb(255, 209, 58);
     font-size: clamp(1rem, 0.568182vw + 0.886364rem, 1.25rem);
 }
 

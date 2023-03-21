@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsStarFill, BsStar } from "react-icons/bs";
 import "./Rating.css";
 
-const Rating = ({ count, emptyColor, className }) => {
+const Rating = ({ count, emptyColor, className, outlineColor }) => {
     const [rating, setRating] = useState(count);
     useEffect(() => {
         setRating(rating);
@@ -13,6 +13,11 @@ const Rating = ({ count, emptyColor, className }) => {
     const hidden = {
         width: `${full}%`,
         height: "100%",
+    };
+
+    const outline = {
+        color: `${outlineColor}`,
+        zIndex: "30",
     };
 
     return (
@@ -30,7 +35,19 @@ const Rating = ({ count, emptyColor, className }) => {
                         }
                     >
                         {rating >= index + 1 ? (
-                            <BsStarFill className="p-0 m-0" />
+                            <span>
+                                {outlineColor ? (
+                                    <span className="parent--star">
+                                        <BsStarFill className="p-0 m-0 star-fill" />
+                                        <BsStar
+                                            className={"star-outline"}
+                                            style={outlineColor && outline}
+                                        />
+                                    </span>
+                                ) : (
+                                    <BsStarFill className="p-0 m-0 " />
+                                )}
+                            </span>
                         ) : rating >= number ? (
                             <span className="parent--star">
                                 {emptyColor && (
@@ -39,22 +56,44 @@ const Rating = ({ count, emptyColor, className }) => {
                                         style={{ color: `${emptyColor}` }}
                                     />
                                 )}
-                                <BsStar className={emptyColor && "outline"} />
+                                <BsStar
+                                    className={emptyColor && "outline"}
+                                    style={outlineColor && outline}
+                                />
                                 <span className="hidden" style={hidden}>
                                     <BsStarFill className="hidden--star" />
                                 </span>
                             </span>
                         ) : (
-                            <span className="parent--star">
-                                {emptyColor && (
-                                    <BsStarFill
-                                        className="dummy--star"
-                                        style={{
-                                            color: ` ${emptyColor}`,
-                                        }}
-                                    />
+                            // <span className="parent--star">
+                            //     {emptyColor && (
+                            //         <BsStarFill
+                            //             className="dummy--star"
+                            //             style={{
+                            //                 color: ` ${emptyColor}`,
+                            //             }}
+                            //         />
+                            //     )}
+
+                            //     <BsStar />
+                            // </span>
+                            <span>
+                                {emptyColor ? (
+                                    <span className="parent--star">
+                                        <BsStarFill
+                                            className="dummy--star"
+                                            style={{
+                                                color: ` ${emptyColor}`,
+                                            }}
+                                        />
+                                        <BsStar
+                                            className="star-outline"
+                                            style={outlineColor && outline}
+                                        />
+                                    </span>
+                                ) : (
+                                    <BsStar style={outlineColor && outline} />
                                 )}
-                                <BsStar />
                             </span>
                         )}
                     </button>

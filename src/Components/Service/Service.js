@@ -33,7 +33,12 @@ const Service = ({ service }) => {
                     </div>
 
                     <div className="d-flex flex-row justify-content-start align-items-center">
-                        <Rating count={rating} className="tour-rating" />
+                        <Rating
+                            count={rating}
+                            outlineColor="orange"
+                            emptyColor="orange"
+                            className="tour-rating"
+                        />
                         <span className="reviews ms-1">{rating}</span>
                     </div>
 
