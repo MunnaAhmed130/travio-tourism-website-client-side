@@ -8,12 +8,12 @@ const SetRating = ({ value, setValue, className, emptyStar }) => {
 
     useEffect(() => {
         setValue(rating);
-    }, [rating]);
+    }, [rating, setValue]);
 
     // console.log(`rating: ${rating}, hover: ${hover}`);
-    const color = {
-        color: "#d17e7b",
-    };
+    // const color = {
+    //     color: "#d17e7b",
+    // };
     // const condition = rating || hover;
     const condition = hover;
 
