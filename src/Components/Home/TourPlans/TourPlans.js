@@ -19,10 +19,12 @@ const TourPlans = () => {
 
     return (
         <section className="tours-section overflow-hidden position-relative mx-auto">
-            <h2 className="section-title fw-bold text-center py-md-4 pt-0 py-0 position-relative text-uppercase px-4 mb-0">
+            {/* <h2 className="section-title fw-bold text-center py-md-4 pt-0 py-0 position-relative text-uppercase px-4 mb-0">
+                Most Popular Destinations
+            </h2> */}
+            <h2 className="section-title fw-bold text-center py-4  pt-0position-relative text-uppercase px-4 mb-0">
                 Most Popular Destinations
             </h2>
-
             {plans.length === 0 ? (
                 <Container fluid="lg">
                     <Row xs={1} sm={2} md={2} lg={3} className="g-4 m-1">

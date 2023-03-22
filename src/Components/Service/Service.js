@@ -12,7 +12,7 @@ const Service = ({ service }) => {
     const { img, _id, description, name, places, rating } = service;
     // const [value, setValue] = useState(1.5);
     // console.log(`value: ${value}`);
-    const cardDescription = description.slice(0, 80);
+    const cardDescription = description.slice(0, 70);
     return (
         <Col className="mt-3 mt-sm-3">
             <Card
