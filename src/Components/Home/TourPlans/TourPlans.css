@@ -14,10 +14,24 @@
     right: 25%;
 } */
 
-.tours-section h2 {
+.tours-section .section-title {
+    position: relative;
     font-size: clamp(1.6875rem, 1.16071vw + 1.45536rem, 2.5rem);
     z-index: 1;
     /* border-bottom: 1px solid green; */
+}
+
+.tours-section .section-title:before {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
 }
 
 .tours-section::before {

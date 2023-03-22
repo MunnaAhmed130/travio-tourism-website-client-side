@@ -16,7 +16,7 @@ const Service = ({ service }) => {
     return (
         <Col className="mt-3 mt-sm-3">
             <Card
-                className="tour-card border-0 mx-auto overflow-hidden d-flex flex-row align-items-end "
+                className="tour-card border-0 mx-auto overflow-hidden d-flex flex-row align-items-end"
                 // style={{ backgroundImage: `url(${img})` }}
             >
                 <img

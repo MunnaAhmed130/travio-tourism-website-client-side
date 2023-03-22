@@ -18,8 +18,8 @@ const TourPlans = () => {
     }, []);
 
     return (
-        <section className="tours-section overflow-hidden position-relative">
-            <h2 className="fw-bold text-center py-md-4 pt-0 py-0 position-relative text-uppercase px-4 mb-0">
+        <section className="tours-section overflow-hidden position-relative mx-auto">
+            <h2 className="section-title fw-bold text-center py-md-4 pt-0 py-0 position-relative text-uppercase px-4 mb-0">
                 Most Popular Destinations
             </h2>
 
