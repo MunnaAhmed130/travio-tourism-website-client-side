@@ -5,7 +5,7 @@ import OrderForm from "../../OrderForm/OrderForm";
 const MyOrder = () => {
     const [order, setOrder] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000//orders`)
+        fetch(`https://travel-related-website-server.vercel.app//orders`)
             .then((res) => res.json())
             .then((data) => {
                 setOrder(data);

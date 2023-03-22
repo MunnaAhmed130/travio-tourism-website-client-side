@@ -14,7 +14,9 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
     const [order, setOrder] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:4000//tours/${serviceId}`)
+        fetch(
+            `https://travel-related-website-server.vercel.app//tours/${serviceId}`
+        )
             .then((res) => res.json())
             .then((data) => {
                 setOrder(data);
@@ -25,13 +27,18 @@ const PlaceOrder = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         console.log(data);
-        axios.post("http://localhost:4000//orders", data).then((res) => {
-            console.log(res);
+        axios
+            .post(
+                "https://travel-related-website-server.vercel.app//orders",
+                data
+            )
+            .then((res) => {
+                console.log(res);
 
-            if (res.data.insertedId) {
-                alert("order successfully placed");
-            }
-        });
+                if (res.data.insertedId) {
+                    alert("order successfully placed");
+                }
+            });
     };
     return (
         <div>
