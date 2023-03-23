@@ -2,7 +2,6 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsClock, BsStarFill, BsArrowRight } from "react-icons/bs";
-
 // import Rating from "../Shared/Rating/Rating";
 import Rating from "../Shared/Rating/Rating";
 import "./Service.css";

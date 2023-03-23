@@ -7,7 +7,9 @@
 }
 
 .footer--bottom {
-    font-size: 12px;
+    font-size: 15px;
+    padding-block: 1.5em;
+    line-height: 20px;
 }
 @media screen and (max-width: 424px) {
     .mini-footer {

@@ -10,7 +10,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0 ">
             <Container
                 fluid="lg"
-                className="navbar-container align-items-lg-center align-items-start"
+                className="navbar-container align-items-sm-center align-items-start"
             >
                 <Navbar.Brand className="p-0 text-uppercase text-white">
                     <span className="logo-container">
