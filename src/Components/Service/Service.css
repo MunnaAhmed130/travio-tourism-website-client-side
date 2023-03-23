@@ -3,14 +3,9 @@
     --first-color: rgba(0, 0, 0, 0.8);
     --second-color: rgb(128, 128, 158);
     max-width: 400px;
-    min-width: 276px;
+    /* min-width: 276px; */
     box-shadow: 0px 10px 20px 5px rgba(145, 145, 145, 0.5);
     color: white;
-}
-
-.tour-card:hover,
-.tour-card:focus-within {
-    box-shadow: 0px 10px 20px 5px rgb(126, 126, 126);
 }
 
 .tour-card {
@@ -30,9 +25,10 @@
     transition: 0.5s;
 }
 
-.tour-card:hover:before,
-.tour-card:focus-within:before {
-    background: rgba(0, 0, 0, 0.2);
+/* card box shadow  */
+.tour-card:hover,
+.tour-card:focus-within {
+    box-shadow: 0px 10px 20px 5px rgb(126, 126, 126);
 }
 
 /* card body style  */
@@ -44,34 +40,6 @@
         rgba(0, 0, 0, 1)
     );
     z-index: 2;
-    transform: translateY(55%);
-    transition: transform 0.5s;
-}
-
-.tour-card:focus-within .card-body {
-    /* transition: 0s; */
-    transition-duration: 0s;
-}
-
-.tour-card:hover .card-body,
-.tour-card:focus-within .card-body {
-    transform: translateY(0%);
-    /* transition-delay: 0.5s; */
-}
-
-.tour-card:focus-within .card-body {
-    /* transition-delay: 0s; */
-    /* transition-duration: 0s; */
-}
-.card-body > *:not(.title, .subtitle-container) {
-    opacity: 0;
-    transition: opacity 0.5s;
-    transition-delay: 0.3s;
-}
-
-.tour-card:hover .card-body > *,
-.tour-card:focus-within .card-body > * {
-    opacity: 1;
 }
 
 /* image  */
@@ -177,25 +145,52 @@
     transition: 0.4s;
 }
 
-.tour-btn:hover {
+.tour-btn:hover,
+.tour-btn:focus-within,
+.tour-btn:focus-visible {
     /* color: #315734; */
     /* color: #4e8853; */
     letter-spacing: 2px;
+    transition: 0.4s;
 }
 
-.tour-card .ripple-button {
-    font-size: 12px;
-    border: none;
-}
+/* media query for hover supported devices */
+@media (hover) {
+    /* lights up the background */
+    .tour-card:hover:before,
+    .tour-card:focus-within:before {
+        background: rgba(0, 0, 0, 0.2);
+    }
 
-.tour-card .ripple-button:hover {
-    background-position: right;
-    /* change the direction of the change here */
-    /* color: #fff; */
-    box-shadow: 0px 5px 5px 0px #b1b1b1;
-    background-color: rgba(0, 0, 0, 1);
-    /* box-shadow: 5px 5px 5px 5px black; */
-    /* background-color: rgb(65, 59, 41); */
-    /* color: black; */
-    text-decoration: none;
+    /* card body at bottom  */
+    .tour-card .card-body {
+        transform: translateY(55%);
+        transition: transform 0.7s;
+    }
+
+    /* card body comes from bottom  */
+    .tour-card:hover .card-body,
+    .tour-card:focus-within .card-body {
+        transform: translateY(0%);
+    }
+
+    .tour-card:focus-within .card-body {
+        transition-duration: 0s;
+    }
+
+    .card-body > *:not(.title, .subtitle-container) {
+        opacity: 0;
+        transition: opacity 0.5s;
+        /* transition-delay: 0.3s; */
+    }
+
+    .tour-card:hover .card-body > *,
+    .tour-card:focus-within .card-body > * {
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+
+    .tour-card:focus-within .card-body > * {
+        transition-delay: 0.1s;
+    }
 }
