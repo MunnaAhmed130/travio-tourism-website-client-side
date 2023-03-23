@@ -69,7 +69,6 @@ const Header = () => {
                                     Log In
                                 </Link>
                             )}
-                            {/* <Link className="link">lol</Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </div>

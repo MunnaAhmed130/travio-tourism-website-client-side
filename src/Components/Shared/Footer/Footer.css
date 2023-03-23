@@ -1,5 +1,4 @@
-
-.footer-bottom{
+.footer {
     color: white;
     background-color: #1c1f22;
     font-weight: 500;
@@ -7,8 +6,11 @@
     line-height: 50px;
 }
 
-@media screen  and (max-width:424px){
-    .mini-footer{
+.footer--bottom {
+    font-size: 12px;
+}
+@media screen and (max-width: 424px) {
+    .mini-footer {
         display: flex;
         flex-direction: row;
         align-items: center;

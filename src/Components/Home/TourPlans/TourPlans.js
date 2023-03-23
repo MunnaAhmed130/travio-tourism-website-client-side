@@ -12,10 +12,11 @@ const TourPlans = () => {
 
     useEffect(() => {
         // fetch("fakedata.json")
-        fetch(
-            `https://travel-related-website-server.vercel.app/tours/query?limit=${limit}`
-        )
-            // fetch(`http://localhost:4000/tours/query?limit=${limit}`)
+        // fetch(
+        //     `https://travel-related-website-server.vercel.app/tours/query?limit=${limit}`
+        // )
+        fetch(`http://localhost:4000/tours/query?limit=${limit}`)
+            // fetch(`http://localhost:4000/tours`)
             .then((res) => res.json())
             .then((data) => setPlans(data));
     }, []);

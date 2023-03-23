@@ -17,7 +17,7 @@ const Home = () => {
             <TourPlans />
             <MidBanner />
             <Destination />
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Footer />
         </>
     );
