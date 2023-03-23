@@ -3,65 +3,101 @@
     --first-color: rgba(0, 0, 0, 0.8);
     --second-color: rgb(128, 128, 158);
     max-width: 400px;
-    box-shadow: 0px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    min-width: 276px;
+    box-shadow: 0px 10px 20px 5px rgba(145, 145, 145, 0.5);
     color: white;
+}
+
+.tour-card:hover,
+.tour-card:focus-within {
+    box-shadow: 0px 10px 20px 5px rgb(126, 126, 126);
 }
 
 .tour-card {
     position: relative;
-    height: 350px;
+    height: 370px;
     transition: all 500ms;
 }
 
-.tour-card:hover {
-    box-shadow: 0px 15px 15px 0px rgb(151, 151, 151);
+.tour-card:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.tour-card:hover:before,
+.tour-card:focus-within:before {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /* card body style  */
 .tour-card .card-body {
-    padding-top: 2em;
+    padding-top: 1.5em;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.5) 20%,
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 1)
     );
     z-index: 2;
-    transform: translateY(60%);
-    transition: 0.6s;
+    transform: translateY(55%);
+    transition: transform 0.5s;
 }
 
+.tour-card:focus-within .card-body {
+    /* transition: 0s; */
+    transition-duration: 0s;
+}
+
+.tour-card:hover .card-body,
+.tour-card:focus-within .card-body {
+    transform: translateY(0%);
+    /* transition-delay: 0.5s; */
+}
+
+.tour-card:focus-within .card-body {
+    /* transition-delay: 0s; */
+    /* transition-duration: 0s; */
+}
 .card-body > *:not(.title, .subtitle-container) {
     opacity: 0;
-    transition: 0.6s;
-}
-.tour-card:hover .card-body {
-    transform: translateY(0%);
+    transition: opacity 0.5s;
+    transition-delay: 0.3s;
 }
 
-.tour-card:hover .card-body > * {
+.tour-card:hover .card-body > *,
+.tour-card:focus-within .card-body > * {
     opacity: 1;
 }
 
 /* image  */
 .card-img {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(80%);
+    transition: 500ms;
 }
 
-.tour-card .card-body:hover .card-img {
-    filter: brightness(1000%);
+.tour-card:hover .card-img {
+    filter: brightness(90%);
 }
 
+/* title  */
 .tour-card .title {
     font-family: var(--oswald);
     font-size: clamp(1.125rem, 0.284091vw + 1.06818rem, 1.25rem);
+    font-size: 25px;
 }
 
+/* subtitle  */
 .tour-card :is(.place, .time) {
     font-family: var(--oswald);
     /* color: rgba(0, 0, 0, 0.831); */
@@ -75,6 +111,7 @@
     /* color: #4e8853; */
     font-weight: 800;
 }
+
 .icon {
     /* --clock-color: #337e38; */
     --clock-color: white;
@@ -82,11 +119,9 @@
     border: 1px solid var(--clock-color);
     background-color: var(--clock-color);
     border-radius: 50%;
-    transition: ease-in 0.3s;
+    /* transition: ease-in 0.3s; */
 }
-.tour-card:hover .icon {
-    box-shadow: 0px 0px 2px 1px var(--clock-color);
-}
+
 /* .tour-card .subtitle-container {
     font-size: 14px;
 } */
@@ -100,7 +135,7 @@
 
 .tour-rating {
     /* clamp( 0.875rem , 0.178571vw + 0.839286rem ,  1rem )  */
-
+    margin-inline: 0.25em;
     /* background-color: yellow; */
     /* color: rgb(255, 209, 58); */
     /* color: orange; */
@@ -108,12 +143,14 @@
     /* font-size: 1.25rem; */
 }
 
+.tour-rating.star {
+}
 .tour-rating,
 .star-icon {
     color: orange;
 }
 .tour-rating:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .reviews {

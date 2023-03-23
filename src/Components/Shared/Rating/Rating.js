@@ -31,14 +31,10 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
                 let number = index + 0.1;
                 return (
                     // star button here
-                    <button
-                        type="button"
+                    <span
+                        // type="button"
                         key={index}
-                        className={
-                            className
-                                ? `${className} star-button `
-                                : "star-button "
-                        }
+                        className={className ? `${className} star ` : "star "}
                     >
                         {rating >= index + 1 ? (
                             <span>
@@ -108,7 +104,7 @@ const Rating = ({ count, emptyColor, className, outlineColor }) => {
                                 )}
                             </span>
                         )}
-                    </button>
+                    </span>
                 );
             })}
         </div>

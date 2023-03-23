@@ -1,6 +1,7 @@
 /* common style for setRating and Rating componenet */
-.star-button {
+.star {
     /* display: flex; */
+    /* display: inline-block; */
     flex-direction: column;
     background-color: transparent;
     border: none;
@@ -46,7 +47,7 @@
     position: absolute;
     /* top: 2px; */
     left: 0;
-    bottom: 1px;
+    bottom: 0px;
     /* bottom: 0px; */
     z-index: 20;
     overflow: hidden;
@@ -68,7 +69,7 @@
 
 .half-outline {
     position: absolute;
-    bottom: 1px;
+    bottom: 0px;
     left: 0;
 }
 /* empty style color  */
