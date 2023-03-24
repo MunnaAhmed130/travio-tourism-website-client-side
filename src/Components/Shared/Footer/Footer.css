@@ -1,21 +1,44 @@
 .footer {
+    --logo-height: clamp(1.5625rem, 1.5625vw + 1.25rem, 2.25rem);
+    --logo-height: 30px;
     color: white;
-    background-color: #1c1f22;
     font-weight: 500;
-    font-size: 1em;
+    /* font-size: 1em; */
+    background-color: rgba(28, 31, 34, 0.98);
     line-height: 50px;
 }
 
+.footer .logo-container {
+    height: var(--logo-height);
+}
+
+.footer .logo-container .logo-bg {
+    top: 0;
+    left: 1px;
+}
+
+.website-name {
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    font-family: var(--oswald);
+}
+
 .footer--bottom {
+    /* 1440 - 320 - 15-12 */
+    /* display: inline-block; */
+    font-size: clamp(0.75rem, 0.446429vw + 0.660714rem, 1.0625rem);
     font-size: 15px;
     padding-block: 1.5em;
+    letter-spacing: 2px;
     line-height: 20px;
+    background-color: #0a1016;
 }
+
 @media screen and (max-width: 424px) {
-    .mini-footer {
+    /* .mini-footer {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    }
+    } */
 }

@@ -13,7 +13,7 @@ const Header = () => {
                 className="navbar-container align-items-sm-center align-items-start"
             >
                 <Navbar.Brand className="p-0 text-uppercase text-white">
-                    <span className="logo-container">
+                    <span className="logo-container position-relative">
                         <img
                             className="logo"
                             src="https://i.ibb.co/ZgtNRjn/logo-small-white.png"
