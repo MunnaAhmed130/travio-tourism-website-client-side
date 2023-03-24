@@ -7,6 +7,7 @@
     line-height: 50px;
 }
 
+/* logo  */
 .footer .logo-container {
     height: var(--logo-height);
 }
@@ -18,6 +19,7 @@
 
 .footer h3 {
     font-size: 20px;
+    /* margin-bottom: 1rem; */
 }
 
 .footer .website-name {
@@ -27,23 +29,17 @@
     font-family: var(--oswald);
 }
 
+/* footer info */
+
 .footer-info {
     font-size: 14px;
     line-height: 20px;
     max-width: 300px;
+    color: rgba(255, 255, 255, 0.9);
     /* font-weight: 400; */
 }
 
-.pages a {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    line-height: 25px;
-    padding-bottom: 5px;
-}
-
+/* social icons */
 .social-icons a {
     display: inline-block;
     --square-icon: 40px;
@@ -64,10 +60,54 @@
     background-color: white;
     color: black;
 }
+
 .social-icons {
     line-height: 1;
 }
 
+/* pages col */
+.pages a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 5px;
+}
+
+/* contact info */
+.icon-container {
+    --square-box: 40px;
+    display: inline-block;
+    background-color: rgba(85, 85, 85, 0.8);
+    height: var(--square-box);
+    width: var(--square-box);
+    text-align: center;
+    line-height: var(--square-box);
+    line-height: calc(var(--square-box) - (var(--square-box) * 0.1));
+    /* line-height: 40px; */
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #60ad64;
+    font-size: 15px;
+}
+
+.contact-info span {
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* font-family: var(--oswald); */
+}
+.contact-us p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-us div {
+    /* margin-bottom: 0.9rem; */
+}
 .footer--bottom p {
     /* 1440 - 320 - 15-12 */
     font-size: clamp(0.75rem, 0.446429vw + 0.660714rem, 1.0625rem);
