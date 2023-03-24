@@ -1,9 +1,8 @@
+/* footer */
 .footer {
     --logo-height: clamp(1.5625rem, 1.5625vw + 1.25rem, 2.25rem);
     --logo-height: 30px;
     color: white;
-    font-weight: 500;
-    /* font-size: 1em; */
     background-color: rgba(28, 31, 34, 0.98);
     line-height: 50px;
 }
@@ -17,15 +16,60 @@
     left: 1px;
 }
 
-.website-name {
-    font-size: 1rem;
+.footer h3 {
+    font-size: 20px;
+}
+
+.footer .website-name {
+    font-size: 22px;
+    font-weight: 500;
     margin-left: 0.2rem;
     font-family: var(--oswald);
 }
 
-.footer--bottom {
+.footer-info {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 300px;
+    /* font-weight: 400; */
+}
+
+.pages a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    --square-icon: 40px;
+    background-color: rgba(109, 109, 109, 0.4);
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    height: var(--square-icon);
+    width: var(--square-icon);
+    /* line-height: calc(var(--square-icon) - 5px); */
+    line-height: var(--square-icon);
+    margin-right: 1rem;
+    color: white;
+    text-align: center;
+    transition: 0.2s ease-in;
+}
+
+.social-icons a:hover {
+    background-color: white;
+    color: black;
+}
+.social-icons {
+    line-height: 1;
+}
+
+.footer--bottom p {
     /* 1440 - 320 - 15-12 */
-    /* display: inline-block; */
     font-size: clamp(0.75rem, 0.446429vw + 0.660714rem, 1.0625rem);
     font-size: 15px;
     padding-block: 1.5em;
