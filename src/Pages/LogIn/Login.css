@@ -1,9 +1,14 @@
-.login,.logOut{
+.login {
+    background: #000;
+}
+
+.btn.login,
+.btn.logOut {
     margin-bottom: 250px;
     font-size: 1.5em;
 }
 
-.log{
+.log {
     margin-top: 200px;
     font-size: 3rem;
     margin-bottom: 50px;

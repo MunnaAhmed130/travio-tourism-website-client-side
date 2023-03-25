@@ -19,15 +19,17 @@ const Header = () => {
                 className="navbar-container align-items-sm-center align-items-start"
             >
                 <Navbar.Brand className="p-0 text-uppercase text-white">
-                    <span className="logo-container position-relative">
-                        <img
-                            className="logo"
-                            src="https://i.ibb.co/ZgtNRjn/logo-small-white.png"
-                            alt="logo"
-                        />
-                        <span></span>
-                    </span>
-                    Travio
+                    <Link to="/" className="text-decoration-none text-white">
+                        <span className="logo-container position-relative">
+                            <img
+                                className="logo"
+                                src="https://i.ibb.co/ZgtNRjn/logo-small-white.png"
+                                alt="logo"
+                            />
+                            <span></span>
+                        </span>
+                        Travio
+                    </Link>
                 </Navbar.Brand>
                 <div className="text-end">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

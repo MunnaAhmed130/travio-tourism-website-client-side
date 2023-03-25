@@ -14,6 +14,16 @@
     right: 25%;
 } */
 
+.tours-section h4 {
+    /* position: relative; */
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgba(153, 205, 50, 0.3);
+}
+
 .tours-section .section-title {
     /* display: inline-block;
     margin-inline: auto;
@@ -39,7 +49,7 @@
     content: "";
     position: absolute;
     /* background-image: url("https://i.ibb.co/hW4FZ3C/landing-img-40.jpg"); */
-    background-image: url("https://i.ibb.co/kg9fg9g/landing-img-40-tiny.jpg");
+    /* background-image: url("https://i.ibb.co/kg9fg9g/landing-img-40-tiny.jpg"); */
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;

@@ -13,7 +13,7 @@ nav.navbar {
     height: var(--logo-height);
     width: var(--logo-height);
     margin-bottom: 5px;
-    margin-right: 1px;
+    margin-right: 2px;
     z-index: 1;
 }
 
@@ -30,7 +30,7 @@ nav.navbar {
 
 /* navbar brand  */
 
-.navbar .navbar-brand {
+.navbar .navbar-brand a {
     font-family: var(--oswald);
     font-size: clamp(1.5625rem, 1.5625vw + 1.25rem, 2.25rem);
     font-weight: 900;
