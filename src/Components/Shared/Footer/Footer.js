@@ -11,14 +11,14 @@ import {
 } from "react-icons/fa";
 import "./Footer.css";
 
-const layout = "py-4 ";
+const layout = "py-md-2";
 const contactList = "lh-1 d-flex flex-row mb-3";
-const contactInfo = "d-flex flex-column justify-content-around";
+const contactInfo = "d-flex flex-column justify-content-between ";
 const Footer = () => {
     return (
         <footer className="footer">
             <Container>
-                <Row className="py-2">
+                <Row className="py-5 ">
                     <Col
                         xs={12}
                         sm={12}
@@ -46,10 +46,14 @@ const Footer = () => {
                         </p>
                         <h6 className="text-uppercase">Follow us on</h6>
 
-                        <div className="social-icons ">
-                            <Link>
+                        <div className="social-icons pb-2 lh-1">
+                            <a
+                                // target="_blank"
+                                rel="noopener"
+                                href="https://www.facebook.com"
+                            >
                                 <FaInstagram className="social-icon" />
-                            </Link>
+                            </a>
                             <Link>
                                 <FaFacebookSquare className="social-icon" />
                             </Link>
@@ -66,15 +70,17 @@ const Footer = () => {
                         sm={12}
                         md={6}
                         xl={3}
-                        className={`d-flex flex-column ${layout} pages`}
+                        className={`d-flex flex-column ps-xl-5  ${layout} pages`}
                     >
                         <h3 className="text-uppercase py-2">Pages</h3>
-                        <nav className="">
-                            <Link to="/">Home</Link>
-                            <Link>About Us</Link>
-                            <Link>Contact Us</Link>
-                            <Link>Privacy Policy</Link>
-                            <Link>Terms & conditions</Link>
+                        <nav className="footer-nav">
+                            <a href="#navbar">Home</a>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/contact">Contact Us</Link>
+                            <Link to="/privacy-policy">Privacy Policy</Link>
+                            <Link to="/terms&Conditions">
+                                Terms & conditions
+                            </Link>
                         </nav>
                     </Col>
                     <Col
@@ -86,9 +92,9 @@ const Footer = () => {
                     >
                         <h3 className="text-uppercase py-2">Contact Us</h3>
                         {/* <div className="contact-info"> */}
-                        <div className={`${contactList}`}>
+                        <div className={`${contactList} contact-list`}>
                             <span className="icon-container">
-                                <BsTelephoneFill />
+                                <BsTelephoneFill className="contact-icon" />
                             </span>
                             <div className={`${contactInfo} contact-info`}>
                                 <span className="">Drop a Line</span>
@@ -97,9 +103,9 @@ const Footer = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`${contactList}`}>
+                        <div className={`${contactList} contact-list`}>
                             <span className="icon-container">
-                                <MdEmail />
+                                <MdEmail className="contact-icon" />
                             </span>
                             <div className={`${contactInfo} contact-info`}>
                                 <span>Email Address</span>
@@ -108,9 +114,9 @@ const Footer = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`${contactList}`}>
+                        <div className={`${contactList} contact-list`}>
                             <span className="icon-container">
-                                <MdLocationOn />
+                                <MdLocationOn className="contact-icon" />
                             </span>
                             <div className={`${contactInfo} contact-info`}>
                                 <span>Visit Office</span>
@@ -122,7 +128,47 @@ const Footer = () => {
                         {/* </div> */}
                     </Col>
                     <Col xs={12} sm={12} md={6} xl={3} className={`${layout}`}>
-                        <h3 className="text-uppercase">instagram Gallary</h3>
+                        <h3 className="text-uppercase py-2">
+                            instagram Gallary
+                        </h3>
+                        <div className="insta-image--container">
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/gzyTtHR/insta-image.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/26CNmj8/insta-Image1.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/c62JQBS/insta-image-3.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/g6Khfkc/insta-image4.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/Jtcf7CL/insta-image5.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                            <Link>
+                                <img
+                                    src="https://i.ibb.co/rdSdpvw/insta-image7.jpg"
+                                    alt=""
+                                />
+                            </Link>
+                        </div>
                     </Col>
                 </Row>
             </Container>

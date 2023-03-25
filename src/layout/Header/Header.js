@@ -7,7 +7,13 @@ import "./Header.css";
 const Header = () => {
     const { user, handleLogOut } = UseAuth();
     return (
-        <Navbar collapseOnSelect expand="sm" variant="dark" className="p-0 ">
+        <Navbar
+            collapseOnSelect
+            expand="sm"
+            variant="dark"
+            className="p-0"
+            id="navbar"
+        >
             <Container
                 fluid="lg"
                 className="navbar-container align-items-sm-center align-items-start"
