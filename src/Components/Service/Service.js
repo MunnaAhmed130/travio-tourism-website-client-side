@@ -18,6 +18,7 @@ const Service = ({ service }) => {
                 className="tour-card border-0 mx-auto overflow-hidden d-flex flex-row align-items-end"
                 style={{ backgroundImage: `url(${img}) ` }}
             >
+                <span className="card-tag text-uppercase">Most Popular</span>
                 {/* <img
                     variant="top"
                     className="card-img rounded-0"

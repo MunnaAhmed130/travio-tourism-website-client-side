@@ -17,6 +17,20 @@
     /* transition: background-position 0.1s; */
 }
 
+.card-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 7px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    /* background-color: rgba(172, 255, 47, 0.4); */
+    color: #326d37;
+    color: rgba(255, 255, 255, 0.767);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
 .tour-card:before {
     position: absolute;
     content: "";

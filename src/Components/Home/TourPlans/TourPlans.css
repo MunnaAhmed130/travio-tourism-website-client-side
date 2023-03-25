@@ -16,10 +16,13 @@
 
 .tours-section h4 {
     /* position: relative; */
+    font-size: clamp(0.9375rem, 0.446429vw + 0.848214rem, 1.25rem);
     font-size: 16px;
     font-weight: 600;
-    color: green;
+    color: #3e8043;
     padding: 10px 30px;
+    font-family: var(--roboto);
+    letter-spacing: 1px;
     border-radius: 5px;
     background-color: rgba(153, 205, 50, 0.3);
 }
@@ -30,6 +33,8 @@
     text-align: center; */
     position: relative;
     font-size: clamp(1.6875rem, 1.16071vw + 1.45536rem, 2.5rem);
+    font-size: clamp(1.875rem, 1.69014vw + 1.47887rem, 3rem);
+    /* font-size: 30px; */
     z-index: 1;
     /* border-bottom: 1px solid green; */
 }

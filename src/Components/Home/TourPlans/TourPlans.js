@@ -30,7 +30,7 @@ const TourPlans = () => {
                 <h4 className="subtitle text-uppercase text-center mx-auto d-inline-block ">
                     Most Popular
                 </h4>
-                <h2 className="section-title fw-bold text-center py-4  pt-2 text-uppercase px-4 mb-0">
+                <h2 className="section-title fw-bold text-center pb-lg-4 py-sm-3 pb-2  pt-2 text-uppercase px-4 mb-0">
                     Explore Destinations
                 </h2>
             </div>
