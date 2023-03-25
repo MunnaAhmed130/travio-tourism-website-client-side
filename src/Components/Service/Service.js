@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { BsClock, BsStarFill, BsArrowRight } from "react-icons/bs";
+import { BsClock, BsStarFill, BsArrowRight, BsPlus } from "react-icons/bs";
 // import Rating from "../Shared/Rating/Rating";
 import Rating from "../Shared/Rating/Rating";
 import "./Service.css";
@@ -12,6 +12,7 @@ const Service = ({ service }) => {
     // const [value, setValue] = useState(1.5);
     // console.log(`value: ${value}`);
     const cardDescription = description.slice(0, 70);
+
     return (
         <Col className="mt-3 mt-sm-3">
             <Card
@@ -19,6 +20,16 @@ const Service = ({ service }) => {
                 style={{ backgroundImage: `url(${img}) ` }}
             >
                 <span className="card-tag text-uppercase">Most Popular</span>
+                <OverlayTrigger
+                    overlay={
+                        <Tooltip id="button-tooltip">add to wishlist</Tooltip>
+                    }
+                >
+                    <button className="wishlist border-0">
+                        <BsPlus />
+                    </button>
+                </OverlayTrigger>
+
                 {/* <img
                     variant="top"
                     className="card-img rounded-0"

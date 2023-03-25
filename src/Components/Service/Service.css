@@ -17,20 +17,43 @@
     /* transition: background-position 0.1s; */
 }
 
-.card-tag {
+.card-tag,
+.wishlist {
     position: absolute;
     top: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-tag {
     left: 10px;
-    padding: 7px 12px;
     margin: 5px;
     border-radius: 5px;
     font-size: 12px;
-    /* background-color: rgba(172, 255, 47, 0.4); */
     color: #326d37;
     color: rgba(255, 255, 255, 0.767);
     background-color: rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
+
+.wishlist {
+    right: 10px;
+    padding: 7px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #326d37;
+    color: rgba(255, 255, 255, 0.767);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+.wishlist:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .tour-card:before {
     position: absolute;
     content: "";
