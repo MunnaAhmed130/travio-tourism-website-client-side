@@ -15,6 +15,7 @@ const Header = () => {
             id="navbar"
         >
             <Container
+                // fluid
                 fluid="lg"
                 className="navbar-container align-items-sm-center align-items-start"
             >
