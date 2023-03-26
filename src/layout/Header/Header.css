@@ -102,6 +102,52 @@ div.navbar-nav {
     /* margin-right: 5px; */
 }
 
+#user_card {
+    display: flex;
+    justify-content: center;
+}
+
+/* profile btn style  */
+/* background-color: transparent;
+outline: none;
+border-color: none;
+} */
+
+button.user_dropdown--toggle.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle,
+button.user_dropdown--toggle:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+}
+
+/* remove box shadow from dropdown btn */
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: none;
+}
+
+/* dropdown toggle  */
+.user_dropdown--toggle.dropdown-toggle::after {
+    font-size: 16px;
+    /* margin-left: 0.6rem; */
+    margin-left: 0.4rem;
+    vertical-align: 0.1rem;
+}
+
+.user_dropdown {
+    transition: 0.2s;
+}
+.user_dropdown .dropdown-menu.show {
+    left: -10rem;
+    text-align: center;
+    width: 15rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
 .logOut-btn {
     /* border: 0; */
     border-radius: 2px;
@@ -122,4 +168,32 @@ div.navbar-nav {
     .navbar {
         /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
     }
+}
+
+@media (min-width: 768px) {
+    .animate {
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.slideIn {
+    animation-name: slideIn;
 }

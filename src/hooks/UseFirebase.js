@@ -17,7 +17,7 @@ const UseFirebase = () => {
     const auth = getAuth();
     // console.log(auth);
     const googleProvider = new GoogleAuthProvider();
-    console.log(user);
+    // console.log(user);
     const handleGoogleLogIn = () => {
         // setIsLoading(true)
         return signInWithPopup(auth, googleProvider);
@@ -41,7 +41,7 @@ const UseFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    }, []);
+    }, [auth]);
 
     const handleLogOut = () => {
         signOut(auth)

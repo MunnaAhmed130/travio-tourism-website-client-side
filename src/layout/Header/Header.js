@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Dropdown, Nav, Navbar } from "react-bootstrap";
+import { FiLogOut } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
 import UseAuth from "../../Hooks/UseAuth";
@@ -8,6 +9,7 @@ import "./Header.css";
 // navbar expand
 const Header = () => {
     const { user, handleLogOut } = UseAuth();
+
     const layout = "lg";
     return (
         <Navbar
@@ -60,35 +62,22 @@ const Header = () => {
                                     Add A New Service
                                 </Link>
                             )}
-                            {user?.email && (
-                                <div>
-                                    {/* <span className="span">
-                                        Signed In as : {user?.displayName}
-                                    </span> */}
-                                    <img
-                                        className="profile"
-                                        src={user.photoURL}
-                                        alt=""
-                                    />
-                                </div>
-                            )}
-                            {user.email ? (
-                                // <img
-                                //     className="profile"
-                                //     src={user.photoURL}
-                                //     alt=""
-                                // />
-                                <RippleButton
-                                    // onClick={handleLogOut}
-                                    className="logOut-btn border-0 bg-danger text-uppercase"
-                                >
-                                    Log Out
-                                </RippleButton>
+                            {user?.email ? (
+                                <user />
                             ) : (
                                 <Link to="/logIn" className="link">
                                     Log In
                                 </Link>
                             )}
+                            {/* {user.email ? (
+                                <RippleButton className="logOut-btn border-0 bg-danger text-uppercase">
+                                    <FiLogOut className="me-1" /> Log Out
+                                </RippleButton>
+                            ) : (
+                                <Link to="/logIn" className="link">
+                                    Log In
+                                </Link>
+                            )} */}
                         </Nav>
                     </Navbar.Collapse>
                 </div>
