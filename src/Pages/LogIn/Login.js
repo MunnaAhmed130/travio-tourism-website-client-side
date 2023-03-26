@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import Footer from "../../Components/Shared/Footer/Footer";
 import UseAuth from "../../Hooks/UseAuth";
 // import { useLocation, useHistory } from 'react-router-dom';
@@ -7,6 +8,7 @@ import "./Login.css";
 
 const Login = () => {
     const { handleGoogleLogIn, user, handleLogOut } = UseAuth();
+    // console.log(user.uid);
     // const location = useLocation();
     // const history = useHistory();
     // const redirect_uri = location.state?.from || "/";
@@ -17,20 +19,24 @@ const Login = () => {
     };
 
     return (
-        <div className="login bg-black text-white ">
+        <section className="login bg-black text-white ">
             {/* <button>login</button> */}
             <Container fluid="xxl" className="login-container ">
                 <Row className="login-row ">
-                    <Col lg="6" className="login-col overflow-hidden p-0">
+                    <Col
+                        lg="6"
+                        sm="12"
+                        className="login-col overflow-hidden p-0"
+                    >
                         <div className="login-img-container position-relative w-100 h-100 d-flex flex-row align-items-center justify-content-center">
-                            <p>
+                            <p className="">
                                 Travel Far Enough
                                 <br />
                                 You'll meet yourself
                             </p>
                         </div>
                     </Col>
-                    <Col lg="6" className="login-form--col p-0">
+                    <Col lg="6" sm="12" className="login-form--col p-0">
                         <div className="d-flex flex-column align-items-center">
                             <h2 className="text-white text-uppercase  log">
                                 Welcome to travio
@@ -78,17 +84,22 @@ const Login = () => {
                                         placeholder="Password"
                                     />
                                 </Form.Group>
-                                <Form.Group
-                                    className="mb-3"
-                                    controlId="formBasicCheckbox"
-                                >
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Check me out"
-                                    />
-                                </Form.Group>
+                                <div className="login- d-flex flex-row justify-content-between">
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="formBasicCheckbox"
+                                    >
+                                        <Form.Check
+                                            type="checkbox"
+                                            label="Remember me"
+                                        />
+                                    </Form.Group>
+                                    <Link className="text-decoration-none text-white">
+                                        Forgot password
+                                    </Link>
+                                </div>
                                 <button className="submit-btn" type="submit">
-                                    Submit
+                                    Log In
                                 </button>
                             </Form>
                         </div>
@@ -116,7 +127,7 @@ const Login = () => {
                 </Row>
             </Container>
             {/* <Footer /> */}
-        </div>
+        </section>
     );
 };
 
