@@ -34,6 +34,12 @@
     margin: auto;
 }
 
+/* .carousel next and previous buttons  */
+
+.carousel :is(.carousel-control-next, .carousel-control-prev) {
+    display: none;
+}
+
 .banner .carousel-caption {
     height: calc(100vh - var(--navbar-height));
     right: 5%;

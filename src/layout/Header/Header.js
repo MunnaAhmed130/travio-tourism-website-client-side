@@ -3,6 +3,7 @@ import { Button, Container, Dropdown, Nav, Navbar } from "react-bootstrap";
 import { FiLogOut } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
+import User from "../../Components/header/User";
 import UseAuth from "../../Hooks/UseAuth";
 import "./Header.css";
 
@@ -40,30 +41,38 @@ const Header = () => {
                 <div className="text-end">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav className="links">
-                            <Link to="/home" className="link">
-                                Home
-                            </Link>
-                            <Link to="/placeOrder" className="link">
-                                PlaceOrder
-                            </Link>
-                            {user?.email && (
-                                <Link to="/myOrder" className="link">
-                                    My Order
+                        <Nav className={` align-items-${layout}-center`}>
+                            <div
+                                className={`links d-flex flex-column flex-${layout}-row`}
+                            >
+                                <Link to="/home" className="link">
+                                    Home
                                 </Link>
-                            )}
-                            {user?.email && (
-                                <Link to="/manageAllOrders" className="link">
-                                    Manage All Service
+                                <Link to="/placeOrder" className="link">
+                                    PlaceOrder
                                 </Link>
-                            )}
-                            {user?.email && (
-                                <Link to="/addANewService" className="link">
-                                    Add A New Service
-                                </Link>
-                            )}
+                                {user?.email && (
+                                    <Link to="/myOrder" className="link">
+                                        My Order
+                                    </Link>
+                                )}
+                                {user?.email && (
+                                    <Link
+                                        to="/manageAllOrders"
+                                        className="link"
+                                    >
+                                        Manage All Service
+                                    </Link>
+                                )}
+                                {user?.email && (
+                                    <Link to="/addANewService" className="link">
+                                        Add A New Service
+                                    </Link>
+                                )}
+                            </div>
+
                             {user?.email ? (
-                                <user />
+                                <User />
                             ) : (
                                 <Link to="/logIn" className="link">
                                     Log In

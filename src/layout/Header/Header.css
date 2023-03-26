@@ -52,23 +52,10 @@ span.navbar-toggler-icon {
     padding-block: 1em;
 }
 
-/* .carousel next and previous buttons  */
-
-.carousel :is(.carousel-control-next, .carousel-control-prev) {
-    display: none;
-}
-
 /* navbar routes  */
 
 div.navbar-nav {
     /* margin-top: 5px; */
-}
-
-.links {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .link {
@@ -102,16 +89,7 @@ div.navbar-nav {
     /* margin-right: 5px; */
 }
 
-#user_card {
-    display: flex;
-    justify-content: center;
-}
-
 /* profile btn style  */
-/* background-color: transparent;
-outline: none;
-border-color: none;
-} */
 
 button.user_dropdown--toggle.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle,
@@ -131,7 +109,6 @@ button.user_dropdown--toggle:active:focus,
 /* dropdown toggle  */
 .user_dropdown--toggle.dropdown-toggle::after {
     font-size: 16px;
-    /* margin-left: 0.6rem; */
     margin-left: 0.4rem;
     vertical-align: 0.1rem;
 }
@@ -149,7 +126,6 @@ button.user_dropdown--toggle:active:focus,
 }
 
 .logOut-btn {
-    /* border: 0; */
     border-radius: 2px;
     padding-inline: 15px;
     background-color: rgb(255, 71, 71);

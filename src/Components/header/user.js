@@ -4,7 +4,7 @@ import { FiLogOut } from "react-icons/fi";
 import UseAuth from "../../Hooks/UseAuth";
 import RippleButton from "../Shared/RippleButton/RippleButton";
 
-const user = () => {
+const User = () => {
     const { user, handleLogOut } = UseAuth();
     let name = user.displayName;
     let userName = name.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
@@ -52,4 +52,4 @@ const user = () => {
     );
 };
 
-export default user;
+export default User;
