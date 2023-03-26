@@ -9,6 +9,7 @@ import "./Banner.css";
 const imgStyle = "object-fit-cover d-block w-100";
 const captionStyle = "d-flex flex-column justify-content-center ";
 const buttonStyle = "border-0 text-white  text-uppercase";
+
 const Banner = () => {
     const intervalCount = 10000;
     return (

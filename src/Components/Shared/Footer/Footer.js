@@ -14,6 +14,7 @@ import "./Footer.css";
 const layout = "py-md-2";
 const contactList = "lh-1 d-flex flex-row mb-3";
 const contactInfo = "d-flex flex-column justify-content-between ";
+
 const Footer = () => {
     return (
         <footer className="footer">

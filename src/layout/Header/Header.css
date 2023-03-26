@@ -95,6 +95,6 @@ div.navbar-nav {
 /* media queries */
 @media screen and (min-width: 576px) {
     .navbar {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
     }
 }

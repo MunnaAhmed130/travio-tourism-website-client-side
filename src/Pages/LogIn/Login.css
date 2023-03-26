@@ -1,18 +1,6 @@
 .login {
-    background: #000;
     margin-top: calc(var(--navbar-height) * -1);
     /* padding-top: var(--navbar-height); */
-    /* height: 100vh; */
-    overflow: hidden;
-    color: white;
-}
-
-.login-form--container {
-    /* padding-top: var(--navbar-height); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .login-container {
@@ -21,15 +9,15 @@
 }
 
 .login-img-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    /* position: relative; */
+    /* width: 100%;
+    height: 100%; */
     background-image: url("https://i.ibb.co/VtzDNff/split-screen-img-1.jpg");
     background-position: center;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .login-img-container p {
     font-size: 5em;
@@ -41,7 +29,7 @@
     line-height: 1;
     letter-spacing: 3px;
     color: white;
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 .login-img-container:before {
@@ -51,23 +39,31 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .login-row {
     height: 100vh;
 }
-/* 
-.login :is(.col, .row) {
-    border: 1px solid white;
-} */
 
+.login-form--col {
+    /* padding-top: var(--navbar-height); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* login btn  */
 .login-img {
     height: 100vh;
     object-fit: contain;
     object-position: center;
     filter: brightness(50%);
 }
+
 .login-btn,
 .logOut-btn {
     /* margin-bottom: 250px; */
+    width: 100%;
     font-size: 18px;
     color: rgb(59, 59, 59);
     font-weight: 500;
@@ -83,6 +79,57 @@
     /* font-family: var(--oswald);  */
     /* color: white; */
 }
+
+/* or */
+
+.or-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    text-align: center;
+}
+
+.or {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}
+
+.or-container .hr {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.login-form ::placeholder {
+    color: white;
+}
+/* .login-form
+    :is(input[type="email"], input[type="password"]) */
+.login-form input:is([type="email"], [type="password"]) {
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    border-bottom: 1px solid white;
+}
+
+.submit-btn {
+    width: 100%;
+}
+/* 
+.login :is(.col, .row) {
+    border: 1px solid white;
+} */
+
+/* login button */
 
 .google-logo {
     --icon-width: 25px;
