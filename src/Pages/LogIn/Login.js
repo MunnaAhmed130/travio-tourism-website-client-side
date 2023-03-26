@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Footer from "../../Components/Shared/Footer/Footer";
+// import Footer from "../../Components/Shared/Footer/Footer";
 import UseAuth from "../../Hooks/UseAuth";
 // import { useLocation, useHistory } from 'react-router-dom';
 import "./Login.css";
@@ -18,7 +18,7 @@ const Login = () => {
     return (
         <div className="login">
             {/* <button>login</button> */}
-            <Container fluid className="login-container ">
+            <Container fluid="xl" className="login-container ">
                 <Row className="login-row ">
                     <Col lg="6" className="login-col overflow-hidden p-0">
                         <div className="login-img-container">

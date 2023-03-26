@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     padding-inline: 10px;
-    outline: 1px solid rgba(255, 255, 255, 0.4);
+    /* outline: 1px solid rgba(255, 255, 255, 0.4); */
 }
 
 .card-tag {
@@ -47,11 +47,19 @@
     font-size: 15px;
     color: #326d37;
     color: rgba(255, 255, 255, 0.767);
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: transparent;
     font-weight: 500;
+    /* img  */
+    /* width: 100px; */
 }
-.wishlist:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+
+.wishlist svg {
+    width: 30px;
+    /* background-color: white; */
+    fill: rgba(0, 0, 0, 0.3);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 0.5px;
 }
 
 .tour-card:before {
@@ -160,8 +168,6 @@
     /* font-size: 1.25rem; */
 }
 
-.tour-rating.star {
-}
 .tour-rating,
 .star-icon {
     color: orange;
