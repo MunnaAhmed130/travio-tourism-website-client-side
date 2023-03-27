@@ -40,10 +40,7 @@ const routes = createBrowserRouter([
                     </PrivateRoute>
                 ),
             },
-            {
-                path: "/login",
-                element: <Login />,
-            },
+
             {
                 path: "/myOrder",
                 element: <MyOrder />,
@@ -61,6 +58,10 @@ const routes = createBrowserRouter([
                 element: <NotFound />,
             },
         ],
+    },
+    {
+        path: "/login",
+        element: <Login />,
     },
 ]);
 export default routes;

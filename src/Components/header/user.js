@@ -63,7 +63,7 @@ const User = () => {
                 <hr />
                 {/* <div className="btn_container"> */}
                 <RippleButton
-                    // onClick={handleLogOut}
+                    onClick={handleLogOut}
                     className="logOut-btn border-0 w-100 bg-danger text-uppercase mx-auto"
                 >
                     <FiLogOut className="me-1" /> Log Out

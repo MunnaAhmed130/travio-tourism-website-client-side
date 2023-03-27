@@ -22,9 +22,9 @@ const Login = () => {
     };
 
     return (
-        <section className="login bg-black text-white ">
+        <section className="login text-white ">
             {/* <button>login</button> */}
-            <Container fluid="xxl" className="login-container ">
+            <Container fluid className="login-container ">
                 <Row className="login-row ">
                     <Col
                         lg="6"
@@ -32,7 +32,7 @@ const Login = () => {
                         className="login-col overflow-hidden p-0"
                     >
                         <div className="login-img-container position-relative w-100 h-100 d-flex flex-row align-items-center justify-content-center">
-                            <p className="">
+                            <p className="m-0">
                                 Travel Far Enough
                                 <br />
                                 You'll meet yourself
@@ -40,7 +40,7 @@ const Login = () => {
                         </div>
                     </Col>
                     <Col lg="6" sm="12" className="login-form--col p-0">
-                        <div className="d-flex flex-column align-items-center">
+                        <div className="login-card d-flex flex-column align-items-center mx-1 px-sm-4 px-4 py-4">
                             <h2 className="text-white text-uppercase  log">
                                 Welcome to travio
                             </h2>
@@ -49,7 +49,7 @@ const Login = () => {
                             </p>
                             <RippleButton
                                 className="login-btn"
-                                // onClick={handleLogIn}
+                                onClick={handleLogIn}
                             >
                                 <img
                                     className="google-logo"
@@ -66,13 +66,13 @@ const Login = () => {
                             </span>
                             <Form className="login-form w-100">
                                 <Form.Group
-                                    className="mb-3"
+                                    className="mb-4"
                                     controlId="formBasicEmail"
                                 >
                                     {/* <Form.Label>Email address</Form.Label> */}
                                     <Form.Control
                                         type="email"
-                                        placeholder="Enter email"
+                                        placeholder="Email"
                                     />
                                     {/* <Form.Text className="text-muted">
                                         We'll never share your email with anyone
@@ -81,7 +81,7 @@ const Login = () => {
                                 </Form.Group>
 
                                 <Form.Group
-                                    className="mb-3"
+                                    className="mb-4"
                                     controlId="formBasicPassword"
                                 >
                                     {/* <Form.Label>Password</Form.Label> */}
