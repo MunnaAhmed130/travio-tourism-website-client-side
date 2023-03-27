@@ -88,8 +88,10 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* .login-form
-    :is(input[type="email"], input[type="password"]) */
+.login-form .form-control:focus {
+    box-shadow: none;
+}
+
 .login-form input:is([type="email"], [type="password"]) {
     color: white;
     background-color: black;

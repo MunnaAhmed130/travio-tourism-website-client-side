@@ -35,9 +35,17 @@ const User = () => {
                 )}
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="animate slideIn">
-                <div className="dropdown_item ">
-                    <p className="user_name">{userName}</p>
+            <Dropdown.Menu className=" p-3 animate slideIn">
+                <div className="user-info d-flex">
+                    <img
+                        className="profile m-0"
+                        src={user.photoURL}
+                        alt="profile-pic"
+                    />
+                    <div>
+                        <p className="user_name m-0">{userName}</p>
+                        <span className="user-email">{user.email}</span>
+                    </div>
                 </div>
                 {/* <div className="btn_container"> */}
                 <RippleButton

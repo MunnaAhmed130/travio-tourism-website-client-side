@@ -25,9 +25,9 @@ const Header = () => {
                 fluid="lg"
                 className={`navbar-container align-items-${layout}-center align-items-start`}
             >
-                <Navbar.Brand className="p-0 text-uppercase text-white">
-                    <Link to="/" className="text-decoration-none text-white">
-                        <span className="logo-container position-relative">
+                <Navbar.Brand className="p-0 text-uppercase text-white align-content-center">
+                    <Link to="/" className="text-decoration-none text-white ">
+                        <span className="logo-container position-relative ">
                             <img
                                 className="logo"
                                 src="https://i.ibb.co/ZgtNRjn/logo-small-white.png"
@@ -38,12 +38,17 @@ const Header = () => {
                         Travio
                     </Link>
                 </Navbar.Brand>
-                <div className="text-end">
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav className={` align-items-${layout}-center`}>
+                <div className="text-end nav-toggle">
+                    <Navbar.Toggle
+                        aria-controls="responsive-navbar-nav"
+                        className="mt-2"
+                    />
+                    <Navbar.Collapse id="navbarScroll" className="">
+                        <Nav
+                            className={` align-items-${layout}-center  text-end`}
+                        >
                             <div
-                                className={`links d-flex flex-column flex-${layout}-row`}
+                                className={`links d-flex flex-column flex-${layout}-row text-end`}
                             >
                                 <Link to="/home" className="link">
                                     Home
