@@ -49,7 +49,7 @@ const Login = () => {
                             </p>
                             <RippleButton
                                 className="login-btn"
-                                onClick={handleLogIn}
+                                // onClick={handleLogIn}
                             >
                                 <img
                                     className="google-logo"
