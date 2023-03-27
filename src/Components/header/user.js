@@ -1,6 +1,8 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
-import { FiLogOut } from "react-icons/fi";
+import { FiLogOut, FiSettings } from "react-icons/fi";
+import { MdOutlineDashboard, MdOutlineNotificationsNone } from "react-icons/md";
+import { Link } from "react-router-dom";
 import UseAuth from "../../Hooks/UseAuth";
 import RippleButton from "../Shared/RippleButton/RippleButton";
 
@@ -36,21 +38,33 @@ const User = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu className=" p-3 animate slideIn">
-                <div className="user-info d-flex">
+                <div className="user-info d-flex mt-2 mb-3">
                     <img
                         className="profile m-0"
                         src={user.photoURL}
                         alt="profile-pic"
                     />
-                    <div>
-                        <p className="user_name m-0">{userName}</p>
-                        <span className="user-email">{user.email}</span>
+                    <div className="d-flex flex-column justify-content-between py-1 align-items-start ms-3">
+                        <p className="user_name m-0 lh-1">{userName}</p>
+                        {/* <span className="user-email">{user.email}</span> */}
+                        <span className="user-email lh-1">View Profile</span>
                     </div>
                 </div>
+                <hr />
+                <Link className="text-decoration-none text-dark d-block py-1">
+                    <MdOutlineNotificationsNone /> Notification
+                </Link>
+                <Link className="text-decoration-none text-dark d-block py-1">
+                    <MdOutlineDashboard /> Dashboard
+                </Link>
+                <Link className="text-decoration-none text-dark d-block py-1">
+                    <FiSettings /> Setting
+                </Link>
+                <hr />
                 {/* <div className="btn_container"> */}
                 <RippleButton
-                    onClick={handleLogOut}
-                    className="logOut-btn border-0 bg-danger text-uppercase"
+                    // onClick={handleLogOut}
+                    className="logOut-btn border-0 w-100 bg-danger text-uppercase mx-auto"
                 >
                     <FiLogOut className="me-1" /> Log Out
                 </RippleButton>

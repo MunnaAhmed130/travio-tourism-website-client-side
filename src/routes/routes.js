@@ -33,6 +33,14 @@ const routes = createBrowserRouter([
                 ),
             },
             {
+                path: "/placeOrder",
+                element: (
+                    <PrivateRoute>
+                        <PlaceOrder />
+                    </PrivateRoute>
+                ),
+            },
+            {
                 path: "/login",
                 element: <Login />,
             },

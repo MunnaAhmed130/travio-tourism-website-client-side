@@ -119,27 +119,47 @@ button.user_dropdown--toggle:active:focus,
 }
 
 /* dropdown menu  */
+
 .user_dropdown .dropdown-menu.show {
-    left: -15rem;
-    width: 18rem;
+    left: -10rem;
+    width: 15rem;
     margin-top: 1rem;
     padding: 0.2rem;
-    border-radius: 2px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.2);
 }
 
+.user-info {
+    letter-spacing: 0;
+}
 .user-info .profile {
     --profile-width: 50px;
+    /* border: 2px solid rgb(115, 150, 47); */
+}
+
+.user_name {
+    /* font-family: var(--oswald); */
+    /* letter-spacing: 0; */
+    font-size: 18px;
 }
 
 .user-email {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: var(--oswald); */
+    color: #426444;
 }
 
 .logOut-btn {
     border-radius: 2px;
-    padding-inline: 15px;
-    background-color: rgb(255, 71, 71);
+    /* padding: 10px 20px; */
+    padding-block: 0.5rem;
+    /* background-color: rgb(255, 71, 71); */
     color: white;
+    /* color: black; */
+    background-color: transparent;
 }
 
 .logOut-btn .content {
@@ -147,6 +167,12 @@ button.user_dropdown--toggle:active:focus,
     font-weight: 400;
     font-size: 14px;
     /* letter-spacing: 2px; */
+}
+
+.logOut-btn > .ripple {
+    --circle-width: 20px;
+    /* background-color: rgba(87, 87, 87, 0.7); */
+    /* animation: 1s linear ripple-effect; */
 }
 
 /* media queries */
@@ -164,7 +190,7 @@ button.user_dropdown--toggle:active:focus,
 }
 /* @media (min-width: 768px) { */
 .animate {
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-fill-mode: both;
 }
 /* } */

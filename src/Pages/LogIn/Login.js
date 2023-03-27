@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Navigate, redirect } from "react-router-dom";
+import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
 // import Footer from "../../Components/Shared/Footer/Footer";
 import UseAuth from "../../Hooks/UseAuth";
 // import { useLocation, useHistory } from 'react-router-dom';
@@ -15,6 +16,8 @@ const Login = () => {
     const handleLogIn = () => {
         handleGoogleLogIn().then((result) => {
             // history.push(redirect_uri);
+            // redirect("/");
+            <Navigate to="/home" />;
         });
     };
 
@@ -44,14 +47,17 @@ const Login = () => {
                             <p className="text-white">
                                 Let's get started to your journey
                             </p>
-                            <button className="login-btn" onClick={handleLogIn}>
+                            <RippleButton
+                                className="login-btn"
+                                onClick={handleLogIn}
+                            >
                                 <img
                                     className="google-logo"
                                     src="https://i.ibb.co/N3h7xpB/tiny-google-logo.png"
                                     alt=""
                                 />
                                 Log In with Google
-                            </button>
+                            </RippleButton>
                             <span className="or-container w-100 ">
                                 <span className="or mx-2 px-2  text-center">
                                     or
@@ -98,9 +104,13 @@ const Login = () => {
                                         Forgot password
                                     </Link>
                                 </div>
-                                <button className="submit-btn" type="submit">
+                                <RippleButton
+                                    className="submit-btn"
+                                    // type="submit"
+                                    onClick={handleLogIn}
+                                >
                                     Log In
-                                </button>
+                                </RippleButton>
                             </Form>
                         </div>
                         {/* {user?.email ? (
