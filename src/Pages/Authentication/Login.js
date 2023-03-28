@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Link, Navigate, redirect } from "react-router-dom";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
 // import Footer from "../../Components/Shared/Footer/Footer";
 import UseAuth from "../../Hooks/UseAuth";
@@ -9,6 +10,15 @@ import "./Authentication.css";
 
 const Login = () => {
     const { handleGoogleLogIn, user, handleLogOut } = UseAuth();
+    const [passwordType, setPasswordType] = useState("password");
+
+    const togglePassword = () => {
+        if (passwordType === "password") {
+            setPasswordType("text");
+            return;
+        }
+        setPasswordType("password");
+    };
     // console.log(user.uid);
     // const location = useLocation();
     // const history = useHistory();
@@ -67,30 +77,35 @@ const Login = () => {
                             <div className="line my-3"></div>
                             <Form className="login-form w-100 pt-3 pt-sm-4">
                                 <Form.Group
-                                    className="mb-3 mb-sm-4"
+                                    className="mb-3 mb-sm-4 input-container"
                                     controlId="formBasicEmail"
                                 >
-                                    {/* <Form.Label>Email address</Form.Label> */}
                                     <Form.Control
                                         type="email"
                                         placeholder="Email"
                                     />
-                                    {/* <Form.Text className="text-muted">
-                                        We'll never share your email with anyone
-                                        else.
-                                    </Form.Text> */}
                                 </Form.Group>
 
                                 <Form.Group
-                                    className="mb-3 mb-sm-4"
+                                    className="mb-3 mb-sm-4 d-flex input-container"
                                     controlId="formBasicPassword"
                                 >
-                                    {/* <Form.Label>Password</Form.Label> */}
                                     <Form.Control
-                                        type="password"
+                                        type={passwordType}
                                         placeholder="Password"
                                     />
+                                    <span
+                                        className="d-flex align-items-center px-2 bg-transparent border-0 text-white icon-btn"
+                                        onClick={togglePassword}
+                                    >
+                                        {passwordType === "password" ? (
+                                            <AiOutlineEyeInvisible className="eye-icon" />
+                                        ) : (
+                                            <AiOutlineEye className="eye-icon" />
+                                        )}
+                                    </span>
                                 </Form.Group>
+
                                 <div className="form-options d-flex flex-row align-itemx-start justify-content-between">
                                     <Form.Group
                                         className="mb-3"
@@ -101,10 +116,12 @@ const Login = () => {
                                             label="Remember me"
                                         />
                                     </Form.Group>
-                                    <Link className="text-decoration-none text-white">
+
+                                    <Link className=" text-white">
                                         Forgot password
                                     </Link>
                                 </div>
+
                                 <RippleButton
                                     className="submit-btn p-0"
                                     // type="submit"
@@ -113,36 +130,13 @@ const Login = () => {
                                     Log In
                                 </RippleButton>
                             </Form>
-                            <p className="mt-1">
-                                Don't have an account?{" "}
-                                <Link
-                                    className="text-decoration-none"
-                                    to="/register"
-                                >
-                                    Sign Up
+                            <p className="mt-1 form-text">
+                                Not registered yet?&nbsp;
+                                <Link className=" register-link" to="/register">
+                                    Create account
                                 </Link>
                             </p>
                         </div>
-                        {/* {user?.email ? (
-                            <button
-                                className="logOut-btn"
-                                onClick={handleLogOut}
-                            >
-                                Log Out
-                            </button>
-                        ) : (
-                            <button
-                                className="login-btn text-uppercase"
-                                onClick={handleLogIn}
-                            >
-                                <img
-                                    className="google-logo"
-                                    src="https://i.ibb.co/N3h7xpB/tiny-google-logo.png"
-                                    alt=""
-                                />
-                                Log In
-                            </button>
-                        )} */}
                     </Col>
                 </Row>
             </Container>

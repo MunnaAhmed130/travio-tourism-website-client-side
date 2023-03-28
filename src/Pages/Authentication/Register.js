@@ -8,10 +8,6 @@ import "./Authentication.css";
 
 const Register = () => {
     const [passwordType, setPasswordType] = useState("password");
-    const [passwordInput, setPasswordInput] = useState("");
-    const handlePasswordChange = (e) => {
-        setPasswordInput(e.target.value);
-    };
 
     const togglePassword = () => {
         if (passwordType === "password") {
@@ -77,7 +73,7 @@ const Register = () => {
                             <Form className="login-form w-100 pt-3 pt-sm-4">
                                 <Form.Group
                                     className="mb-3 mb-sm-4 input-container"
-                                    controlId="formBasicEmail"
+                                    controlId="formBasicName"
                                 >
                                     <Form.Control
                                         type="text"
@@ -86,7 +82,7 @@ const Register = () => {
                                 </Form.Group>
                                 <Form.Group
                                     className="mb-3 mb-sm-4 input-container"
-                                    controlId="formBasicName"
+                                    controlId="formBasicEmail"
                                 >
                                     <Form.Control
                                         type="email"
@@ -101,19 +97,7 @@ const Register = () => {
                                     <Form.Control
                                         type={passwordType}
                                         placeholder="Password"
-                                        onChange={handlePasswordChange}
                                     />
-                                    {/* <AiOutlineEye /> */}
-                                    {/* <span
-                                        className="d-flex align-items-center px-2 bg-transparent border-0 text-white icon-btn"
-                                        onClick={togglePassword}
-                                    >
-                                        {passwordType === "password" ? (
-                                            <AiOutlineEyeInvisible className="eye-icon" />
-                                        ) : (
-                                            <AiOutlineEye className="eye-icon" />
-                                        )}
-                                    </span> */}
                                 </Form.Group>
                                 <Form.Group
                                     className="mb-3 mb-sm-4 d-flex input-container"
@@ -122,9 +106,8 @@ const Register = () => {
                                     <Form.Control
                                         type={passwordType}
                                         placeholder="Confirm password"
-                                        onChange={handlePasswordChange}
                                     />
-                                    {/* <AiOutlineEye /> */}
+
                                     <span
                                         className="d-flex align-items-center px-2 bg-transparent border-0 text-white icon-btn"
                                         onClick={togglePassword}
@@ -136,23 +119,10 @@ const Register = () => {
                                         )}
                                     </span>
                                 </Form.Group>
-                                {/* <div className="form-options d-flex flex-row align-itemx-start justify-content-between">
-                                    <Form.Group
-                                        className="mb-3"
-                                        controlId="formBasicCheckbox"
-                                    >
-                                        <Form.Check
-                                            type="checkbox"
-                                            label="Remember me"
-                                        />
-                                    </Form.Group>
-                                    <Link className="text-decoration-none text-white">
-                                        Forgot password
-                                    </Link>
-                                </div> */}
+
                                 <RippleButton
-                                    className="submit-btn p-0"
-                                    // type="submit"
+                                    className="submit-btn p-0 mt-4 mt-sm-5"
+                                    type="submit"
                                     onClick={handleLogIn}
                                 >
                                     Create account
@@ -160,10 +130,7 @@ const Register = () => {
                             </Form>
                             <p className="mt-1">
                                 Already have an account?{" "}
-                                <Link
-                                    className="text-decoration-none"
-                                    to="/login"
-                                >
+                                <Link className="login-link" to="/login">
                                     Log in
                                 </Link>
                             </p>
