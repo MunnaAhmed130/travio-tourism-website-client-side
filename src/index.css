@@ -33,3 +33,23 @@ h5,
 h6 {
     font-family: var(--oswald);
 }
+
+/* google autofill style  */
+:is(.login, .register)
+    :is(
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active
+    ) {
+    transition: background-color 50000s ease-in-out 0s, color 5000s 0s;
+    /* -webkit-background-clip: text; */
+    caret-color: var(--auth-color);
+    -webkit-text-fill-color: var(--auth-color);
+    border-bottom-color: var(--border-color);
+}
+
+:is(.login, .register) input:-webkit-autofill:focus-visible {
+    /* border-bottom: var(--border-bottom-focus); */
+    -webkit-text-fill-color: var(--auth-color);
+}

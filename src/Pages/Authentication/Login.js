@@ -5,7 +5,7 @@ import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
 // import Footer from "../../Components/Shared/Footer/Footer";
 import UseAuth from "../../Hooks/UseAuth";
 // import { useLocation, useHistory } from 'react-router-dom';
-import "./Login.css";
+import "./Authentication.css";
 
 const Login = () => {
     const { handleGoogleLogIn, user, handleLogOut } = UseAuth();
@@ -24,15 +24,15 @@ const Login = () => {
     return (
         <section className="login text-white ">
             {/* <button>login</button> */}
-            <Container fluid className="login-container ">
-                <Row className="login-row ">
+            <Container fluid>
+                <Row className="auth-row ">
                     <Col
                         lg="6"
                         sm="12"
                         className="login-col overflow-hidden p-0"
                     >
-                        <div className="login-img-container position-relative w-100 h-100 d-flex flex-row align-items-center justify-content-center">
-                            <p className="m-0">
+                        <div className="login-img-container position-relative w-100 h-100 d-flex flex-row align-items-center">
+                            <p className="">
                                 Travel Far Enough
                                 <br />
                                 You'll meet yourself
@@ -44,11 +44,11 @@ const Login = () => {
                             <h2 className="text-white text-uppercase  log">
                                 Welcome to travio
                             </h2>
-                            <p className="text-white">
-                                Let's get started to your journey
+                            <p className="text-white ">
+                                Let's get started on your journey
                             </p>
                             <RippleButton
-                                className="login-btn"
+                                className="login-btn p-0"
                                 onClick={handleLogIn}
                             >
                                 <img
@@ -58,15 +58,16 @@ const Login = () => {
                                 />
                                 Log In with Google
                             </RippleButton>
-                            <span className="or-container w-100 ">
-                                <span className="or mx-2 px-2  text-center">
-                                    or
-                                </span>
+
+                            {/* <span className="or-container w-100 my-3">
+                                <span className="or px-2  text-center">Or</span>
                                 <span className="hr"></span>
-                            </span>
-                            <Form className="login-form w-100">
+                            </span> */}
+
+                            <div className="line my-3"></div>
+                            <Form className="login-form w-100 pt-3 pt-sm-4">
                                 <Form.Group
-                                    className="mb-4"
+                                    className="mb-3 mb-sm-4"
                                     controlId="formBasicEmail"
                                 >
                                     {/* <Form.Label>Email address</Form.Label> */}
@@ -81,7 +82,7 @@ const Login = () => {
                                 </Form.Group>
 
                                 <Form.Group
-                                    className="mb-4"
+                                    className="mb-3 mb-sm-4"
                                     controlId="formBasicPassword"
                                 >
                                     {/* <Form.Label>Password</Form.Label> */}
@@ -90,7 +91,7 @@ const Login = () => {
                                         placeholder="Password"
                                     />
                                 </Form.Group>
-                                <div className="login- d-flex flex-row justify-content-between">
+                                <div className="form-options d-flex flex-row align-itemx-start justify-content-between">
                                     <Form.Group
                                         className="mb-3"
                                         controlId="formBasicCheckbox"
@@ -105,13 +106,19 @@ const Login = () => {
                                     </Link>
                                 </div>
                                 <RippleButton
-                                    className="submit-btn"
+                                    className="submit-btn p-0"
                                     // type="submit"
                                     onClick={handleLogIn}
                                 >
                                     Log In
                                 </RippleButton>
                             </Form>
+                            <p className="mt-1">
+                                Don't have an account?{" "}
+                                <Link className="text-decoration-none">
+                                    Sign Up
+                                </Link>
+                            </p>
                         </div>
                         {/* {user?.email ? (
                             <button

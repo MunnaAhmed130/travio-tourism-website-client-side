@@ -4,11 +4,12 @@ import AddANewService from "../Components/Conditional/AddANewService/AddANewServ
 import ManageAllOrders from "../Components/Conditional/ManageAllOrders/ManageAllOrders";
 import MyOrder from "../Components/Conditional/MyOrder/MyOrder";
 import Home from "../Pages/Home/Home";
-import Login from "../Pages/LogIn/Login";
 import Main from "../layout/Main/Main";
 import NotFound from "../Pages/NotFound/NotFound";
 import PlaceOrder from "../Components/PlaceOrder/PlaceOrder";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Login from "../Pages/Authentication/Login";
+import Register from "../Pages/Authentication/Register";
 
 const routes = createBrowserRouter([
     {
@@ -62,6 +63,10 @@ const routes = createBrowserRouter([
     {
         path: "/login",
         element: <Login />,
+    },
+    {
+        path: "/register",
+        element: <Register />,
     },
 ]);
 export default routes;
