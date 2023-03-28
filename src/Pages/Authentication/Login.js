@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import { Link, Navigate, redirect } from "react-router-dom";
+import { Link, useNavigate, redirect } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
 // import Footer from "../../Components/Shared/Footer/Footer";
@@ -11,7 +11,7 @@ import "./Authentication.css";
 const Login = () => {
     const { handleGoogleLogIn, user, handleLogOut } = UseAuth();
     const [passwordType, setPasswordType] = useState("password");
-
+    const navigate = useNavigate();
     const togglePassword = () => {
         if (passwordType === "password") {
             setPasswordType("text");
@@ -25,9 +25,7 @@ const Login = () => {
     // const redirect_uri = location.state?.from || "/";
     const handleLogIn = () => {
         handleGoogleLogIn().then((result) => {
-            // history.push(redirect_uri);
-            // redirect("/");
-            <Navigate to="/home" />;
+            navigate("/home");
         });
     };
 

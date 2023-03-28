@@ -13,7 +13,9 @@ const User = () => {
         letter.toUpperCase()
     );
     // capitalize first letter of each word
-
+    const logOut = () => {
+        handleLogOut();
+    };
     return (
         <Dropdown id="user_card" className="user_dropdown ">
             <Dropdown.Toggle
@@ -63,7 +65,7 @@ const User = () => {
                 <hr />
                 {/* <div className="btn_container"> */}
                 <RippleButton
-                    onClick={handleLogOut}
+                    // onClick={logOut}
                     className="logOut-btn border-0 w-100 bg-danger text-uppercase mx-auto"
                 >
                     <FiLogOut className="me-1" /> Log Out

@@ -175,8 +175,8 @@ button.user_dropdown--toggle:active:focus,
     animation: 1s linear ripple-effect;
     background-image: radial-gradient(
         circle,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.1) 100%
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.2) 100%
     );
 }
 
