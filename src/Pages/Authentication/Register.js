@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
@@ -7,6 +7,20 @@ import UseAuth from "../../Hooks/UseAuth";
 import "./Authentication.css";
 
 const Register = () => {
+    const [passwordType, setPasswordType] = useState("password");
+    const [passwordInput, setPasswordInput] = useState("");
+    const handlePasswordChange = (e) => {
+        setPasswordInput(e.target.value);
+    };
+
+    const togglePassword = () => {
+        if (passwordType === "password") {
+            setPasswordType("text");
+            return;
+        }
+        setPasswordType("password");
+    };
+
     const { handleGoogleLogIn, user, handleLogOut } = UseAuth();
     const handleLogIn = () => {
         handleGoogleLogIn().then((result) => {
@@ -15,7 +29,7 @@ const Register = () => {
             // <Navigate to="/home" />;
         });
     };
-    const showPassword = () => {};
+
     return (
         <section className="auth  text-white ">
             {/* <button>login</button> */}
@@ -85,15 +99,41 @@ const Register = () => {
                                     controlId="formBasicPassword"
                                 >
                                     <Form.Control
-                                        type="password"
+                                        type={passwordType}
                                         placeholder="Password"
+                                        onChange={handlePasswordChange}
+                                    />
+                                    {/* <AiOutlineEye /> */}
+                                    {/* <span
+                                        className="d-flex align-items-center px-2 bg-transparent border-0 text-white icon-btn"
+                                        onClick={togglePassword}
+                                    >
+                                        {passwordType === "password" ? (
+                                            <AiOutlineEyeInvisible className="eye-icon" />
+                                        ) : (
+                                            <AiOutlineEye className="eye-icon" />
+                                        )}
+                                    </span> */}
+                                </Form.Group>
+                                <Form.Group
+                                    className="mb-3 mb-sm-4 d-flex input-container"
+                                    controlId="formBasicPassword2"
+                                >
+                                    <Form.Control
+                                        type={passwordType}
+                                        placeholder="Confirm password"
+                                        onChange={handlePasswordChange}
                                     />
                                     {/* <AiOutlineEye /> */}
                                     <span
                                         className="d-flex align-items-center px-2 bg-transparent border-0 text-white icon-btn"
-                                        onClick={showPassword}
+                                        onClick={togglePassword}
                                     >
-                                        <AiOutlineEyeInvisible className="eye-icon" />
+                                        {passwordType === "password" ? (
+                                            <AiOutlineEyeInvisible className="eye-icon" />
+                                        ) : (
+                                            <AiOutlineEye className="eye-icon" />
+                                        )}
                                     </span>
                                 </Form.Group>
                                 {/* <div className="form-options d-flex flex-row align-itemx-start justify-content-between">
