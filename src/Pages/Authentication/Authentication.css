@@ -1,5 +1,5 @@
 /* login section */
-.login {
+.auth {
     --auth-color: white;
     --placeholder-color: rgba(177, 177, 177, 0.8);
     --border-color: rgba(255, 255, 255, 0.5);
@@ -14,17 +14,18 @@
     height: 100vh;
 }
 
-.login-img-container {
+.auth-img-container {
     background-image: url("https://i.ibb.co/VtzDNff/split-screen-img-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.login-img-container p {
+.auth-img-container p {
     /* max-width: 450px; */
-    width: 70%;
+    width: 65%;
     margin: auto;
+    display: flex;
     /* text-align: right; */
     /* margin-inline: auto; */
     font-size: 8.5rem;
@@ -42,15 +43,13 @@
     /* opacity: 0.9; */
 }
 
-.login-img-container:before {
+.auth-img-container:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-
 
 .login-form--col {
     /* padding-top: var(--navbar-height); */
@@ -147,7 +146,7 @@
     box-shadow: none;
 }
 
-.login-form input:is([type="email"], [type="password"]) {
+.login-form input:is([type="email"], [type="password"], [type="text"]) {
     color: white;
     background-color: var(--background-color);
     border: 1px solid transparent;
@@ -156,9 +155,20 @@
     border-radius: 0px;
     padding: .85em 0em;
     line-height: 1;
-    border-bottom: 1px solid var(--border-color);
 }
 
+.eye-icon{
+    font-size: 20px;
+}
+.icon-btn{
+    cursor: pointer;
+    /* pointer-events: none ; */
+}
+
+.input-container{
+    border-bottom: 1px solid var(--border-color);
+
+}
 .login-form input[type="checkbox"] {
     background-color: rgba(250, 250, 250, 0.5);
     border: 1px solid black;

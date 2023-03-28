@@ -22,7 +22,7 @@ const Login = () => {
     };
 
     return (
-        <section className="login text-white ">
+        <section className="auth  text-white ">
             {/* <button>login</button> */}
             <Container fluid>
                 <Row className="auth-row ">
@@ -31,7 +31,7 @@ const Login = () => {
                         sm="12"
                         className="login-col overflow-hidden p-0"
                     >
-                        <div className="login-img-container position-relative w-100 h-100 d-flex flex-row align-items-center">
+                        <div className="auth-img-container position-relative w-100 h-100 d-flex flex-row align-items-center">
                             <p className="">
                                 Travel Far Enough
                                 <br />
@@ -115,7 +115,10 @@ const Login = () => {
                             </Form>
                             <p className="mt-1">
                                 Don't have an account?{" "}
-                                <Link className="text-decoration-none">
+                                <Link
+                                    className="text-decoration-none"
+                                    to="/register"
+                                >
                                     Sign Up
                                 </Link>
                             </p>
