@@ -3,7 +3,6 @@ import "./RippleButton.css";
 
 const RippleButton = ({ children, onClick, className, type, disabled }) => {
     const value = 0;
-    // const [localCoords, setLocalCoords] = useState({ x: 0, y: 0 });
     const [coords, setCoords] = useState({ x: value, y: value });
     const [isRippling, setIsRippling] = useState(false);
     // console.log(localCoords);
