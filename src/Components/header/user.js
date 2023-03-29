@@ -14,7 +14,7 @@ const User = () => {
     );
     // capitalize first letter of each word
     const logOut = () => {
-        handleLogOut();
+        setTimeout(handleLogOut, 1000);
     };
     return (
         <Dropdown id="user_card" className="user_dropdown ">
@@ -65,7 +65,7 @@ const User = () => {
                 <hr />
                 {/* <div className="btn_container"> */}
                 <RippleButton
-                    // onClick={logOut}
+                    onClick={logOut}
                     className="logOut-btn border-0 w-100 bg-danger text-uppercase mx-auto"
                 >
                     <FiLogOut className="me-1" /> Log Out
