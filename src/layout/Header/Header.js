@@ -1,15 +1,13 @@
 import React from "react";
-import { Button, Container, Dropdown, Nav, Navbar } from "react-bootstrap";
-import { FiLogOut } from "react-icons/fi";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import RippleButton from "../../Components/Shared/RippleButton/RippleButton";
-import User from "../../Components/header/User";
 import UseAuth from "../../Hooks/UseAuth";
+import User from "../../Components/header/User";
 import "./Header.css";
 
 // navbar expand
 const Header = () => {
-    const { user, handleLogOut } = UseAuth();
+    const { user } = UseAuth();
 
     const layout = "lg";
     return (

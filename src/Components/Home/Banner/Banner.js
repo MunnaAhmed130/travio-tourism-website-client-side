@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import RippleButton from "../../Shared/RippleButton/RippleButton";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 // Travel and find happiness within
 // yourself.
